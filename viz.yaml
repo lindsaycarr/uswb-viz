@@ -1,24 +1,16 @@
 vizlab: "0.1.7"
 info:
-  id: gages-through-ages
-  name: Stream Gages Through the Ages
-  date: 2017-03-08
+  id: uswb-viz
+  name: US Water Budgets
+  date: 2017-10-10
   publish-date: 9999-01-01
-  path: /gages-through-ages
+  path: /us-water-budgets
   analytics-id: UA-78530187-1
   description: >-
-    The U.S. Geological Survey Groundwater and Streamflow Information Program is 
-    funded by Congress to monitor drought and flood across the US through a network 
-    of stream gages. The USGS has been monitoring streamflow since 1889, and data 
-    from streamgages have since become critical to hydropower operations, recreation,
-    streamflow prediction, flood forecasts, emergency management, engineering designs,
-    and many other purposes. This data visualization shows an animation of stream gages
-    since the late 1800s, by year, across the US. In addition, records from one of the
-    oldest continuously active USGS stream gages, on the Rio Grande River at Embudo, NM,
-    is shown in an interactive plot.  
+    U.S. Water Budgets... TBC 
   audience: General public
-  keywords: [ "water", "USGS", "VIZLAB", "stream gages" ]
-  url: https://owi.usgs.gov/vizlab/gages-through-ages/
+  keywords: [ "water", "USGS", "VIZLAB", "water budget" ]
+  url: https://owi.usgs.gov/vizlab/us-water-budgets/
   thumbnail:  
     url:  "none"  
     width: 250    
@@ -28,36 +20,8 @@ info:
     url: "none"
   contributors:
     -
-      name: Mary Bucknell
-      email: mbucknell@usgs.gov
-      affiliation: U.S. Geological Survey
-    -
-      name: Lindsay Carr
-      email: lcarr@usgs.gov
-      affiliation: U.S. Geological Survey
-    -
-      name: Laura DeCicco
-      email: ldecicco@usgs.gov
-      affiliation: U.S. Geological Survey
-    -
-      name: Emily Read
-      email: eread@usgs.gov
-      affiliation: U.S. Geological Survey
-    -
-      name: Jordan Read
-      email: jread@usgs.gov
-      affiliation: U.S. Geological Survey
-    -
-      name: Jordan Walker
-      email: jiwalker@usgs.gov
-      affiliation: U.S. Geological Survey
-    -
-      name: David Watkins
-      email: wwatkins@usgs.gov
-      affiliation: U.S. Geological Survey
-    -
-      name: Marty Wernimont
-      email: mwernimont@usgs.gov
+      name: David Blodgett
+      email: dblodgett@usgs.gov
       affiliation: U.S. Geological Survey
   twitter: "@USGS_R"
   required-packages:
@@ -96,14 +60,6 @@ info:
       version: 1.2.0
 fetch:
   -
-    id: NM_data
-    location: cache/NMdaily.rds
-    fetcher: dv_data
-    siteID: "08279500"
-    refetch: FALSE
-    reader: rds
-    scripts: scripts/fetch/dv_data.R
-  -
     id: disch-data
     location: cache/allSitesYears.csv
     fetcher: sciencebase
@@ -132,14 +88,6 @@ process:
     processor: state_map
     scripts: scripts/process/process_map.R
     reader: rds
-  - 
-    id: processedNMdaily
-    location: cache/processedNMdaily.rds
-    processor: hydrographData
-    scripts: scripts/process/hydrographs.R
-    reader: rds
-    depends: 
-      dailyData: NM_data
   -
     id: watermark
     location: cache/watermark.rds
@@ -172,19 +120,6 @@ process:
     reader: filepath
     min-year: 1890
     max-year: 2015
-  -
-    id: NMHydrograhTotal-svg
-    location: cache/zoom-bar.xml
-    processor: plot_hydrographTotal
-    reader: filepath
-    depends: 
-      data: processedNMdaily
-    height: 1
-    width: 10
-    full-desample: 30
-    minYear: 1889
-    maxYear: 2016
-    scripts: scripts/process/process-hydrograph.R
 visualize:
   -
     id: map-svg
@@ -196,25 +131,6 @@ visualize:
     inline: true
     title: "U.S. Geological Survey Active Stream Gages"
     alttext: "Map of U.S. Geological Survey gages"
-
-  -
-    id: doy-NM
-    location: figures/doyNM.svg
-    visualizer: doy
-    mimetype: image/svg+xml
-    inline: true
-    height: 3
-    width: 10
-    full-desample: 5
-    minYear: 1889
-    maxYear: 2016
-    depends: 
-      daily: processedNMdaily
-      zoomer: NMHydrograhTotal-svg
-      watermark: watermark
-    scripts: scripts/visualize/visualize-doy.R
-    title: "NM through the ages"
-    alttext: "NM gage"
   -
     id: thumbnail-map-facebook
     location: figures/thumb-facebook.png
@@ -298,8 +214,6 @@ publish:
       footer: footer
       intro: intro
       map-section: map-section
-      intro2: intro2
-      doy-section: doy-section
       social-section: social-section
       embed-section: embed-section
       jquery: jquery-js
@@ -313,7 +227,7 @@ publish:
     context:
       header: header
       footer: footer
-      sections: [ "intro", "map-section", "intro2", "doy-section", "social-section", "embed-section" ]
+      sections: [ "intro", "map-section", "social-section", "embed-section" ]
       resources: [ "jquery", "svg-js", "gages-js", "headerCSS", "footerCSS", "vizCSS", "svgCSS"]
   -
     id: intro
@@ -336,27 +250,6 @@ publish:
       id: gage-map
       figure: map
       caption: siteText.explanationText1
-  -
-    id: intro2
-    template: layout/templates/intro.mustache
-    publisher: section
-    depends: siteText
-    context:
-      data: siteText.introText2
-  -
-    id: doy-section
-    publisher: section
-    template: layout/templates/figureTemplate.mustache
-    depends:
-      siteText: siteText
-      doyNM_graph: doy-NM
-      svg-js: svg-js
-      gages-js: gages-js
-      svgCSS: svgCSS
-    context:
-      id: doyNM-graph
-      figure: doyNM_graph
-      caption: ["siteText.explanationText2", "siteText.dataSources"]
   -
     id: header
     publisher: section
