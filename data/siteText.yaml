@@ -1,15 +1,13 @@
-title: "## Stream Gages Through the Ages"
+title: "## Water Budgets Across the United States"
 
-subtitle: "### In support of citizens, emergency managers, policy makers, and more"
+subtitle: "### Differences in precipitation, evapotranspiration and streamflow across the country"
 
-introText1: "### U.S. Geological Survey Active Stream Gages"
+introText1: "### How the water cycle varies across the country"
 
 explanationText1: |
-   The [U.S. Geological Survey Groundwater and Streamflow Information Program](https://www.usgs.gov/science/mission-areas/water/groundwater-and-streamflow-information?qt-programs_l2_landing_page=0#qt-programs_l2_landing_page)
-   is funded by Congress to monitor drought and flood across the US through a network of stream gages.
-   
-   Why should you care about USGS streamgages? The USGS has been monitoring streamflow since 1889, and data from streamgages
-   have since become critical to hydropower operations, recreation, streamflow prediction, flood forecasts, emergency 
-   management, engineering designs, and many other purposes.
-   
-   Mouse over the timeline below the map to see the distribution of active stream gages for a given year.
+   Text here would explain the idea of a water budget and that this shows how much 
+   variation in water budgets there is across the us. Also explain caveats related 
+   to water budget closure and uncertainty in the data we are using. Highlight how 
+   we are working to close the water budget and improve data accuracy. Link to the
+   [National Water Census](https://water.usgs.gov/watercensus/)
+
