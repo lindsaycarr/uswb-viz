@@ -16,16 +16,6 @@ to_sp <- function(...){
   return(map.sp.t)
 }
 
-#' @param locations a data.frame with dec_long_va and dec_lat_va
-points_sp <- function(locations){
-  library(dplyr)
-  
-  points <- cbind(locations$dec_long_va, locations$dec_lat_va) %>% 
-    sp::SpatialPoints(proj4string = CRS("+proj=longlat +datum=WGS84")) %>% 
-    sp::spTransform(CRS(proj.string)) %>% 
-    sp::SpatialPointsDataFrame(data = locations[c('site_no')])
-}
-
 shifts <- list(AK = list(scale = 0.37, shift = c(90,-460), rotate = -50),
                HI = list(scale = 1, shift = c(520, -110), rotate = -35),
                PR = list(scale = 2.5, shift = c(-140, 90), rotate=20))
@@ -52,27 +42,6 @@ process.state_map <- function(viz){
   }
   
   saveRDS(states.out, file = viz[['location']])
-}
-
-process.site_map <- function(viz){
-  library(dplyr)
-  sites <- readData(viz[['depends']]) %>% filter(!is.na(dec_lat_va))
-  huc.map <- c(AK = "19", HI = "20", PR = "21")
-  
-  #parse huc_cd to 2 digits, and rename to huc to stay consistent
-  sites <- sites %>% mutate(huc = substr(huc, 1,2)) 
- 
-  sites.out <- sites %>% filter(!huc %in% huc.map) %>% 
-    points_sp()
-  
-  for (region in names(huc.map)){
-    sites.tmp <- sites %>% filter(huc %in% huc.map[[region]]) %>% 
-      points_sp()
-    sites.tmp <- do.call(shift_sp, c(sp = sites.tmp, ref = stuff_to_move[[region]], 
-                                shifts[[region]]))
-    sites.out <- rbind(sites.out, sites.tmp)
-  }
-  saveRDS(sites.out, file = viz[['location']])
 }
 
 library(rgeos)
