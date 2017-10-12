@@ -2,6 +2,12 @@
 
 Code for a US water budget data visualization.
 
+#### Naming Convention
+File names: {phase}_{stepid}.R e.g. fetch_watersheds.R
+Function names: {phase}.{stepid} e.g. fetch.watersheds <- function(viz) {}
+Stepid: {phase}-{stepid} e.g. fetch-watersheds
+Cache items: {phase}_{stepid}.{encoding} e.g. fetch_watersheds.rds
+
 Initial Setup:
 
 Clone this repository.
