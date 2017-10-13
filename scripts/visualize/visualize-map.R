@@ -7,7 +7,7 @@ size_map_svg <- function(sp){
   apply(sp::bbox(sp), 1, diff)/500000
 }
 
-visualize.map_thumbnail <- function(viz){
+visualize.visualize_map_thumbnail <- function(viz){
   library(dplyr)
   
   data <- readDepends(viz)

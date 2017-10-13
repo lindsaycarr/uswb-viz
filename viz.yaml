@@ -97,42 +97,39 @@ visualize:
     title: "U.S. Water Budgets"
     alttext: "Summary of water budgets for the conterminous US."
   -
-    id: thumbnail-map-facebook
+    id: visualize-thumbnail-map-facebook
     location: figures/thumb-facebook.png
-    visualizer: map_thumbnail
+    visualizer: visualize_map_thumbnail
     scripts: ["scripts/visualize/visualize-map.R"]
     depends: ["process-map", "process-watermark"]
     fig-height: 820
     fig-width: 1560
-    export: true
   -
-    id: thumbnail-map-twitter
+    id: visualize-thumbnail-map-twitter
     location: figures/thumb-twitter.png
-    visualizer: map_thumbnail
+    visualizer: visualize_map_thumbnail
     scripts: ["scripts/visualize/visualize-map.R"]
     depends: ["process-map", "process-watermark"]
     fig-height: 300
     fig-width: 560
-    export: true
   -
-    id: thumbnail-map-landing
+    id: visualize-thumbnail-map-landing
     location: figures/thumb-landing.png
-    visualizer: map_thumbnail
+    visualizer: visualize_map_thumbnail
     scripts: ["scripts/visualize/visualize-map.R"]
     depends: ["process-map", "process-watermark"]
     fig-height: 400
     fig-width: 400
-    export: true
 publish:
   -
-    id: intro
+    id: publish-intro
     template: layout/templates/intro.mustache
     publisher: section
     depends: siteText
     context:
       data: ["siteText.title", "siteText.introText1"]
   -
-    id: map-section
+    id: publish-map-section
     publisher: section
     template: layout/templates/figureTemplate.mustache
     depends:
@@ -143,25 +140,25 @@ publish:
       figure: map
       caption: siteText.explanationText1
   -
-    id: header
+    id: publish-header
     publisher: section
     template: header-template
     context:
       title: Water Budgets Across the U.S.
   -
-    id: social-section
+    id: publish-social-section
     publisher: section
     template: layout/templates/socialMedia.mustache
     depends:
-      githubLogo: githubLogo
-      twitterLogo: twitterLogo 
-      facebookLogo: facebookLogo
+      githubLogo: publish-githubLogo
+      twitterLogo: publish-twitterLogo 
+      facebookLogo: publish-facebookLogo
     context:
-      githubLogo: githubLogo
-      twitterLogo: twitterLogo 
-      facebookLogo: facebookLogo
+      githubLogo: publish-githubLogo
+      twitterLogo: publish-twitterLogo 
+      facebookLogo: publish-facebookLogo
   -
-    id: footer
+    id: publish-footer
     publisher: footer
     template: footer-template
     blogsInFooter: TRUE
@@ -175,76 +172,76 @@ publish:
         url: https://owi.usgs.gov/blog/stats-service-map/
         thumbLoc: https://owi.usgs.gov/blog/static/stats-service-map/plot-1.png
   -
-    id: viz-css
+    id: publish-viz-css
     location: layout/css/viz.css
     mimetype: text/css
     publisher: resource
   -
-    id: svg-css
+    id: publish-svg-css
     location: layout/css/svg.css
     mimetype: text/css
     publisher: resource
   -
-    id: index
+    id: publish-index
     name: index
     publisher: page
     template: fullpage
     depends:
-      header: header
-      footer: footer
-      intro: intro
-      map-section: map-section
-      social-section: social-section
+      header: publish-header
+      footer: publish-footer
+      intro: publish-intro
+      map-section: publish-map-section
+      social-section: publish-social-section
       jquery-js: lib-jquery-js
       svg-injector-js: lib-svg-injector-js
       vizlab-js: lib-vizlab-javascript
-      svg-css: svg-css
-      viz-css: viz-css
+      svg-css: publish-svg-css
+      viz-css: publish-viz-css
       header-css: lib-header-css
       footer-css: lib-footer-css
     context:
       header: header
       footer: footer
       sections: [ "intro", "map-section", "social-section"]
-      resources: [ "jquery-js", "vizlab-js", "svg-injector-js", "header-css", 
-      "footer-css", "viz-css", "svg-css"]
+      resources: [ "jquery-js", "vizlab-js", "svg-injector-js", 
+      "header-css", "footer-css", "viz-css", "svg-css"]
   -
-    id: githubLogo
+    id: publish-githubLogo
     location: images/github.svg
     mimetype: image/svg
     inline: true
     title: "Github"
     alttext: "Github Logo"
   -
-    id: twitterLogo
+    id: publish-twitterLogo
     location: images/twitter.svg
     mimetype: image/svg
     inline: true
     title: "Twitter"
     alttext: "Twitter Logo"
   -
-    id: facebookLogo
+    id: publish-facebookLogo
     location: images/facebook.svg
     mimetype: image/svg
     inline: true
     title: "Facebook"
     alttext: "Facebook Logo"
   -
-    id: facebook-thumb
+    id: publish-facebook-thumb
     location: figures/thumb-facebook.png
     publisher: thumbnail
     for: facebook
     mimetype: image/png
     export: TRUE
   -
-    id: twitter-thumb
+    id: publish-twitter-thumb
     location: figures/thumb-twitter.png
     publisher: thumbnail
     for: twitter
     mimetype: image/png
     export: TRUE
   -
-    id: landing-thumb
+    id: publish-landing-thumb
     location: figures/thumb-landing.png
     publisher: thumbnail
     for: landing
