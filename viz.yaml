@@ -206,8 +206,8 @@ publish:
       header: header
       footer: footer
       sections: [ "intro", "map-section", "social-section"]
-      resources: [ "jquery-js", "svg-injector-js", "vizlab-js", 
-      "header-css", "footer-css", "viz-css", "svg-css"]
+      resources: [ "jquery-js", "vizlab-js", "svg-injector-js", "header-css", 
+      "footer-css", "viz-css", "svg-css"]
   -
     id: githubLogo
     location: images/github.svg
