@@ -145,20 +145,6 @@ publish:
     title: "Facebook"
     alttext: "Facebook Logo"
   -
-    id: embedIcon
-    location: images/embed.svg
-    mimetype: image/svg
-    inline: true
-    title: "Embed"
-    alttext: "Vizlab Embed Icon"
-  -
-    id: blackEmbedIcon
-    location: images/blackEmbed.svg
-    mimetype: image/svg
-    inline: true
-    title: "Embed"
-    alttext: "Vizlab Embed Icon"
-  -
     id: index
     name: index
     publisher: page
@@ -169,7 +155,6 @@ publish:
       intro: intro
       map-section: map-section
       social-section: social-section
-      embed-section: embed-section
       vizlab-js: lib-vizlab-javascript
       svg-injector-js: lib-svg-injector-js
       jquery-js: lib-jquery-js
@@ -180,7 +165,7 @@ publish:
     context:
       header: header
       footer: footer
-      sections: [ "intro", "map-section", "social-section", "embed-section" ]
+      sections: [ "intro", "map-section", "social-section"]
       resources: [ "vizlab-js", "svg-injector-js", "headerCSS", "footerCSS", "vizCSS", "svgCSS", "jquery-js"]
   -
     id: intro
@@ -216,24 +201,10 @@ publish:
       githubLogo: githubLogo
       twitterLogo: twitterLogo 
       facebookLogo: facebookLogo
-      embedIcon: embedIcon 
     context:
       githubLogo: githubLogo
       twitterLogo: twitterLogo 
       facebookLogo: facebookLogo
-      embedIcon: embedIcon 
-  -
-    id: embed-section
-    publisher: section
-    template: layout/templates/embedTemplate.mustache
-    depends:
-      blackEmbedIcon: blackEmbedIcon
-    context:
-      blackEmbedIcon: blackEmbedIcon
-      embeds: 
-        -
-          description: Embed Description Area
-          url: "urltosweetplace"
   -
     id: footer
     publisher: footer
