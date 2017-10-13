@@ -55,9 +55,14 @@ info:
     gsplot:
       repo: GRAN
       version: 0.7.3
-    svglite:
-      repo: CRAN
-      version: 1.2.0
+    svglite: 
+      repo: github
+      version: 1.2.0.9003
+      name: jread-usgs/svglite
+      ref: svgnano_03
+    NWCEd: 
+      repo: github
+      name: USGS-R/NWCEd
 fetch:
   -
     id: siteText
@@ -71,13 +76,57 @@ fetch:
     mimetype: "application/json"
     scripts: 
   -
-    id: fetch-watersheds
-    location: cache/fetch_watersheds.rds
-    fetcher: fetch_watersheds
-    depends: [ "fetch-HU_ids" ]
-    scripts: scripts/fetch/fetch_watersheds.R
+    id: fetch-huc12boundary
+    location: cache/fetch_huc12boundary.geojson
+    fetcher: sciencebase
+    scripts:
+    remoteItemId: 59e10108e4b05fe04cd000c8
+    remoteFilename: usgs_huc12boundary_uswb.geojson
+  -
+    id: fetch-huc12boundary_atts
+    location: cache/fetch_huc12boundary_atts.tsv
+    fetcher: sciencebase
+    scripts:
+    remoteItemId: 59e10108e4b05fe04cd000c8
+    remoteFilename: usgs_huc12boundary_uswb.tsv
+  -
+    id: fetch-huc12pp
+    location: cache/fetch_huc12pp.geojson
+    fetcher: sciencebase
+    scripts:
+    remoteItemId: 59e10108e4b05fe04cd000c8
+    remoteFilename: usgs_huc12pp_uswb.geojson
+  -
+    id: fetch-huc12pp_atts
+    location: cache/fetch_huc12pp_atts.tsv
+    fetcher: sciencebase
+    scripts:
+    remoteItemId: 59e10108e4b05fe04cd000c8
+    remoteFilename: usgs_huc12pp_uswb.tsv
+  -
+    id: fetch-nhdplusflowline
+    location: cache/fetch_nhdplusflowline.geojson
+    fetcher: sciencebase
+    scripts:
+    remoteItemId: 59e10108e4b05fe04cd000c8
+    remoteFilename: usgs_nhdplusflowline_uswb.geojson
+  -
+    id: fetch-nwc_wb_data
+    location: cache/fetch_nwc_wb_data.rds
+    fetcher: fetch_nwc_wb_data
+    scripts: scripts/fetch/fetch_nwc_wb_data.R
+    depends: fetch-HU_ids
     reader: rds
 process:
+  -
+    id: process-watershed_map_data
+    location: cache/process_watershed_map_data.rds
+    processor: process_watershed_map_data
+    scripts: scripts/process/process_watershed_data.R
+    depends: [ "fetch-HU_ids", "fetch-huc12boundary", "fetch-huc12boundary_atts", 
+    "fetch-huc12pp", "fetch-huc12pp_atts", 
+    "fetch-nhdplusflowline"]
+    reader: rds
   -
     id: process-map
     location: cache/process_map.rds
