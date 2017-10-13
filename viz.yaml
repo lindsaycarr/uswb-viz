@@ -136,9 +136,23 @@ process:
     location: cache/process_watershed_map_data.rds
     processor: process_watershed_map_data
     scripts: scripts/process/process_watershed_data.R
-    depends: [ "fetch-HU_ids", "fetch-huc12boundary", "fetch-huc12boundary_atts", 
+    depends: ["fetch-huc12boundary", "fetch-huc12boundary_atts", 
     "fetch-huc12pp", "fetch-huc12pp_atts", 
     "fetch-nhdplusflowline", "parameter-spatial"]
+    reader: rds
+  -
+    id: process-watershed-annual-wb-data
+    location: cache/process_watershed_annual_wb_data.rds
+    processor: process_watershed_annual_wb_data
+    scripts: scripts/process/process_watershed_data.R
+    depends: ["fetch-nwc_wb_data"]
+    reader: rds
+  -
+    id: process-watershed-por-wb-data
+    location: cache/process_watershed_por_wb_data.rds
+    processor: process_watershed_por_wb_data
+    scripts: scripts/process/process_watershed_data.R
+    depends: ["process-watershed-annual-wb-data"]
     reader: rds
   -
     id: process-map
