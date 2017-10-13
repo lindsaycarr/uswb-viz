@@ -199,14 +199,14 @@ publish:
       jquery-js: lib-jquery-js
       svg-css: svg-css
       viz-css: viz-css
-      headerCSS: lib-header-css
-      footerCSS: lib-footer-css
+      header-css: lib-header-css
+      footer-css: lib-footer-css
     context:
       header: header
       footer: footer
       sections: [ "intro", "map-section", "social-section"]
-      resources: [ "vizlab-js", "svg-injector-js", "headerCSS", 
-      "footerCSS", "viz-css", "svg-css", "jquery-js"]
+      resources: [ "jquery-js", "vizlab-js", "svg-injector-js", "header-css", 
+      "footer-css", "viz-css", "svg-css"]
   -
     id: githubLogo
     location: images/github.svg
