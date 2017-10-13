@@ -92,7 +92,7 @@ visualize:
     depends: ["process-map", "process-watermark"]
     scripts: scripts/visualize/visualize-map.R
     mimetype: image/svg+xml
-    orientation: landscape
+    orientation: vizlab-landscape
     export: true
     title: "U.S. Water Budgets"
     alttext: "Summary of water budgets for the conterminous US."
