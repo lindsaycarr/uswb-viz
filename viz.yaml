@@ -1,4 +1,4 @@
-vizlab: "0.1.7"
+vizlab: "0.2.2"
 info:
   id: uswb-viz
   name: US Water Budgets
@@ -27,7 +27,7 @@ info:
   required-packages:
     vizlab:
       repo: GRAN
-      version: 0.1.7
+      version: 0.2.2
     dataRetrieval:
       repo: CRAN
       version: 2.6.3
@@ -159,16 +159,6 @@ publish:
     title: "Embed"
     alttext: "Vizlab Embed Icon"
   -
-    id: vizCSS
-    location: layout/css/viz.css
-    mimetype: text/css
-    publisher: resource
-  -
-    id: svgCSS
-    location: layout/css/svg.css
-    mimetype: text/css
-    publisher: resource
-  -
     id: index
     name: index
     publisher: page
@@ -180,8 +170,9 @@ publish:
       map-section: map-section
       social-section: social-section
       embed-section: embed-section
-      jquery: jquery-js
-      svg-js: svg-js
+      vizlab-js: lib-vizlab-javascript
+      svg-injector-js: lib-svg-injector-js
+      jquery-js: lib-jquery-js
       svgCSS: svgCSS
       vizCSS: vizCSS
       headerCSS: lib-header-css
@@ -190,7 +181,7 @@ publish:
       header: header
       footer: footer
       sections: [ "intro", "map-section", "social-section", "embed-section" ]
-      resources: [ "jquery", "svg-js", "headerCSS", "footerCSS", "vizCSS", "svgCSS"]
+      resources: [ "vizlab-js", "svg-injector-js", "headerCSS", "footerCSS", "vizCSS", "svgCSS", "jquery-js"]
   -
     id: intro
     template: layout/templates/intro.mustache
@@ -204,7 +195,7 @@ publish:
     template: layout/templates/figureTemplate.mustache
     depends:
       map: visualize-map
-      svg-js: svg-js
+      svg-js: lib-svg-injector-js
       svgCSS: svgCSS
       siteText: siteText
     context:
@@ -258,13 +249,15 @@ publish:
         url: https://owi.usgs.gov/blog/stats-service-map/
         thumbLoc: https://owi.usgs.gov/blog/static/stats-service-map/plot-1.png
   -
-    id: jquery-js
-    location: layout/js/jquery311.min.js
-    mimetype: text/javascript
-  - 
-    id: svg-js
-    location: layout/js/svg.js
-    mimetype: text/javascript
+    id: vizCSS
+    location: layout/css/viz.css
+    mimetype: text/css
+    publisher: resource
+  -
+    id: svgCSS
+    location: layout/css/svg.css
+    mimetype: text/css
+    publisher: resource
   -
     id: facebook-thumb
     location: figures/thumb-facebook.png
