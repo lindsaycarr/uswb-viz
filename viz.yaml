@@ -66,9 +66,15 @@ fetch:
     reader: md
     mimetype: text/yaml
   -
+    id: fetch-HU_ids
+    location: data/HU_ids.json
+    mimetype: "application/json"
+    scripts: 
+  -
     id: fetch-watersheds
     location: cache/fetch_watersheds.rds
     fetcher: fetch_watersheds
+    depends: [ "fetch-HU_ids" ]
     scripts: scripts/fetch/fetch_watersheds.R
     reader: rds
 process:
