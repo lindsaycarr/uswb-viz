@@ -92,7 +92,8 @@ visualize:
     depends: ["process-map", "process-watermark"]
     scripts: scripts/visualize/visualize-map.R
     mimetype: image/svg+xml
-    inline: true
+    orientation: landscape
+    export: true
     title: "U.S. Water Budgets"
     alttext: "Summary of water budgets for the conterminous US."
   -
@@ -194,19 +195,19 @@ publish:
       intro: intro
       map-section: map-section
       social-section: social-section
-      vizlab-js: lib-vizlab-javascript
-      svg-injector-js: lib-svg-injector-js
       jquery-js: lib-jquery-js
+      svg-injector-js: lib-svg-injector-js
+      vizlab-js: lib-vizlab-javascript
       svg-css: svg-css
       viz-css: viz-css
-      headerCSS: lib-header-css
-      footerCSS: lib-footer-css
+      header-css: lib-header-css
+      footer-css: lib-footer-css
     context:
       header: header
       footer: footer
       sections: [ "intro", "map-section", "social-section"]
-      resources: [ "vizlab-js", "svg-injector-js", "headerCSS", 
-      "footerCSS", "viz-css", "svg-css", "jquery-js"]
+      resources: [ "jquery-js", "svg-injector-js", "vizlab-js", 
+      "header-css", "footer-css", "viz-css", "svg-css"]
   -
     id: githubLogo
     location: images/github.svg
