@@ -8,6 +8,8 @@ Function names: {phase}.{stepid} e.g. fetch.watersheds <- function(viz) {}
 Stepid: {phase}-{stepid} e.g. fetch-watersheds  
 Cache items: {phase}_{stepid}.{encoding} e.g. fetch_watersheds.rds  
 
+Also see the [vizlab style guide](https://github.com/USGS-VIZLAB/vizlab/wiki/Style-guide)
+
 Initial Setup:
 
 Clone this repository.
