@@ -1,8 +1,8 @@
-process.process_watershed_map_data <- function(viz = as.viz("process-watershed_map_data")) {
+process.process_watershed_map_data <- function(viz = as.viz("process-watershed-map-data")) {
 
   deps <- readDepends(viz)
-  required <- c("fetch-huc12boundary", "fetch-huc12boundary_atts", 
-                "fetch-huc12pp", "fetch-huc12pp_atts", 
+  required <- c("fetch-huc12boundary", "fetch-huc12boundary-atts", 
+                "fetch-huc12pp", "fetch-huc12pp-atts", 
                 "fetch-nhdplusflowline",
                 "parameter-spatial")
   checkRequired(deps, required)
@@ -23,10 +23,10 @@ process.process_watershed_map_data <- function(viz = as.viz("process-watershed_m
 process.process_watershed_annual_wb_data <- function(viz = as.viz("process-watershed-annual-wb-data")) {
   
   deps <- readDepends(viz)
-  required <- c("fetch-nwc_wb_data")
+  required <- c("fetch-nwc-wb-data")
   checkRequired(deps, required)
   
-  wb_data <- deps$`fetch-nwc_wb_data`
+  wb_data <- deps$`fetch-nwc-wb-data`
   
   wb_data <- lapply(wb_data, process_wb_ts)
   

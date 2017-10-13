@@ -1,10 +1,10 @@
-fetch.fetch_nwc_wb_data <- function(viz = as.viz("fetch-nwc_wb_data")) {
+fetch.fetch_nwc_wb_data <- function(viz = as.viz("fetch-nwc-wb-data")) {
   
   deps <- readDepends(viz)
-  required <- "fetch-HU_ids"
+  required <- "fetch-HU-ids"
   checkRequired(deps, required)
   
-  HU_ids <- deps[["fetch-HU_ids"]]
+  HU_ids <- deps[["fetch-HU-ids"]]
   
   wb_data <- list()
   

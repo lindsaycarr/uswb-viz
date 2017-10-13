@@ -73,13 +73,13 @@ parameter:
     simplify_tolerance_m: 1000
 fetch:
   -
-    id: siteText
+    id: fetch-siteText
     location: data/siteText.yaml
     scripts:
     reader: md
     mimetype: text/yaml
   -
-    id: fetch-HU_ids
+    id: fetch-HU-ids
     location: data/HU_ids.json
     mimetype: "application/json"
     scripts: 
@@ -92,7 +92,7 @@ fetch:
     remoteFilename: usgs_huc12boundary_uswb.geojson
     reader: sf_reader
   -
-    id: fetch-huc12boundary_atts
+    id: fetch-huc12boundary-atts
     location: cache/fetch_huc12boundary_atts.tsv
     fetcher: sciencebase
     scripts:
@@ -108,7 +108,7 @@ fetch:
     remoteFilename: usgs_huc12pp_uswb.geojson
     reader: sf_reader
   -
-    id: fetch-huc12pp_atts
+    id: fetch-huc12pp-atts
     location: cache/fetch_huc12pp_atts.tsv
     fetcher: sciencebase
     scripts:
@@ -124,20 +124,20 @@ fetch:
     remoteFilename: usgs_nhdplusflowline_uswb.geojson
     reader: sf_reader
   -
-    id: fetch-nwc_wb_data
+    id: fetch-nwc-wb-data
     location: cache/fetch_nwc_wb_data.rds
     fetcher: fetch_nwc_wb_data
     scripts: scripts/fetch/fetch_nwc_wb_data.R
-    depends: fetch-HU_ids
+    depends: fetch-HU-ids
     reader: rds
 process:
   -
-    id: process-watershed_map_data
+    id: process-watershed-map-data
     location: cache/process_watershed_map_data.rds
     processor: process_watershed_map_data
     scripts: scripts/process/process_watershed_data.R
-    depends: ["fetch-huc12boundary", "fetch-huc12boundary_atts", 
-    "fetch-huc12pp", "fetch-huc12pp_atts", 
+    depends: ["fetch-huc12boundary", "fetch-huc12boundary-atts", 
+    "fetch-huc12pp", "fetch-huc12pp-atts", 
     "fetch-nhdplusflowline", "parameter-spatial"]
     reader: rds
   -
@@ -145,7 +145,7 @@ process:
     location: cache/process_watershed_annual_wb_data.rds
     processor: process_watershed_annual_wb_data
     scripts: scripts/process/process_watershed_data.R
-    depends: ["fetch-nwc_wb_data"]
+    depends: ["fetch-nwc-wb-data"]
     reader: rds
   -
     id: process-watershed-por-wb-data
@@ -207,7 +207,7 @@ publish:
     id: publish-intro
     template: layout/templates/intro.mustache
     publisher: section
-    depends: siteText
+    depends: fetch-siteText
     context:
       data: ["siteText.title", "siteText.introText1"]
   -
@@ -216,7 +216,7 @@ publish:
     template: layout/templates/figureTemplate.mustache
     depends:
       map: visualize-map
-      siteText: siteText
+      siteText: fetch-siteText
     context:
       id: gage-map
       figure: map
