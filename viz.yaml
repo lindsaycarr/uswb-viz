@@ -124,50 +124,6 @@ visualize:
     export: true
 publish:
   -
-    id: githubLogo
-    location: images/github.svg
-    mimetype: image/svg
-    inline: true
-    title: "Github"
-    alttext: "Github Logo"
-  -
-    id: twitterLogo
-    location: images/twitter.svg
-    mimetype: image/svg
-    inline: true
-    title: "Twitter"
-    alttext: "Twitter Logo"
-  -
-    id: facebookLogo
-    location: images/facebook.svg
-    mimetype: image/svg
-    inline: true
-    title: "Facebook"
-    alttext: "Facebook Logo"
-  -
-    id: index
-    name: index
-    publisher: page
-    template: fullpage
-    depends:
-      header: header
-      footer: footer
-      intro: intro
-      map-section: map-section
-      social-section: social-section
-      vizlab-js: lib-vizlab-javascript
-      svg-injector-js: lib-svg-injector-js
-      jquery-js: lib-jquery-js
-      svgCSS: svgCSS
-      vizCSS: vizCSS
-      headerCSS: lib-header-css
-      footerCSS: lib-footer-css
-    context:
-      header: header
-      footer: footer
-      sections: [ "intro", "map-section", "social-section"]
-      resources: [ "vizlab-js", "svg-injector-js", "headerCSS", "footerCSS", "vizCSS", "svgCSS", "jquery-js"]
-  -
     id: intro
     template: layout/templates/intro.mustache
     publisher: section
@@ -180,8 +136,6 @@ publish:
     template: layout/templates/figureTemplate.mustache
     depends:
       map: visualize-map
-      svg-js: lib-svg-injector-js
-      svgCSS: svgCSS
       siteText: siteText
     context:
       id: gage-map
@@ -220,15 +174,60 @@ publish:
         url: https://owi.usgs.gov/blog/stats-service-map/
         thumbLoc: https://owi.usgs.gov/blog/static/stats-service-map/plot-1.png
   -
-    id: vizCSS
+    id: viz-css
     location: layout/css/viz.css
     mimetype: text/css
     publisher: resource
   -
-    id: svgCSS
+    id: svg-css
     location: layout/css/svg.css
     mimetype: text/css
     publisher: resource
+  -
+    id: index
+    name: index
+    publisher: page
+    template: fullpage
+    depends:
+      header: header
+      footer: footer
+      intro: intro
+      map-section: map-section
+      social-section: social-section
+      vizlab-js: lib-vizlab-javascript
+      svg-injector-js: lib-svg-injector-js
+      jquery-js: lib-jquery-js
+      svg-css: svg-css
+      viz-css: viz-css
+      headerCSS: lib-header-css
+      footerCSS: lib-footer-css
+    context:
+      header: header
+      footer: footer
+      sections: [ "intro", "map-section", "social-section"]
+      resources: [ "vizlab-js", "svg-injector-js", "headerCSS", 
+      "footerCSS", "viz-css", "svg-css", "jquery-js"]
+  -
+    id: githubLogo
+    location: images/github.svg
+    mimetype: image/svg
+    inline: true
+    title: "Github"
+    alttext: "Github Logo"
+  -
+    id: twitterLogo
+    location: images/twitter.svg
+    mimetype: image/svg
+    inline: true
+    title: "Twitter"
+    alttext: "Twitter Logo"
+  -
+    id: facebookLogo
+    location: images/facebook.svg
+    mimetype: image/svg
+    inline: true
+    title: "Facebook"
+    alttext: "Facebook Logo"
   -
     id: facebook-thumb
     location: figures/thumb-facebook.png
