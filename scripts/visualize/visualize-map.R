@@ -31,12 +31,13 @@ visualize.visualize_map <- function(viz = as.viz("visualize-map")){
   states <- data[['process-map']]
   outlets <- data[['process-watershed-map-data']]$hu_outlet
   watermark <- data[['process-watermark']]
-  state.name <- as.character(row.names(states)[states@plotOrder])
+  state.name <- states$ID
   # site.num <- sites$site_no # note that points sp objects don't have `plotOrder`, so we need to verify this
   
   library(svglite)
-  library(sp)
   library(sf)
+  library(sp)
+  states <- sf::as_Spatial(states$geometry)
   size <- size_map_svg(states)
   svg <- svglite::xmlSVG({
     par(mai=c(0,0,0,0), omi=c(0,0,0,0))
@@ -200,8 +201,8 @@ createThumbnailPlot <- function(states, width){
   library(xml2)
   
   par(mar=c(0,0,0,0), oma=c(0,0,0,0), bg='black')
-  
-  sp::plot(states, col='grey2', border = 'grey2')
+  library(sf)
+  plot(states, col='grey2', border = 'grey2')
   # Could add watersheds?
   # sp::plot(sites, add=TRUE, pch = 16, cex=width/2500, col='#CCFFFF33') # 20% opacity
   
