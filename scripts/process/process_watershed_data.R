@@ -12,7 +12,7 @@ process.process_watershed_map_data <- function(viz = as.viz("process-watershed-m
                              hu_outlet = deps$`fetch-huc12pp`,
                              nhd_flowline = deps$`fetch-nhdplusflowline`)
   
-  watershed_map_data <- lapply(watershed_map_data, sf::st_transform, crs = deps$`parameter-spatial`$epsg_code)
+  watershed_map_data <- lapply(watershed_map_data, sf::st_transform, crs = deps$`parameter-spatial`$crs)
   
   # simplify geometries
   watershed_map_data <- lapply(watershed_map_data, sf::st_simplify, dTolerance = deps$`parameter-spatial`$simplify_tolerance_m)

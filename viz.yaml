@@ -69,7 +69,7 @@ info:
 parameter:
   -
     id: parameter-spatial
-    epsg_code: '+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs'
+    crs: '+init=epsg:2163'
     simplify_tolerance_m: 1000
 fetch:
   -
