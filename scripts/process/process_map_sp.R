@@ -30,7 +30,7 @@ stuff_to_move <- list(
 #' create the sp object 
 #'
 #'@param viz the vizlab object 
-process.process_map <- function(viz = as.viz("process-map")){
+process.process_map <- function(viz = as.viz("process_map")){
   library(sp)
   states.out <- to_sp('state')
   for(i in names(shifts)){

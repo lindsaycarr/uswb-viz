@@ -1,9 +1,9 @@
 
-process.process_map <- function(viz = as.viz("process-map")){
+process.process_map <- function(viz = as.viz("process_map")){
   
   deps <- readDepends(viz)
-  required <- c("parameter-spatial")
-  crs <- deps[["parameter-spatial"]]$crs
+  required <- c("parameter_spatial")
+  crs <- deps[["parameter_spatial"]]$crs
   crs <- "+init=epsg:2163"
   
   shift_states <- 

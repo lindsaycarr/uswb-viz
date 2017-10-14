@@ -11,7 +11,7 @@ visualize.visualize_map_thumbnail <- function(viz){
   library(dplyr)
   
   data <- readDepends(viz)
-  states <- data[['process-map']]
+  states <- data[['process_map']]
   # Just commenting out sites and bars to keep ideas in code for later.
   # sites <- data[['site-map']]
   # bars <- data[['bar-data']]
@@ -23,14 +23,14 @@ visualize.visualize_map_thumbnail <- function(viz){
   dev.off()
 }
 
-visualize.visualize_map <- function(viz = as.viz("visualize-map")){
+visualize.visualize_map <- function(viz = as.viz("visualize_map")){
   
-  required <- c("process-map", "process-watermark", "process-watershed-map-data")
+  required <- c("process_map", "process_watermark", "process_watershed_map_data")
   data <- readDepends(viz)
   
-  states <- data[['process-map']]
-  outlets <- data[['process-watershed-map-data']]$hu_outlet
-  watermark <- data[['process-watermark']]
+  states <- data[['process_map']]
+  outlets <- data[['process_watershed_map_data']]$hu_outlet
+  watermark <- data[['process_watermark']]
   state.name <- states$ID
   # site.num <- sites$site_no # note that points sp objects don't have `plotOrder`, so we need to verify this
   

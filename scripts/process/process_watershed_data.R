@@ -1,32 +1,32 @@
-process.process_watershed_map_data <- function(viz = as.viz("process-watershed-map-data")) {
+process.process_watershed_map_data <- function(viz = as.viz("process_watershed_map_data")) {
 
   deps <- readDepends(viz)
-  required <- c("fetch-huc12boundary", "fetch-huc12boundary-atts", 
-                "fetch-huc12pp", "fetch-huc12pp-atts", 
-                "fetch-nhdplusflowline",
-                "parameter-spatial")
+  required <- c("fetch_huc12boundary", 
+                "fetch_huc12pp", 
+                "fetch_nhdplusflowline",
+                "parameter_spatial")
   checkRequired(deps, required)
   
   # Load geojson and project
-  watershed_map_data <- list(hu_boundary = deps$`fetch-huc12boundary`,
-                             hu_outlet = deps$`fetch-huc12pp`,
-                             nhd_flowline = deps$`fetch-nhdplusflowline`)
+  watershed_map_data <- list(hu_boundary = deps$`fetch_huc12boundary`,
+                             hu_outlet = deps$`fetch_huc12pp`,
+                             nhd_flowline = deps$`fetch_nhdplusflowline`)
   
-  watershed_map_data <- lapply(watershed_map_data, sf::st_transform, crs = deps$`parameter-spatial`$crs)
+  watershed_map_data <- lapply(watershed_map_data, sf::st_transform, crs = deps$`parameter_spatial`$crs)
   
   # simplify geometries
-  watershed_map_data <- lapply(watershed_map_data, sf::st_simplify, dTolerance = deps$`parameter-spatial`$simplify_tolerance_m)
+  watershed_map_data <- lapply(watershed_map_data, sf::st_simplify, dTolerance = deps$`parameter_spatial`$simplify_tolerance_m)
   
   saveRDS(watershed_map_data, viz[['location']])
 }
 
-process.process_watershed_annual_wb_data <- function(viz = as.viz("process-watershed-annual-wb-data")) {
+process.process_watershed_annual_wb_data <- function(viz = as.viz("process_watershed_annual_wb_data")) {
   
   deps <- readDepends(viz)
-  required <- c("fetch-nwc-wb-data")
+  required <- c("fetch_nwc_wb_data")
   checkRequired(deps, required)
   
-  wb_data <- deps$`fetch-nwc-wb-data`
+  wb_data <- deps$`fetch_nwc_wb_data`
   
   wb_data <- lapply(wb_data, process_wb_ts)
   
@@ -54,13 +54,13 @@ process_wb_ts <- function(wb_data) {
   rbind(an_e, an_p, an_q)
 }
 
-process.process_watershed_por_wb_data <- function(viz = as.viz("process-watershed-por-wb-data")) {
+process.process_watershed_por_wb_data <- function(viz = as.viz("process_watershed_por_wb_data")) {
   
   deps <- readDepends(viz)
-  required <- c("process-watershed-annual-wb-data")
+  required <- c("process_watershed_annual_wb_data")
   checkRequired(deps, required)
   
-  wb_data <- deps$`process-watershed-annual-wb-data`
+  wb_data <- deps$`process_watershed_annual_wb_data`
   
   wb_data <- lapply(wb_data, process_wb_por)
   
