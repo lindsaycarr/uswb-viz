@@ -1,7 +1,7 @@
 
 
-# site.chunk <- 1000
-# group.names <- 'sites-group-%s'
+site.chunk <- 1000
+group.names <- 'sites-group-%s'
 
 size_map_svg <- function(sp){
   apply(sp::bbox(sp), 1, diff)/500000
@@ -24,22 +24,24 @@ visualize.visualize_map_thumbnail <- function(viz){
 }
 
 visualize.visualize_map <- function(viz = as.viz("visualize-map")){
+  
+  required <- c("process-map", "process-watermark", "process-watershed-map-data")
   data <- readDepends(viz)
+  
   states <- data[['process-map']]
-  # Just commenting out sites and bars to keep ideas in code for later.
-  # sites <- data[['site-map']]
+  outlets <- data[['process-watershed-map-data']]$hu_outlet
   watermark <- data[['process-watermark']]
-  # bars <- data[['bar-data']]
   state.name <- as.character(row.names(states)[states@plotOrder])
   # site.num <- sites$site_no # note that points sp objects don't have `plotOrder`, so we need to verify this
   
   library(svglite)
   library(sp)
+  library(sf)
   size <- size_map_svg(states)
   svg <- svglite::xmlSVG({
     par(mai=c(0,0,0,0), omi=c(0,0,0,0))
     sp::plot(states, ylim=bbox(states)[2,], xlim=bbox(states)[1,], setParUsrBB = TRUE)
-    # sp::plot(sites, add=TRUE, pch = 20, col='red')
+    plot(outlets, add=TRUE, pch = 20, col='red')
   }, width = size[1], height = size[2])
   
   library(xml2)
@@ -52,14 +54,14 @@ visualize.visualize_map <- function(viz = as.viz("visualize-map")){
   if (length(p) != (length(states))){
     stop('something is wrong, the number of states and polys is different')
   }
-  # if (length(c) != (length(sites))){
-  #   stop('something is wrong, the number of sites and circles is different')
-  # }
+  if (length(c) != (length(outlets$geometry))){
+    stop('something is wrong, the number of sites and circles is different')
+  }
   
   defs <- xml_add_child(svg, 'defs')
   
   g.states <- xml_add_child(svg, 'g', 'id' = 'state-polygons')
-  # g.sites <- xml_add_child(svg, 'g', 'id' = 'site-dots')
+  g.outlets <- xml_add_child(svg, 'g', 'id' = 'outlet-dots')
   g.watermark <- xml_add_child(svg, 'g', id='usgs-watermark', 
                                transform = sprintf('translate(50,%s)scale(0.20)', as.character(vb.num[4]-3)))
 
@@ -76,15 +78,15 @@ visualize.visualize_map <- function(viz = as.viz("visualize-map")){
   cxs <- as.numeric(xml_attr(c, 'cx')) %>% round(0) %>% as.character()
   cys <- as.numeric(xml_attr(c, 'cy')) %>% round(0) %>% as.character()
 
-  # chunk.s <- seq(1,by=site.chunk, to=length(cxs))
-  # chunk.e <- c(tail(chunk.s, -1L), length(cxs))
-  # if (tail(chunk.e,1) == tail(chunk.s,1)) stop("can't handle this case")
+  chunk.s <- seq(1,by=site.chunk, to=length(cxs))
+  chunk.e <- c(tail(chunk.s, -1L), length(cxs))
+  if (tail(chunk.e,1) == tail(chunk.s,1)) stop("can't handle this case")
   
-  # for (i in 1:length(chunk.s)){
-  #   xml_add_child(g.sites, 'path', 
-  #                 d = paste("M",cxs[chunk.s[i]:chunk.e[i]], " ",  cys[chunk.s[i]:chunk.e[i]], "v0", collapse="", sep=''), 
-  #                 id=sprintf(group.names, i), class='site-dot')
-  # }
+  for (i in 1:length(chunk.s)){
+    xml_add_child(g.outlets, 'path',
+                  d = paste("M",cxs[chunk.s[i]:chunk.e[i]], " ",  cys[chunk.s[i]:chunk.e[i]], "v0", collapse="", sep=''),
+                  id=sprintf(group.names, i), class='site-dot')
+  }
   
   rm(c)
   
