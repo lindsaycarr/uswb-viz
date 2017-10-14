@@ -15,8 +15,7 @@ fetch.fetch_view_limits <- function(viz = as.viz('fetch_view_limits')){
                                pointsize = p_spatial$pointsize)
   
   view_limits <- append(view_limits, 
-                        list(crs = p_spatial$crs,
-                             width = p_spatial$width, 
+                        list(width = p_spatial$width, 
                              height = p_spatial$height, 
                              pointsize = p_spatial$pointsize))
   

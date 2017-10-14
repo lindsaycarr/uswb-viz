@@ -178,6 +178,16 @@ process:
     scripts: scripts/process/process_watermark.R
     reader: rds
 visualize:
+  - id: visualize_svg_base_map
+    location: figures/visualize_svg_base_map.svg
+    visualizer: visualize_svg_base_map
+    depends: ["fetch_view_limits", "process_map"]
+    scripts: scripts/visualize/visualize_svg_base_map.R
+    mimetype: image/svg+xml
+    orientation: vizlab-landscape
+    export: true
+    title: "U.S. Water Budgets"
+    alttext: "Summary of water budgets for the conterminous US."
   -
     id: visualize_map
     location: figures/visualize_map.svg
