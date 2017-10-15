@@ -23,8 +23,15 @@
 .site-dot {
   stroke:#828282;
   stroke-linecap:round;
-  stroke-width:5;
+  stroke-width:.5;
   opacity:0.7;
+}
+
+circle.emphasis {
+  stroke-width:2;
+  fill: #dddddd;
+  stroke:#828282;
+  stroke-opacity: 1;
 }
 
 .gage-count-bar{

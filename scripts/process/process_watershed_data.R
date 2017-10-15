@@ -39,10 +39,10 @@ process.process_outlet_map_data <- function(viz = as.viz("process_outlet_map_dat
   outlets <- deps[["process_watershed_map_data"]]$hu_outlet %>%
     dplyr::select(HUC_12) %>% 
     dplyr::left_join(boundaries, by = c("HUC_12" = "huc12")) %>%
-    dplyr::mutate(hovertext = paste(name, " - ", (areasqkm * 0.386102), "sqmi"),
-           r = '5',
+    dplyr::mutate(hovertext = paste(name, " - ", round((areasqkm * 0.386102)), "sqmi"),
+           r = '2',
            onmousemove = sprintf("hovertext('%s',evt);", hovertext),
-           onmouseover=sprintf("setEmphasis('%s');", hovertext),
+           onmouseover=sprintf("setEmphasis('%s');", HUC_12),
            onmouseout="clearEmphasis();",
            onclick = sprintf("clicklink('%s');", paste0(nwc_base, HUC_12)),
            class = 'outlet-dots') %>%

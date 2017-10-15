@@ -288,6 +288,11 @@ publish:
     location: layout/css/svg.css
     mimetype: text/css
     publisher: resource
+  - 
+    id: publish_animate_js
+    location: layout/js/animate.js
+    mimetype: text/javascript
+    publisher: resource
   -
     id: publish_index
     name: index
@@ -304,6 +309,7 @@ publish:
       svg-injector-js: lib-svg-injector-js
       vizlab-js: lib-vizlab-javascript
       tooltip-js: lib-tooltip-js
+      animate-js: publish_animate_js
       svg-css: publish_svg_css
       viz-css: publish_viz_css
       header-css: lib-header-css
@@ -313,7 +319,7 @@ publish:
       footer: footer
       sections: [ "intro", "map-section", "social-section"]
       resources: [ "lib-d3-js", "jquery-js", "vizlab-js", "svg-injector-js", 
-      "tooltip-js", "header-css", "footer-css", "viz-css", "svg-css"]
+      "animate-js", "tooltip-js", "header-css", "footer-css", "viz-css", "svg-css"]
   -
     id: githubLogo
     location: images/github.svg
