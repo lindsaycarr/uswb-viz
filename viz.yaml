@@ -276,11 +276,9 @@ publish:
     publisher: section
     template: layout/templates/socialMedia.mustache
     depends:
-      githubLogo: githubLogo
       twitterLogo: twitterLogo 
       facebookLogo: facebookLogo
     context:
-      githubLogo: githubLogo
       twitterLogo: twitterLogo 
       facebookLogo: facebookLogo
   -
@@ -339,13 +337,6 @@ publish:
       sections: [ "intro", "map-section", "social-section"]
       resources: [ "lib-d3-js", "jquery-js", "vizlab-js", "svg-injector-js", 
       "animate-js", "tooltip-js", "header-css", "footer-css", "viz-css", "svg-css"]
-  -
-    id: githubLogo
-    location: images/github.svg
-    mimetype: image/svg
-    inline: true
-    title: "Github"
-    alttext: "Github Logo"
   -
     id: twitterLogo
     location: images/twitter.svg
