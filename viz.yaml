@@ -172,6 +172,14 @@ process:
     depends: ["process_watershed_map_data"]
     reader: rds
   -
+    id: process_flowline_map_data
+    location: cache/process_flowline_map_data.rds
+    processor: process_flowline_map_data
+    scripts: scripts/process/process_watershed_data.R
+    depends: ["process_watershed_map_data"]
+    reader: rds
+    simp_tolerance: 5000
+  -
     id: process_watershed_annual_wb_data
     location: cache/process_watershed_annual_wb_data.rds
     processor: process_watershed_annual_wb_data
@@ -198,6 +206,7 @@ visualize:
     visualizer: visualize_svg_base_map
     depends: ["fetch_view_limits", 
     "process_state_map_data",
+    "process_flowline_map_data",
     "process_boundary_map_data",
     "process_outlet_map_data"]
     scripts: scripts/visualize/visualize_svg_base_map.R

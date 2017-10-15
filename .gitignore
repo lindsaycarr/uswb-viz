@@ -1,6 +1,6 @@
 cache/
-target/
 user/
+target/
 figures/
 vizlab/
 makefile

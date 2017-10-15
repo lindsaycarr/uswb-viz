@@ -68,13 +68,32 @@ process.process_boundary_map_data <- function(viz = as.viz("process_boundary_map
   saveRDS(boundaries, viz[['location']])
 }
 
+# Adds svg markup to flowlines
+process.process_flowline_map_data <- function(viz = as.viz("process_flowline_map_data")) {
+  
+  deps <- readDepends(viz)
+  required <- c("process_watershed_map_data")
+  checkRequired(deps, required)
+  
+  library(dplyr)
+  library(sf) # dplyr calls select out geometry with loading sf.
+  
+  flowline <- sf::st_simplify(deps[["process_watershed_map_data"]]$nhd_flowline, viz[["simp_tolerance"]])
+  
+  flowline <-  flowline %>%
+    dplyr::mutate(class = 'nhdplus-flowline') %>%
+    dplyr::rename(id = huc12)
+  
+  saveRDS(flowline, viz[['location']])
+}
+
 process.process_watershed_annual_wb_data <- function(viz = as.viz("process_watershed_annual_wb_data")) {
   
   deps <- readDepends(viz)
   required <- c("fetch_nwc_wb_data")
   checkRequired(deps, required)
   
-  wb_data <- deps$`fetch_nwc_wb_data`
+  wb_data <- deps[["fetch_nwc_wb_data"]]
   
   wb_data <- lapply(wb_data, process_wb_ts)
   
@@ -130,5 +149,19 @@ process_wb_por <- function(wb_data) {
     dplyr::left_join(component_labels, by = "group") %>%
     dplyr::mutate(group = label) %>%
     dplyr::select(-label)
+  
+}
+
+# grabs the matches between huc and NWIS id
+process.process_wb_huc_nwis <- function(viz = as.viz("process_wb_huc_nwis")) {
+  
+  deps <- readDepends(viz)
+  required <- c("fetch_nwc_wb_data")
+  checkRequired(deps, required)
+  
+  wb_data <- deps[["fetch_nwc_wb_data"]]
+  
+  
+  
   
 }

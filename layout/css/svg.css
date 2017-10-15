@@ -10,9 +10,7 @@
   fill:#b8bfac;
   stroke:none;
 }
-.mouser-shape{
-  opacity:0;
-}
+
 .watermark {
   cursor: pointer;
   fill: #c0c0c0;
@@ -41,6 +39,10 @@ circle.emphasis {
   stroke: #828282;
 }
 
+.nhdplus-flowline {
+  stroke-width: 1;
+  stroke: #0090ff
+}
 
 .svg-text {
   -webkit-touch-callout: none; /* iOS Safari */

@@ -63,6 +63,11 @@ visualize.visualize_map <- function(viz = as.viz("visualize_map")){
                                                 as.character(as.numeric(vb[3])-115), 
                                                 as.character(as.numeric(vb[1])+10))
   
+  # Hack job here because there is a problem in svg_base_map
+  poly_lines <- xml2::xml_find_all(svg, "//*[local-name()='polyline']")
+  xml2::xml_attr(poly_lines, "id") <- 'flowline'
+  xml2::xml_attr(poly_lines, "class") <- 'nhdplus-flowline'
+  
   xml2::write_xml(svg, viz[['location']])
   
 }
