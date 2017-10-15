@@ -1,0 +1,55 @@
+.viz-background-color {
+  fill:#f5f8ef
+}
+
+.interior-state {
+  fill:#b8bfac;
+  stroke:#f5f8ef;
+}
+.exterior-state {
+  fill:#b8bfac;
+  stroke:none;
+}
+
+.watermark {
+  cursor: pointer;
+  fill: #c0c0c0;
+  stroke: #bdbdbd;
+  stroke-width:0.5;
+}
+
+.site-dot {
+  stroke:#828282;
+  stroke-linecap:round;
+  stroke-width:.5;
+  opacity:0.7;
+}
+
+circle.emphasis {
+  stroke-width:2;
+  fill: #dddddd;
+  stroke:#828282;
+  stroke-opacity: 1;
+}
+
+.watershed-boundary {
+  stroke-width: .5;
+  fill-opacity: 0.2;
+  fill: #52688c;
+  stroke: #828282;
+}
+
+.nhdplus-flowline {
+  stroke-width: 1;
+  stroke: #0090ff
+}
+
+.svg-text {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	cursor: default;
+}
+

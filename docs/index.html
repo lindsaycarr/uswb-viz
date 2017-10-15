@@ -1,0 +1,216 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ########################################################################
+   ___      ___ ___  ________  ___       ________  ________
+  |\  \    /  /|\  \|\_____  \|\  \     |\   __  \|\   __  \
+  \ \  \  /  / | \  \\|___/  /\ \  \    \ \  \|\  \ \  \|\ /_
+   \ \  \/  / / \ \  \   /  / /\ \  \    \ \   __  \ \   __  \
+    \ \    / /   \ \  \ /  /_/__\ \  \____\ \  \ \  \ \  \|\  \
+     \ \__/ /     \ \__\\________\ \_______\ \__\ \__\ \_______\
+      \|__|/       \|__|\|_______|\|_______|\|__|\|__|\|_______|
+  
+  ######################################################################### -->
+  
+  <!-- ############### VIEWPORT META TAG ############### -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <!-- ################################################# -->
+      <meta property="og:title" content="US Water Budgets" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://owi.usgs.gov/vizlab/us-water-budgets/" />
+      <meta property="og:image:url" content="" />
+      <meta property="og:image:height" content="" />
+      <meta property="og:image:width" content="" />
+      <meta property="og:image:type" content="" />
+      <meta property="og:description" content="U.S. Water Budgets... TBC " />
+      <meta property="og:locale" content="en_US" />
+    
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@USGS_R" />
+      <meta name="twitter:title" content="US Water Budgets" />
+      <meta name="twitter:description" content="U.S. Water Budgets... TBC " />
+      <meta name="twitter:image" content="" />
+      <meta name="twitter:image:alt" content="" />
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "US Water Budgets",
+          "about": "U.S. Water Budgets... TBC ",
+          "datePublished": "9999-01-01",
+          
+      "contributor": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "David Blodgett",
+        "email": "dblodgett@usgs.gov",
+        "affiliation": {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "legalName": "U.S. Geological Survey"
+        }
+      },
+      
+      "audience": {
+        "@context": "http://schema.org",
+        "@type": "Audience",
+        "audienceType": "General public"
+      },
+      "publisher": {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "legalName": "U.S. Geological Survey"
+          },
+          "image":{
+        "@type": "ImageObject",
+        "url": "none",
+        "width": 250,
+        "height": 250,
+        "caption": "some text here"
+      },
+      "keywords": "water,USGS,VIZLAB,water budget"
+    	}
+      </script>
+      
+  <title>US Water Budgets</title>
+    <script src="js/d3-4.11.0.min.js?_c=3963594" type="text/javascript"></script>
+    <script src="js/jquery-3.2.1.min.js?_c=7225322" type="text/javascript"></script>
+    <script src="js/vizlab.js?_c=4256622" type="text/javascript"></script>
+    <script src="js/svg-injector-1.1.3.min.js?_c=8736183" type="text/javascript"></script>
+    <script src="js/animate.js?_c=2175268" type="text/javascript"></script>
+    <script src="js/tooltip.js?_c=6248208" type="text/javascript"></script>
+    <link href="css/header.css?_c=4984803" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css?_c=142773" rel="stylesheet" type="text/css" />
+    <link href="css/viz.css?_c=6360229" rel="stylesheet" type="text/css" />
+    <link href="css/svg.css?_c=6453494" rel="stylesheet" type="text/css" />
+  <noscript>Javascript is not enabled</noscript>
+    
+    <script type="application/javascript" src="https://www2.usgs.gov/scripts/analytics/usgs-analytics.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-78530187-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</head>
+<body>
+
+  <div id="header">
+  <div id="logo">
+  	<img src="images/usgsLogo.png?_c=8541205" alt="USGS" title="USGS" />
+  	<h3>Water Budgets Across the U.S.</h3>
+  </div>
+</div>
+
+  <div class="container responsiveGrid">
+    <h2>Water Budgets Across the United States</h2>
+
+    <h3>How the water cycle varies across the country</h3>
+
+</div>
+
+  
+<div id="gage-map" class="responsiveGrid">
+  <figure>
+    <img class="vizlab-landscape vizlab-portrait" src="images/visualize_map.svg" title="U.S. Water Budgets" alt="Summary of water budgets for the conterminous US." />
+  </figure>
+    <p>Text here would explain the idea of a water budget and that this shows how much 
+variation in water budgets there is across the us. Also explain caveats related 
+to water budget closure and uncertainty in the data we are using. Highlight how 
+we are working to close the water budget and improve data accuracy. Link to the
+<a href="https://water.usgs.gov/watercensus/">National Water Census</a></p>
+
+</div>
+
+  <div class="socialHolder">
+  <div class="socialMediaOption" id="github">
+    <div class="socialMediaImage">
+      <img class="vizlab-landscape vizlab-portrait" src="images/github.svg" title="Github" alt="Github Logo" />
+    </div>
+  </div>
+  <div class="socialMediaOption" id="twitter">
+    <div class="socialMediaImage">
+      <img class="vizlab-landscape vizlab-portrait" src="images/twitter.svg" title="Twitter" alt="Twitter Logo" />
+    </div>
+  </div>
+  <div class="socialMediaOption" id="facebook">
+    <div class="socialMediaImage">
+      <img class="vizlab-landscape vizlab-portrait" src="images/facebook.svg" title="Facebook" alt="Facebook Logo" />
+    </div>
+  </div>
+</div>
+
+  <footer>
+    
+<div class="footerContentAligner">
+
+    <div id="vizlabPromo">
+      <p>This interactive data visualization was created by
+      <a href="https://owi.usgs.gov/vizlab/" target="_blank">
+        <strong>USGS VIZLAB</strong></p>
+      	<img src="images/atom.svg" alt="atom icon"/>
+    	</a>
+    </div>
+
+    <div id="github-contact">
+      <a class="githublink" href="" target="_blank" onclick="ga('send', 'event', 'outbound', 'clicked on repo')">
+        <img src="images/github.svg" alt="github icon"/>
+      	<p>Get the Code</p>
+      </a>
+      <span>|</span>
+      <a href="mailto:vizlab@usgs.gov">
+    	  Contact Us
+    	</a>
+    </div>
+
+    <div id="relatedItems">
+
+      <div id="relatedVizzies">
+        <h3>Related Visualizations:</h3>
+        <div class="relatedItemContainer">
+        		<div class="relatedItem">
+        		  <a href="https://owi.usgs.gov/vizlab/hurricane-matthew/" target="_blank">
+        		    <div class="footerThumbnail">
+        					<img src="https://owi.usgs.gov/vizlab/hurricane-matthew/images/matthew_water2.png" alt=""/>
+        				</div>
+        			  <div class="titleHandler">
+        				  <h4>Hurricane Matthew's Water Footprint</h4>
+        				</div>
+        			</a>
+        		</div>
+      	</div>
+      </div>
+
+        <div id="relatedBlogs">
+          <h3>Related Blogs:</h3>
+          <div class="relatedItemContainer">
+          		<div class="relatedItem">
+          		  <a href="https://owi.usgs.gov/blog/stats-service-map/" target="_blank">
+          				<div class="footerThumbnail blog">
+          					<img src="https://owi.usgs.gov/blog/static/stats-service-map/plot-1.png" alt=""/>
+          				</div>
+          				<div class="titleHandler">
+          					<h4>Using the dataRetrieval Stats Service</h4>
+          				</div>
+          			</a>
+          		</div>
+        	</div>
+        </div>
+    </div>
+
+</div>
+
+
+  </footer>
+</body>
+
+</html>
+
