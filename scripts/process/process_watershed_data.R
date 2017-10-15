@@ -1,3 +1,4 @@
+# Loads, projects, and simplifies geometries.
 process.process_watershed_map_data <- function(viz = as.viz("process_watershed_map_data")) {
 
   deps <- readDepends(viz)
@@ -18,6 +19,36 @@ process.process_watershed_map_data <- function(viz = as.viz("process_watershed_m
   watershed_map_data <- lapply(watershed_map_data, sf::st_simplify, dTolerance = deps$`parameter_spatial`$simplify_tolerance_m)
   
   saveRDS(watershed_map_data, viz[['location']])
+}
+
+# Adds svg markup to outlets
+process.process_outlet_map_data <- function(viz = as.viz("process_outlet_map_data")) {
+  
+  deps <- readDepends(viz)
+  required <- c("process_watershed_map_data")
+  checkRequired(deps, required)
+  
+  library(dplyr)
+  boundaries <- deps[["process_watershed_map_data"]]$hu_boundary %>%
+    select(huc12, areasqkm, name)
+  sf::st_geometry(boundaries) <- NULL
+  
+  nwc_base <- 'https://cida.usgs.gov/nwc/#!waterbudget/achuc/'
+  
+  outlets <- deps[["process_watershed_map_data"]]$hu_outlet %>%
+    dplyr::select(HUC_12) %>% 
+    dplyr::left_join(boundaries, by = c("HUC_12" = "huc12")) %>%
+    dplyr::mutate(hovertext = paste(name, " - ", (areasqkm * 0.386102), "sqmi"),
+           r = '5',
+           onmousemove = sprintf("hovertext('%s',evt);", hovertext),
+           onmouseover=sprintf("setEmphasis('%s');", hovertext),
+           onmouseout="clearEmphasis();",
+           onclick = sprintf("clicklink('%s');", paste0(nwc_base, HUC_12)),
+           class = 'outlet-dots') %>%
+    dplyr::rename(id = HUC_12) %>%
+    dplyr::select(-areasqkm, -hovertext, -name)
+    
+  saveRDS(outlets, viz[['location']])
 }
 
 process.process_watershed_annual_wb_data <- function(viz = as.viz("process_watershed_annual_wb_data")) {

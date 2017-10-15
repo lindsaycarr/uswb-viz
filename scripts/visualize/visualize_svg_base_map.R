@@ -33,7 +33,7 @@ visualize.visualize_svg_base_map <- function(viz = as.viz('visualize_svg_base_ma
   }
   
   xml2::write_xml(x = svg, viz[['location']])
-  0# 6) create geoms to mirror ids in <use/> elements, add attributes
+  # 6) create geoms to mirror ids in <use/> elements, add attributes
 }
 
 add_attrs <- function(nodes, data){

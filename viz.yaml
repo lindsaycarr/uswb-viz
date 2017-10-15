@@ -152,6 +152,13 @@ process:
     "fetch_nhdplusflowline", "parameter_spatial"]
     reader: rds
   -
+    id: process_outlet_map_data
+    location: cache/process_outlet_map_data.rds
+    processor: process_outlet_map_data
+    scripts: scripts/process/process_watershed_data.R
+    depends: ["process_watershed_map_data"]
+    reader: rds
+  -
     id: process_watershed_annual_wb_data
     location: cache/process_watershed_annual_wb_data.rds
     processor: process_watershed_annual_wb_data
@@ -181,7 +188,7 @@ visualize:
   - id: visualize_svg_base_map
     location: figures/visualize_svg_base_map.svg
     visualizer: visualize_svg_base_map
-    depends: ["fetch_view_limits", "process_state_map_data"]
+    depends: ["fetch_view_limits", "process_state_map_data", "process_outlet_map_data"]
     scripts: scripts/visualize/visualize_svg_base_map.R
     mimetype: image/svg+xml
     orientation: vizlab-landscape
@@ -284,9 +291,11 @@ publish:
       intro: publish_intro
       map-section: publish_map_section
       social-section: publish_social_section
+      lib-d3-js: lib-d3-js
       jquery-js: lib-jquery-js
       svg-injector-js: lib-svg-injector-js
       vizlab-js: lib-vizlab-javascript
+      tooltip-js: lib-tooltip-js
       svg-css: publish_svg_css
       viz-css: publish_viz_css
       header-css: lib-header-css
@@ -295,8 +304,8 @@ publish:
       header: header
       footer: footer
       sections: [ "intro", "map-section", "social-section"]
-      resources: [ "jquery-js", "vizlab-js", "svg-injector-js", 
-      "header-css", "footer-css", "viz-css", "svg-css"]
+      resources: [ "lib-d3-js", "jquery-js", "vizlab-js", "svg-injector-js", 
+      "tooltip-js", "header-css", "footer-css", "viz-css", "svg-css"]
   -
     id: githubLogo
     location: images/github.svg
