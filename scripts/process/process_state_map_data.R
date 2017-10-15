@@ -1,5 +1,5 @@
 
-process.process_map <- function(viz = as.viz("process_map")){
+process.process_state_map_data <- function(viz = as.viz("process_state_map_data")){
   
   deps <- readDepends(viz)
   required <- c("parameter_spatial")
@@ -27,6 +27,11 @@ process.process_map <- function(viz = as.viz("process_map")){
     
     states_out <- rbind(shifted, states_out)
   }
+  
+  library(dplyr)
+  states_out <- mutate(states_out, id = "state-polygons",
+                       class = ifelse(ID %in% c("AK", "HI", "PR"), "exterior-state", "interior-state")) %>%
+    select(-ID)
   
   saveRDS(states_out, file = viz[['location']])
 }

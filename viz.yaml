@@ -71,14 +71,14 @@ parameter:
     id: parameter_spatial
     crs: '+init=epsg:2163'
     simplify_tolerance_m: 1000
-    bbox: [-129,20,-66,51]
-    height: 10
+    bbox: [-122,25,-69,49]
+    height: 6
     width: 8
     pointsize: 12
 fetch:
   -
     id: fetch_view_limits
-    location: cache/view_limits.rds
+    location: cache/fetch_view_limits.rds
     reader: rds
     fetcher: fetch_view_limits
     scripts: [scripts/fetch/fetch_view_limits.R]
@@ -166,10 +166,10 @@ process:
     depends: ["process_watershed_annual_wb_data"]
     reader: rds
   -
-    id: process_map
-    location: cache/process_map.rds
-    processor: process_map
-    scripts: scripts/process/process_map.R
+    id: process_state_map_data
+    location: cache/process_state_map_data.rds
+    processor: process_state_map_data
+    scripts: scripts/process/process_state_map_data.R
     reader: rds
   -
     id: process_watermark
@@ -181,20 +181,8 @@ visualize:
   - id: visualize_svg_base_map
     location: figures/visualize_svg_base_map.svg
     visualizer: visualize_svg_base_map
-    depends: ["fetch_view_limits", "process_map"]
+    depends: ["fetch_view_limits", "process_state_map_data"]
     scripts: scripts/visualize/visualize_svg_base_map.R
-    mimetype: image/svg+xml
-    orientation: vizlab-landscape
-    export: true
-    title: "U.S. Water Budgets"
-    alttext: "Summary of water budgets for the conterminous US."
-  -
-    id: visualize_map
-    location: figures/visualize_map.svg
-    visualizer: visualize_map
-    depends: ["process_map", "process_watermark",
-    "process_watershed_map_data"]
-    scripts: scripts/visualize/visualize_map.R
     mimetype: image/svg+xml
     orientation: vizlab-landscape
     export: true
@@ -205,7 +193,7 @@ visualize:
     location: figures/thumb-facebook.png
     visualizer: visualize_map_thumbnail
     scripts: ["scripts/visualize/visualize_map.R"]
-    depends: ["process_map", "process_watermark"]
+    depends: ["process_state_map_data", "process_watermark"]
     fig-height: 820
     fig-width: 1560
   -
@@ -213,7 +201,7 @@ visualize:
     location: figures/thumb-twitter.png
     visualizer: visualize_map_thumbnail
     scripts: ["scripts/visualize/visualize_map.R"]
-    depends: ["process_map", "process_watermark"]
+    depends: ["process_state_map_data", "process_watermark"]
     fig-height: 300
     fig-width: 560
   -
@@ -221,7 +209,7 @@ visualize:
     location: figures/thumb-landing.png
     visualizer: visualize_map_thumbnail
     scripts: ["scripts/visualize/visualize_map.R"]
-    depends: ["process_map", "process_watermark"]
+    depends: ["process_state_map_data", "process_watermark"]
     fig-height: 400
     fig-width: 400
 publish:
@@ -237,7 +225,7 @@ publish:
     publisher: section
     template: layout/templates/figureTemplate.mustache
     depends:
-      map: visualize_map
+      map: visualize_svg_base_map
       siteText: siteText
     context:
       id: gage-map

@@ -25,15 +25,15 @@ visualize.visualize_svg_base_map <- function(viz = as.viz('visualize_svg_base_ma
     # g.clip <- clip_sp(g, xlim, ylim) Don't need - will bring back later.
     g_node <- xml2::xml_add_child(geom_base_group, do.call(get_svg_geoms, append(list(sp = g), view_limits)))
     xml2::xml_attr(g_node, 'id') <- g_ids[1L]
-    if ("data" %in% slotNames(g)){
-      # add svg attributes based on data.frame that the sp object is carrying
-      add_attrs(xml2::xml_children(g_node), data = g.clip@data)
-    }
+    # Drop the geometry
+    st_geometry(g) <- NULL
+    # Add the rest as attrs
+    add_attrs(xml2::xml_children(g_node), data = g)
     g_ids <- tail(g_ids, -1L)
   }
   
   xml2::write_xml(x = svg, viz[['location']])
-  # 6) create geoms to mirror ids in <use/> elements, add attributes
+  0# 6) create geoms to mirror ids in <use/> elements, add attributes
 }
 
 add_attrs <- function(nodes, data){
