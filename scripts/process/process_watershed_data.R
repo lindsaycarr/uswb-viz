@@ -30,26 +30,42 @@ process.process_outlet_map_data <- function(viz = as.viz("process_outlet_map_dat
   
   library(dplyr)
   library(sf) # dplyr calls select out geometry with loading sf.
-  boundaries <- deps[["process_watershed_map_data"]]$hu_boundary %>%
-    select(huc12, areasqkm, name)
-  sf::st_geometry(boundaries) <- NULL
-  
-  nwc_base <- 'https://cida.usgs.gov/nwc/#!waterbudget/achuc/'
   
   outlets <- deps[["process_watershed_map_data"]]$hu_outlet %>%
     dplyr::select(HUC_12) %>% 
-    dplyr::left_join(boundaries, by = c("HUC_12" = "huc12")) %>%
-    dplyr::mutate(hovertext = paste(name, " - ", round((areasqkm * 0.386102)), "sqmi"),
-           r = '2',
-           onmousemove = sprintf("hovertext('%s',evt);", hovertext),
+    dplyr::mutate(r = '2',
            onmouseover=sprintf("setEmphasis('%s');", HUC_12),
            onmouseout="clearEmphasis();",
-           onclick = sprintf("clicklink('%s');", paste0(nwc_base, HUC_12)),
            class = 'outlet-dots') %>%
-    dplyr::rename(id = HUC_12) %>%
-    dplyr::select(-areasqkm, -hovertext, -name)
+    dplyr::rename(id = HUC_12)
     
   saveRDS(outlets, viz[['location']])
+}
+
+# Adds svg markup to boundaries
+process.process_boundary_map_data <- function(viz = as.viz("process_boundary_map_data")) {
+  
+  deps <- readDepends(viz)
+  required <- c("process_watershed_map_data")
+  checkRequired(deps, required)
+  
+  library(dplyr)
+  library(sf) # dplyr calls select out geometry with loading sf.
+  
+  nwc_base <- 'https://cida.usgs.gov/nwc/#!waterbudget/achuc/'
+  
+  boundaries <- deps[["process_watershed_map_data"]]$hu_boundary %>%
+    select(huc12, areasqkm, name) %>%
+    dplyr::mutate(hovertext = paste(name, "-", round((areasqkm * 0.386102)), "(sqmi)"),
+                  onmousemove = sprintf("hovertext('%s',evt);", hovertext),
+                  onmouseover=sprintf("setEmphasis('%s');", huc12),
+                  onmouseout="clearEmphasis();",
+                  onclick = sprintf("clicklink('%s');", paste0(nwc_base, huc12)),
+                  class = 'watershed-boundary') %>%
+    dplyr::rename(id = huc12) %>%
+    dplyr::select(-areasqkm, -hovertext, -name)
+  
+  saveRDS(boundaries, viz[['location']])
 }
 
 process.process_watershed_annual_wb_data <- function(viz = as.viz("process_watershed_annual_wb_data")) {

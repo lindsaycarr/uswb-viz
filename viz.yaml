@@ -71,7 +71,7 @@ parameter:
     id: parameter_spatial
     crs: '+init=epsg:2163'
     simplify_tolerance_m: 1000
-    bbox: [-122,25,-69,49]
+    bbox: [-121,27,-71,47]
     height: 6
     width: 8
     pointsize: 12
@@ -165,6 +165,13 @@ process:
     depends: ["process_watershed_map_data"]
     reader: rds
   -
+    id: process_boundary_map_data
+    location: cache/process_boundary_map_data.rds
+    processor: process_boundary_map_data
+    scripts: scripts/process/process_watershed_data.R
+    depends: ["process_watershed_map_data"]
+    reader: rds
+  -
     id: process_watershed_annual_wb_data
     location: cache/process_watershed_annual_wb_data.rds
     processor: process_watershed_annual_wb_data
@@ -189,7 +196,10 @@ visualize:
     id: visualize_svg_base_map
     location: figures/visualize_svg_base_map.svg
     visualizer: visualize_svg_base_map
-    depends: ["fetch_view_limits", "process_state_map_data", "process_outlet_map_data"]
+    depends: ["fetch_view_limits", 
+    "process_state_map_data",
+    "process_boundary_map_data",
+    "process_outlet_map_data"]
     scripts: scripts/visualize/visualize_svg_base_map.R
     reader: svg_map
   - 
