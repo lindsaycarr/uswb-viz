@@ -29,6 +29,7 @@ process.process_outlet_map_data <- function(viz = as.viz("process_outlet_map_dat
   checkRequired(deps, required)
   
   library(dplyr)
+  library(sf) # dplyr calls select out geometry with loading sf.
   boundaries <- deps[["process_watershed_map_data"]]$hu_boundary %>%
     select(huc12, areasqkm, name)
   sf::st_geometry(boundaries) <- NULL

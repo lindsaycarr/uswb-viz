@@ -77,6 +77,12 @@ parameter:
     pointsize: 12
 fetch:
   -
+    id: fetch_usgs_watermark 
+    location: cache/usgs_watermark.xml
+    reader: svg_map
+    fetcher: fetch_usgs_watermark 
+    scripts: scripts/fetch/fetch_usgs_watermark.R 
+  -
     id: fetch_view_limits
     location: cache/fetch_view_limits.rds
     reader: rds
@@ -178,18 +184,20 @@ process:
     processor: process_state_map_data
     scripts: scripts/process/process_state_map_data.R
     reader: rds
-  -
-    id: process_watermark
-    location: cache/process_watermark.rds
-    processor: process_watermark
-    scripts: scripts/process/process_watermark.R
-    reader: rds
 visualize:
-  - id: visualize_svg_base_map
+  - 
+    id: visualize_svg_base_map
     location: figures/visualize_svg_base_map.svg
     visualizer: visualize_svg_base_map
     depends: ["fetch_view_limits", "process_state_map_data", "process_outlet_map_data"]
     scripts: scripts/visualize/visualize_svg_base_map.R
+    reader: svg_map
+  - 
+    id: visualize_map
+    location: figures/visualize_map.svg
+    visualizer: visualize_map
+    depends: ["visualize_svg_base_map", "fetch_usgs_watermark"]
+    scripts: scripts/visualize/visualize_map.R
     mimetype: image/svg+xml
     orientation: vizlab-landscape
     export: true
@@ -200,7 +208,7 @@ visualize:
     location: figures/thumb-facebook.png
     visualizer: visualize_map_thumbnail
     scripts: ["scripts/visualize/visualize_map.R"]
-    depends: ["process_state_map_data", "process_watermark"]
+    depends: ["process_state_map_data"]
     fig-height: 820
     fig-width: 1560
   -
@@ -208,7 +216,7 @@ visualize:
     location: figures/thumb-twitter.png
     visualizer: visualize_map_thumbnail
     scripts: ["scripts/visualize/visualize_map.R"]
-    depends: ["process_state_map_data", "process_watermark"]
+    depends: ["process_state_map_data"]
     fig-height: 300
     fig-width: 560
   -
@@ -216,7 +224,7 @@ visualize:
     location: figures/thumb-landing.png
     visualizer: visualize_map_thumbnail
     scripts: ["scripts/visualize/visualize_map.R"]
-    depends: ["process_state_map_data", "process_watermark"]
+    depends: ["process_state_map_data"]
     fig-height: 400
     fig-width: 400
 publish:
@@ -232,7 +240,7 @@ publish:
     publisher: section
     template: layout/templates/figureTemplate.mustache
     depends:
-      map: visualize_svg_base_map
+      map: visualize_map
       siteText: siteText
     context:
       id: gage-map

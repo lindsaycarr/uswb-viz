@@ -1,12 +1,3 @@
-
-
-site.chunk <- 1000
-group.names <- 'sites-group-%s'
-
-size_map_svg <- function(sp){
-  apply(sp::bbox(sp), 1, diff)/500000
-}
-
 visualize.visualize_map_thumbnail <- function(viz){
   library(dplyr)
   
@@ -25,169 +16,83 @@ visualize.visualize_map_thumbnail <- function(viz){
 
 visualize.visualize_map <- function(viz = as.viz("visualize_map")){
   
-  required <- c("process_state_map_data", "process_watermark", "process_watershed_map_data")
-  data <- readDepends(viz)
+  deps <- readDepends(viz)
+  required <- c("visualize_svg_base_map", "fetch_usgs_watermark")
+  checkRequired(deps, required)
+  # Also expects alttext, title, id, and location from viz.
   
-  states <- data[['process_state_map_data']]
-  outlets <- data[['process_watershed_map_data']]$hu_outlet
-  watermark <- data[['process_watermark']]
-  state.name <- states$ID
-  # site.num <- sites$site_no # note that points sp objects don't have `plotOrder`, so we need to verify this
+  svg <- deps[["visualize_svg_base_map"]]
+  watermark <- deps[['fetch_usgs_watermark']]
   
-  library(svglite)
-  library(sf)
-  library(sp)
-  states <- sf::as_Spatial(states$geometry)
-  size <- size_map_svg(states)
-  svg <- svglite::xmlSVG({
-    par(mai=c(0,0,0,0), omi=c(0,0,0,0))
-    sp::plot(states, ylim=bbox(states)[2,], xlim=bbox(states)[1,], setParUsrBB = TRUE)
-    plot(outlets, add=TRUE, pch = 20, col='red')
-  }, width = size[1], height = size[2])
+  xml2::xml_attr(svg, "id") <- viz[['id']]
+  vb <- strsplit(xml2::xml_attr(svg, 'viewBox'),'[ ]')[[1]] # can be used for portrait vs landscape, see Maria
   
-  library(xml2)
-  svg <- clean_up_svg(svg, viz)
-  vb.num <- as.numeric(strsplit(xml_attr(svg, 'viewBox'),'[ ]')[[1]])
-  p <- xml_find_all(svg, '//*[local-name()="path"]')
-  c <- xml_find_all(svg, '//*[local-name()="circle"]')
-  xml_remove(p)
-  xml_remove(c)
-  if (length(p) != (length(states))){
-    stop('something is wrong, the number of states and polys is different')
-  }
-  if (length(c) != (length(outlets$geometry))){
-    stop('something is wrong, the number of sites and circles is different')
-  }
+  # get the big dog that has all the stuff that is geo:
+  map_elements <- xml2::xml_find_first(svg, "//*[local-name()='g'][@id='map-elements']") 
   
-  defs <- xml_add_child(svg, 'defs')
+  # add sibling element below map_elements (before in xml, below in svg layer)
+  non_geo_bot <- xml2::xml_add_sibling(map_elements, 'g', 'id' = 'non-geo-bottom', .where='before')
   
-  g.states <- xml_add_child(svg, 'g', 'id' = 'state-polygons')
-  g.outlets <- xml_add_child(svg, 'g', 'id' = 'outlet-dots')
-  g.watermark <- xml_add_child(svg, 'g', id='usgs-watermark', 
-                               transform = sprintf('translate(50,%s)scale(0.20)', as.character(vb.num[4]-3)))
-
+  # add alttext and title before the children of the root element
+  xml2::xml_add_sibling(xml2::xml_children(svg)[[1]], 'desc', .where='before', viz[["alttext"]])
+  xml2::xml_add_sibling(xml2::xml_children(svg)[[1]], 'title', .where='before', viz[["title"]])
   
-  for (i in 1:length(state.name)){
-    id.name <- gsub(state.name[i], pattern = '[ ]', replacement = '_')
-    class <- ifelse(state.name[i] %in% c('AK','HI','PR'), 'exterior-state','interior-state')
-    xml_add_child(g.states, 'path', d = xml_attr(p[i], 'd'), id=id.name, class=class)
-  }
-  rm(p)
+  # Add sibling of map_elements (after in xml, above in svg layer)
+  non_geo_top <- xml2::xml_add_sibling(map_elements, 'g', 'id' = 'non-geo-top', .where='after')
   
-  library(dplyr)
+  # Add tooltip group
+  g_tool <- xml2::xml_add_sibling(non_geo_top, 'g', id='tooltip-group')
   
-  cxs <- as.numeric(xml_attr(c, 'cx')) %>% round(0) %>% as.character()
-  cys <- as.numeric(xml_attr(c, 'cy')) %>% round(0) %>% as.character()
-
-  chunk.s <- seq(1,by=site.chunk, to=length(cxs))
-  chunk.e <- c(tail(chunk.s, -1L), length(cxs))
-  if (tail(chunk.e,1) == tail(chunk.s,1)) stop("can't handle this case")
+  # Add defs
+  d <- xml2::xml_add_child(svg, 'defs', .where='before')
   
-  for (i in 1:length(chunk.s)){
-    xml_add_child(g.outlets, 'path',
-                  d = paste("M",cxs[chunk.s[i]:chunk.e[i]], " ",  cys[chunk.s[i]:chunk.e[i]], "v0", collapse="", sep=''),
-                  id=sprintf(group.names, i), class='site-dot')
-  }
+  # Add background with pause class
+  xml2::xml_add_child(non_geo_bot, 'rect', width="100%", height="100%", class='viz-background-color viz-pause', id='viz-background')
   
-  rm(c)
+  # map-elements-{mode}-top is where all of the mouseovers, tips, and click events go
+  map_elements_top <- xml2::xml_add_child(svg, 'g', id = "map-elements-mouser")
   
-  xml_add_child(g.watermark,'path', d=watermark[['usgs']], onclick="window.open('https://www2.usgs.gov/water/','_blank')", 'class'='watermark')
-  xml_add_child(g.watermark,'path', d=watermark[['wave']], onclick="window.open('https://www2.usgs.gov/water/','_blank')", 'class'='watermark')
+  # Could use "as_mouse_topper" here. See Maria.
   
-  # bars.xml <- read_xml(bars)
+  xml2::xml_add_child(g_tool, 'rect', id="tooltip-box", height="24", class="tooltip-box")
+  xml2::xml_add_child(g_tool, 'path', id="tooltip-point", d="M-6,-11 l6,10 l6,-11", class="tooltip-box")
+  xml2::xml_add_child(g_tool, 'text', id="tooltip-text", dy="-1.1em", 'text-anchor'="middle", class="tooltip-text-label svg-text", " ")
   
-  # svg <- add_bar_chart(svg, bars.xml)
-  write_xml(svg, viz[['location']])
+  g_watermark <- xml2::xml_add_child(non_geo_top, watermark)
+  xml2::xml_attr(g_watermark, "transform") <- sprintf('translate(%s,%s)scale(0.2)', 
+                                                as.character(as.numeric(vb[3])-115), 
+                                                as.character(as.numeric(vb[1])+10))
+  
+  xml2::write_xml(svg, viz[['location']])
   
 }
 
-# add_bar_chart <- function(svg, bars){
-#   
-#   library(dplyr)
-#   vb <- as.numeric(strsplit(xml_attr(svg, "viewBox"), '[ ]')[[1]])
-#   ax.buff <- 5
-#   all.bars <- xml_children(xml_children(bars)[1])
-#   all.mousers <- xml_children(xml_children(bars)[2])
-#   last.attrs <- tail(all.bars, 1) %>% xml_attrs() %>% .[[1]] 
-#   full.width <- as.numeric(last.attrs[['x']]) + as.numeric(last.attrs[['width']])
-#   xml_attr(bars, 'transform') <- sprintf("translate(%s,%s)", vb[3]-full.width, vb[4])
-#   
-#   text.path <- paste0(xml_attr(all.bars, 'x'), ',', xml_attr(all.bars, 'y')) %>% 
-#     paste("L", collapse=' ') %>% paste0('M', .)
-# 
-#   xml_find_all(svg, '//*[local-name()="defs"]') %>% 
-#     xml_add_child('path', id = 'flowing-text-path', d=text.path)
-#   
-#   heights <- all.bars %>% xml_attr('height') %>% as.numeric()
-#   h <- max(heights)
-#   max.i <- which(h == heights)[1]
-#   # this is a hack to get the gage count from the element. Brittle:
-#   gage.meta <- xml_attr(all.mousers, 'onmousemove') %>% 
-#     stringr::str_extract_all("\\(?[0-9.]+\\)?")
-#   years <-  lapply(gage.meta,function(x) x[2]) %>% unlist
-#   max.gages <- gage.meta[[max.i]] %>% .[1] %>% as.numeric
-# 
-#   y.tick.labs <- pretty(c(0,max.gages))[pretty(c(0,max.gages)) < max.gages]
-#   y.ticks <- (h+ax.buff-round(y.tick.labs*h/max.gages,1)) %>% as.character()
-#   x.tick.labs <- seq(1800,2020, by=10) %>% as.character()
-#   
-#   
-#   vb[4] <- vb[4] + h + ax.buff + 20 # last part for the axis text
-#   xml_attr(svg, "viewBox") <- paste(vb, collapse=' ')
-#   g.axes <- xml_add_child(bars, 'g', id='axes', .where = 1)
-#   xml_add_child(g.axes, 'path', d=sprintf("M-%s,%s v%s", ax.buff, "0", h+ax.buff), id='y-axis', stroke='black')
-#   xml_add_child(g.axes, 'path', d=sprintf("M-%s,%s h%s", ax.buff, h+ax.buff, ax.buff+full.width), id='x-axis', stroke='black')
-#   g.c <- xml_add_child(g.axes, 'g', id = 'context-label', transform='translate(0,-4)')
-#   g.y <- xml_add_child(g.axes, 'g', id = 'y-axis-labels', class='axis-labels svg-text')
-#   g.x <- xml_add_child(g.axes, 'g', id = 'x-axis-labels', class='axis-labels svg-text')
-#   for (i in 1:length(y.ticks)){
-#     xml_add_child(g.y, 'text', y.tick.labs[i], y = y.ticks[i], 
-#                   x=as.character(-ax.buff), 'text-anchor' = 'end', dx = "-0.33em")
-#   }
-#   for (year in x.tick.labs){
-#     use.i <- which(years == year)
-#     if (length(use.i) > 0){
-#       attrs <- xml_attrs(all.mousers[[use.i[1]]])
-#       xml_add_child(g.x, 'text', year, y = as.character(h+ax.buff), 
-#                     x=as.character(as.numeric(attrs[['x']])+as.numeric(attrs[['width']])/2), 
-#                     'text-anchor' = 'middle', dy = "1.0em")
-#     }
-#   }
-# 
-#   xml_add_child(g.c, 'text', 'letter-spacing'="1.8", class='context-label svg-text') %>% 
-#     xml_add_child('textPath', 'xlink:href'='#flowing-text-path', startOffset="3.3%", 'Number of active gages through time') 
-#   
-#   xml_add_child(svg, bars)
-#   return(svg)
-# }
-
-
-
-#' do the things to the svg that we need to do every time if they come from svglite:
-#' 
-#' @param svg the svglite xml object from svglite
-#' @param viz the vizlab object
-#' 
-#' @return a modified version of svg
-clean_up_svg <- function(svg, viz){
-  # let this thing scale:
-  xml_attr(svg, "preserveAspectRatio") <- "xMidYMid meet"
-  xml_attr(svg, "xmlns") <- 'http://www.w3.org/2000/svg'
-  xml_attr(svg, "xmlns:xlink") <- 'http://www.w3.org/1999/xlink'
-  xml_attr(svg, "id") <- viz[["id"]]
+#' remove mouser events from style geometries, and add them to a new invisible mouser group overlay
+as_mouse_topper <- function(svg, style.group.id, mouser.parent.id){
   
-  r <- xml_find_all(svg, '//*[local-name()="rect"]')
+  style.kids <- xml_children(
+    xml_find_first(
+      svg, sprintf("//*[local-name()='g'][@id='%s']", style.group.id)
+    )
+  )
   
-  xml_add_sibling(xml_children(svg)[[1]], 'desc', .where='before', viz[["alttext"]])
-  xml_add_sibling(xml_children(svg)[[1]], 'title', .where='before', viz[["title"]])
+  parent.element <- xml_find_first(
+    svg, sprintf("//*[local-name()='g'][@id='%s']", mouser.parent.id)
+  )
+  g.mouser <- xml_add_child(parent.element, 'g', id = paste0(style.group.id, '-mousers'))
   
-  defs <- xml_find_all(svg, '//*[local-name()="defs"]')
-  # !!---- use these lines when we have css for the svg ---!!
-  xml_remove(defs)
   
-  # clean up junk that svglite adds:
-  .junk <- lapply(r, xml_remove)
-  return(svg)
+  transfers <- c('onmousemove', 'onmouseout', 'onclick')
+  for (style.kid in style.kids){
+    mouse.kid <- xml_add_child(g.mouser, 'use', 'xlink:href'=sprintf("#%s", xml_attr(style.kid, 'id')), class = 'mouser')
+    .jnk <- lapply(X = transfers, FUN = function(x) {
+      xml_attr(mouse.kid, x) <- xml_attr(style.kid, x)
+      xml_attr(style.kid, x) <- NULL
+    }
+    )
+  }
+  # does it work to let the reference element keep its class? no
+  
 }
 
 #' Create the actual map + bars separately from saving image
