@@ -29,6 +29,7 @@ process.process_state_map_data <- function(viz = as.viz("process_state_map_data"
   }
   
   library(dplyr)
+  library(sf)
   states_out <- mutate(states_out, id = "state-polygons",
                        class = ifelse(ID %in% c("AK", "HI", "PR"), "exterior-state", "interior-state")) %>%
     select(-ID)

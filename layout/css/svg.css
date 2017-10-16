@@ -44,6 +44,40 @@ circle.emphasis {
   stroke: #0090ff
 }
 
+.precip-bar {
+  stroke-width: 1.07; 
+  stroke: none; 
+  stroke-linecap: butt; 
+  fill: #F8766D;
+}
+
+.unknown-bar {
+  stroke-width: 1.07; 
+  stroke: none; 
+  stroke-linecap: butt; 
+  fill: #666699;
+}
+
+.streamflow-bar {
+  stroke-width: 1.07;
+  stroke: none; 
+  stroke-linecap: butt; 
+  fill: #619CFF;
+}
+
+.evapotranspiration-bar {
+  stroke-width: 1.07;
+  stroke: none;
+  stroke-linecap: butt;
+  fill: #00BA38;
+}
+
+.axis-label {
+  font-size: 8.80px;
+  fill: #4D4D4D;
+  font-family: Arial;
+}
+
 .svg-text {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */

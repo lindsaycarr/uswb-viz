@@ -76,6 +76,11 @@ parameter:
     width: 8
     pointsize: 12
 fetch:
+  - 
+    id: fetch_wb_bar_template
+    location: data/wb_bar_template.mustache
+    reader: txt
+    scripts:  
   -
     id: fetch_usgs_watermark 
     location: cache/usgs_watermark.xml
@@ -222,6 +227,13 @@ visualize:
     export: true
     title: "U.S. Water Budgets"
     alttext: "Summary of water budgets for the conterminous US."
+  - 
+    id: visualize_watershed_por_wb_data
+    location: cache/wb_chart_svgs/
+    visualizer: visualize_watershed_por_wb_data
+    depends: ["process_watershed_por_wb_data", "fetch_wb_bar_template"]
+    scripts: scripts/visualize/visualize_watershed_por_wb_data.R
+    mimetype: text/directory
   -
     id: visualize_thumbnail_map_facebook
     location: figures/thumb-facebook.png
