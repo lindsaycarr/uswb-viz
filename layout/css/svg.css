@@ -80,6 +80,12 @@ circle.emphasis {
   fill: #00BA38;
 }
 
+.axis-tick {
+  stroke-width: 2;
+  stroke: #4D4D4D;
+  stroke-linecap: butt;
+}
+
 .wb-plot-title {
   font-size: 12px;
   fill: #4D4D4D;

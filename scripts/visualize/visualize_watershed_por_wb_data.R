@@ -80,7 +80,7 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   x_tick_allow <- 25 # 0.087
   x_tick_text_adj <- 3 # 0.01
   y_tick_allow <- 25 # 0.087
-  y_tick_text_x <- 20 # 0.07
+  y_tick_text_x <- 30
   
   title_x = y_tick_text_x
   title_y = margin / 2
@@ -113,6 +113,8 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   
   top_tick_y <- p_rect_y + max_bar_h - max_bar_h * top_tick / max_bar
   bottom_tick_y <- p_rect_y + max_bar_h - max_bar_h * bottom_tick / max_bar
+  tick_x1 <- y_tick_text_x + 2
+  tick_x2 <- tick_x1 + 5
   
   in_x <- p_rect_x + rect_w / 2
   in_y <- out_y <- p_rect_y + max_bar_h + y_tick_allow / 2
@@ -130,6 +132,7 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
        e_rect_y = e_rect_y, e_rect_h = e_rect_h,
        y_tick_text_x = y_tick_text_x, bottom_tick_y = bottom_tick_y,
        top_tick_y = top_tick_y, bottom_tick = bottom_tick, top_tick = top_tick,
+       tick_x1 = tick_x1, tick_x2 = tick_x2,
        in_x = in_x, in_y = in_y, out_x = out_x, out_y = out_y,
        y_units_x = y_units_x, y_units_y = y_units_y)
   
