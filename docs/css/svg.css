@@ -1,3 +1,11 @@
+.nill {
+  opacity:0;
+}
+
+.showIt {
+  opacity:100;  
+}
+
 .viz-background-color {
   fill:#f5f8ef
 }
@@ -42,6 +50,53 @@ circle.emphasis {
 .nhdplus-flowline {
   stroke-width: 1;
   stroke: #0090ff
+}
+
+.precip-bar {
+  stroke-width: 1.07; 
+  stroke: none; 
+  stroke-linecap: butt; 
+  fill: #F8766D;
+}
+
+.unknown-bar {
+  stroke-width: 1.07; 
+  stroke: none; 
+  stroke-linecap: butt; 
+  fill: #666699;
+}
+
+.streamflow-bar {
+  stroke-width: 1.07;
+  stroke: none; 
+  stroke-linecap: butt; 
+  fill: #619CFF;
+}
+
+.evapotranspiration-bar {
+  stroke-width: 1.07;
+  stroke: none;
+  stroke-linecap: butt;
+  fill: #00BA38;
+}
+
+.wb-plot-title {
+  font-size: 12px;
+  fill: #4D4D4D;
+  font-family: Arial;
+}
+
+.axis-label {
+  font-size: 8.80px;
+  fill: #4D4D4D;
+  font-family: Arial;
+}
+
+.legend-text {
+  font-size: 10px;
+  fill: #4D4D4D;
+  font-family: Arial;
+  
 }
 
 .svg-text {
