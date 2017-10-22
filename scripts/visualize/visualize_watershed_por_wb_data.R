@@ -1,22 +1,43 @@
 visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_watershed_por_wb_data")) {
   
   deps <- readDepends(viz)
-  required <- c("process_watershed_por_wb_data", "fetch_wb_bar_template")
+  required <- c("process_watershed_por_wb_data", "fetch_wb_bar_template", "visualize_map")
   checkRequired(deps, required)
   
   all_wb_data <- deps[["process_watershed_por_wb_data"]]
   
-  if(!dir.exists(viz[["location"]])) dir.create(viz[["location"]])
+  template <- deps[["fetch_wb_bar_template"]]
   
-  lapply(X = names(all_wb_data), 
-         FUN = build_watershed_por_wb_svg_list, 
-         all_wb_data,
-         template = deps[["fetch_wb_bar_template"]],
-         out_folder = viz[["location"]],
-         view_box = c(0, 0, 288, 288))
+  hus <- setNames(names(all_wb_data), names(all_wb_data))
+  
+  wb_svg_size <- c(0, 0, 288, 288)
+  svgs <- lapply(X = hus,
+                 FUN = build_watershed_por_wb_svg_list,
+                 all_wb_data,
+                 view_box = wb_svg_size)
+  
+  svg <- deps[["visualize_map"]]
+  
+  vb <- as.numeric(strsplit(xml2::xml_attr(svg, 'viewBox'),'[ ]')[[1]]) # can be used for portrait vs landscape, see Maria
+  # Expand viewbox to include svgs to be added.
+  vb[4] <- vb[4] + wb_svg_size[4]
+  xml2::xml_attr(svg, 'viewBox') <- paste(vb, collapse = " ")
+  
+  non_geo_top <- xml2::xml_find_first(svg, "//*[local-name()='g'][@id='non-geo-top']")
+  
+  hu <- names(svgs)[1]
+  # will loop this once figured out
+  wb_svg <- xml2::xml_add_child(non_geo_top, xml2::read_xml(whisker::whisker.render(template, svgs[[hu]])))
+  
+  xml2::xml_attr(wb_svg, "id") <- paste0("wb-bar-", hu)
+  xml2::xml_attr(wb_svg, "transform") <- paste0("translate(0,",
+                                               vb[4] - wb_svg_size[4], 
+                                               ")scale(1)")
+  xml2::write_xml(svg, viz[['location']])
+  
 }
 
-build_watershed_por_wb_svg_list <- function(wb, all_wb_data, template, out_folder, view_box = c(0, 0, 288, 288)) {
+build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 288, 288)) {
   min_x <- view_box[1]
   min_y <- view_box[2]
   max_x <- view_box[3]
@@ -75,8 +96,7 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, template, out_folde
   top_tick_y <- p_rect_y + p_rect_h - p_rect_h * top_tick / pr
   bottom_tick_y <- p_rect_y + p_rect_h - p_rect_h * bottom_tick / pr
   
-  template_list <-list(min_x = min_x, min_y = min_y, max_x = max_x, 
-       rect_w = rect_w,
+  template_list <-list(rect_w = rect_w,
        p_rect_h = p_rect_h, p_rect_x = p_rect_x, p_rect_y = p_rect_y,
        ueq_rect_x = ueq_rect_x,
        u_rect_y = u_rect_y, u_rect_h = u_rect_h,
@@ -85,6 +105,5 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, template, out_folde
        y_tick_text_x = y_tick_text_x, bottom_tick_y = bottom_tick_y,
        top_tick_y = top_tick_y, bottom_tick = bottom_tick, top_tick = top_tick)
   
-  svg_xml <- whisker::whisker.render(template, template_list)
-  cat(svg_xml, file = file.path(out_folder, paste0(wb, ".svg")))
+  template_list
 }
