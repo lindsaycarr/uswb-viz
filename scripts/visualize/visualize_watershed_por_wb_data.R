@@ -68,8 +68,10 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   
   # ET is too big in some places. Adjust like this?
   if(et > (pr - q)) {
-    et = pr - q
+    max_bar <- et + q
     u = 0
+  } else {
+    max_bar <- pr
   }
   
   # Constants
@@ -89,27 +91,31 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   top_tick <- floor(pr / 10) * 10
   bottom_tick <- top_tick / 2
   
+  #fictitious "max_bar"
+  max_bar_y <- margin
+  max_bar_h <- (max_y - min_y) - (2 * margin + x_tick_allow)
+  
   # Relative calculations
   p_rect_x <- margin + x_tick_allow 
-  p_rect_y <- margin
-  p_rect_h <- (max_y - min_y) - (2 * margin + x_tick_allow)
+  p_rect_y <- max_bar_y + ((max_bar - pr) / max_bar) * max_bar_h
+  p_rect_h <- max_bar_h * pr / max_bar
   
   ueq_rect_x <- p_rect_x + rect_w
   
-  u_rect_y <- p_rect_y
-  u_rect_h <- p_rect_h * u / pr 
+  u_rect_y <- max_bar_y
+  u_rect_h <- max_bar_h * u / max_bar 
   
   e_rect_y <- u_rect_y + u_rect_h 
-  e_rect_h <- p_rect_h * et / pr
+  e_rect_h <- max_bar_h * et / max_bar
   
   q_rect_y <- e_rect_y + e_rect_h
-  q_rect_h <- p_rect_h * q / pr
+  q_rect_h <- max_bar_h * q / max_bar
   
-  top_tick_y <- p_rect_y + p_rect_h - p_rect_h * top_tick / pr
-  bottom_tick_y <- p_rect_y + p_rect_h - p_rect_h * bottom_tick / pr
+  top_tick_y <- p_rect_y + max_bar_h - max_bar_h * top_tick / max_bar
+  bottom_tick_y <- p_rect_y + max_bar_h - max_bar_h * bottom_tick / max_bar
   
   in_x <- p_rect_x + rect_w / 2
-  in_y <- out_y <- p_rect_y + p_rect_h + y_tick_allow / 2
+  in_y <- out_y <- p_rect_y + max_bar_h + y_tick_allow / 2
   out_x <- ueq_rect_x + rect_w / 2
   
   y_units_x <- margin
