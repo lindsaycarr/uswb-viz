@@ -111,8 +111,10 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   q_rect_y <- e_rect_y + e_rect_h
   q_rect_h <- max_bar_h * q / max_bar
   
-  top_tick_y <- p_rect_y + max_bar_h - max_bar_h * top_tick / max_bar
-  bottom_tick_y <- p_rect_y + max_bar_h - max_bar_h * bottom_tick / max_bar
+  top_tick_text_y <- p_rect_y + max_bar_h - max_bar_h * top_tick / max_bar
+  bottom_tick_text_y <- p_rect_y + max_bar_h - max_bar_h * bottom_tick / max_bar
+  top_tick_y <- top_tick_text_y - 1
+  bottom_tick_y <- bottom_tick_text_y - 1
   tick_x1 <- y_tick_text_x + 2
   tick_x2 <- tick_x1 + 5
   
@@ -130,6 +132,7 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
        u_rect_y = u_rect_y, u_rect_h = u_rect_h,
        q_rect_y = q_rect_y, q_rect_h = q_rect_h,
        e_rect_y = e_rect_y, e_rect_h = e_rect_h,
+       top_tick_text_y = top_tick_text_y, bottom_tick_text_y = bottom_tick_text_y,
        y_tick_text_x = y_tick_text_x, bottom_tick_y = bottom_tick_y,
        top_tick_y = top_tick_y, bottom_tick = bottom_tick, top_tick = top_tick,
        tick_x1 = tick_x1, tick_x2 = tick_x2,
