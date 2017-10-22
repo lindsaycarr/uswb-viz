@@ -1,10 +1,7 @@
 function setEmphasis(id) {
-  $('[id$=' + id + ']').addClass('emphasis');
-}
-
-function clearEmphasis(){
   $(".emphasis").removeClass("emphasis");
   hovertext(" ");
+  $('[id$=' + id + ']').addClass('emphasis');
 }
 
 function clicklink(url, event){
@@ -14,4 +11,11 @@ function clicklink(url, event){
     ga('send', 'event', 'outbound', 'click', url);
     window.open(url, '_blank');
   }
+}
+
+function setShow(id) {
+  $(".showIt").addClass("nill");
+  $(".showIt").removeClass("showIt");
+  $('[id$=' + id + ']').removeClass("nill");
+  $('[id$=' + id + ']').addClass('showIt');
 }

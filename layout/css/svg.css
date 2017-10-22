@@ -1,3 +1,11 @@
+.nill {
+  opacity:0;
+}
+
+.showIt {
+  opacity:100;  
+}
+
 .viz-background-color {
   fill:#f5f8ef
 }
@@ -72,10 +80,23 @@ circle.emphasis {
   fill: #00BA38;
 }
 
+.wb-plot-title {
+  font-size: 12px;
+  fill: #4D4D4D;
+  font-family: Arial;
+}
+
 .axis-label {
   font-size: 8.80px;
   fill: #4D4D4D;
   font-family: Arial;
+}
+
+.legend-text {
+  font-size: 10px;
+  fill: #4D4D4D;
+  font-family: Arial;
+  
 }
 
 .svg-text {

@@ -34,8 +34,6 @@ process.process_outlet_map_data <- function(viz = as.viz("process_outlet_map_dat
   outlets <- deps[["process_watershed_map_data"]]$hu_outlet %>%
     dplyr::select(HUC_12) %>% 
     dplyr::mutate(r = '2',
-           onmouseover=sprintf("setEmphasis('%s');", HUC_12),
-           onmouseout="clearEmphasis();",
            class = 'outlet-dots') %>%
     dplyr::rename(id = HUC_12)
     
@@ -55,11 +53,10 @@ process.process_boundary_map_data <- function(viz = as.viz("process_boundary_map
   nwc_base <- 'https://cida.usgs.gov/nwc/#!waterbudget/achuc/'
   
   boundaries <- deps[["process_watershed_map_data"]]$hu_boundary %>%
-    select(huc12, areasqkm, name) %>%
+    dplyr::select(huc12, areasqkm, name) %>%
     dplyr::mutate(hovertext = paste(name, "-", round((areasqkm * 0.386102)), "(sqmi)"),
                   onmousemove = sprintf("hovertext('%s',evt);", hovertext),
-                  onmouseover=sprintf("setEmphasis('%s');", huc12),
-                  onmouseout="clearEmphasis();",
+                  onmouseover = sprintf("setEmphasis('%s'); setShow('wb-bar-%s');", huc12, huc12),
                   onclick = sprintf("clicklink('%s');", paste0(nwc_base, huc12)),
                   class = 'watershed-boundary') %>%
     dplyr::rename(id = huc12) %>%

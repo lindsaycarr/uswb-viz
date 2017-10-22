@@ -33,10 +33,6 @@ visualize.visualize_map <- function(viz = as.viz("visualize_map")){
   # add sibling element below map_elements (before in xml, below in svg layer)
   non_geo_bot <- xml2::xml_add_sibling(map_elements, 'g', 'id' = 'non-geo-bottom', .where='before')
   
-  # add alttext and title before the children of the root element
-  xml2::xml_add_sibling(xml2::xml_children(svg)[[1]], 'desc', .where='before', viz[["alttext"]])
-  xml2::xml_add_sibling(xml2::xml_children(svg)[[1]], 'title', .where='before', viz[["title"]])
-  
   # Add sibling of map_elements (after in xml, above in svg layer)
   non_geo_top <- xml2::xml_add_sibling(map_elements, 'g', 'id' = 'non-geo-top', .where='after')
   

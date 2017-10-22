@@ -229,7 +229,8 @@ visualize:
     id: visualize_watershed_por_wb_data
     location: figures/visualize_watershed_wb_data.svg
     visualizer: visualize_watershed_por_wb_data
-    depends: ["process_watershed_por_wb_data", "fetch_wb_bar_template", "visualize_map"]
+    depends: ["process_watershed_por_wb_data", "fetch_wb_bar_template", 
+    "visualize_map", "process_watershed_map_data"]
     scripts: scripts/visualize/visualize_watershed_por_wb_data.R
     mimetype: image/svg+xml
     title: "U.S. Water Budgets"
