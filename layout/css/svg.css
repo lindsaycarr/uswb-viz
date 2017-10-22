@@ -96,8 +96,12 @@ circle.emphasis {
   font-size: 10px;
   fill: #4D4D4D;
   font-family: Arial;
-  
 }
+
+.axis-units-label {
+  font-size: 12px;
+  fill: #4D4D4D;
+  font-family: Arial;}
 
 .svg-text {
   -webkit-touch-callout: none; /* iOS Safari */

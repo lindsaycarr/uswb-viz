@@ -38,17 +38,16 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
   non_geo_top <- xml2::xml_find_first(svg, "//*[local-name()='g'][@id='non-geo-top']")
   
   for(hu in names(svgs)) {
-  # will loop this once figured out
-  wb_svg <- xml2::xml_add_child(non_geo_top, xml2::read_xml(whisker::whisker.render(template, svgs[[hu]])))
+    wb_svg <- xml2::xml_add_child(non_geo_top, xml2::read_xml(whisker::whisker.render(template, svgs[[hu]])))
   
-  xml2::xml_attr(wb_svg, "id") <- paste0("wb-bar-", hu)
-  xml2::xml_attr(wb_svg, "transform") <- paste0("translate(0,",
-                                               vb[4] - wb_svg_size[4], 
+    xml2::xml_attr(wb_svg, "id") <- paste0("wb-bar-", hu)
+    xml2::xml_attr(wb_svg, "transform") <- paste0("translate(0,",
+                                               (vb[4] - wb_svg_size[4]), 
                                                ")scale(1)")
-  xml2::xml_attr(wb_svg, "class") <- "nill"
+    xml2::xml_attr(wb_svg, "class") <- "nill"
   }
-  xml2::write_xml(svg, viz[['location']])
   
+  xml2::write_xml(svg, viz[['location']])
 }
 
 build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 288, 288), titles) {
@@ -86,10 +85,6 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   
   rect_w <- 60 # 0.2
   
-  in_x <- 66 # 0.23
-  out_x <- 124 # 0.43
-  inout_y <- max_y - 20 # 0.07
-  
   # Ticks
   top_tick <- floor(pr / 10) * 10
   bottom_tick <- top_tick / 2
@@ -113,6 +108,13 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   top_tick_y <- p_rect_y + p_rect_h - p_rect_h * top_tick / pr
   bottom_tick_y <- p_rect_y + p_rect_h - p_rect_h * bottom_tick / pr
   
+  in_x <- p_rect_x + rect_w / 2
+  in_y <- out_y <- p_rect_y + p_rect_h + y_tick_allow / 2
+  out_x <- ueq_rect_x + rect_w / 2
+  
+  y_units_x <- margin
+  y_units_y <- max_x / 2.5
+  
   template_list <-list(title_x = title_x, title_y = title_y, title = titles[[wb]],
        rect_w = rect_w,
        p_rect_h = p_rect_h, p_rect_x = p_rect_x, p_rect_y = p_rect_y,
@@ -121,7 +123,9 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
        q_rect_y = q_rect_y, q_rect_h = q_rect_h,
        e_rect_y = e_rect_y, e_rect_h = e_rect_h,
        y_tick_text_x = y_tick_text_x, bottom_tick_y = bottom_tick_y,
-       top_tick_y = top_tick_y, bottom_tick = bottom_tick, top_tick = top_tick)
+       top_tick_y = top_tick_y, bottom_tick = bottom_tick, top_tick = top_tick,
+       in_x = in_x, in_y = in_y, out_x = out_x, out_y = out_y,
+       y_units_x = y_units_x, y_units_y = y_units_y)
   
   template_list
 }
