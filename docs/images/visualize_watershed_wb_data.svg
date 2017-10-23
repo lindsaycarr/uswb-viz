@@ -18661,22 +18661,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">27.4 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">17.3 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">6.3 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">3.7 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-070700051701" transform="translate(0,432)scale(1)" class="nill">
@@ -18709,22 +18724,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">32.9 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">18.5 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">8.5 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">5.9 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-031601130201" transform="translate(0,432)scale(1)" class="nill">
@@ -18757,22 +18787,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">57.6 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">33.5 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">22.4 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">1.7 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-160201020603" transform="translate(0,432)scale(1)" class="nill">
@@ -18805,22 +18850,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">26.7 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">14.5 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">2 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">10.2 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-020401050911" transform="translate(0,432)scale(1)" class="nill">
@@ -18853,22 +18913,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">49.2 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">21.3 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">23.9 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">4 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-102600080802" transform="translate(0,432)scale(1)" class="nill">
@@ -18901,22 +18976,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">22.9 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">19.3 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">1 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">2.5 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-180201041203" transform="translate(0,432)scale(1)" class="nill">
@@ -18949,22 +19039,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">34.2 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">21.6 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">10.6 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">2 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-170601080803" transform="translate(0,432)scale(1)" class="nill">
@@ -18997,22 +19102,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">20.7 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">13.2 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">3.6 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">4 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-150302040410" transform="translate(0,432)scale(1)" class="nill">
@@ -19045,22 +19165,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">11.7 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">15.9 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">0.2 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">0 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-101102050210" transform="translate(0,432)scale(1)" class="nill">
@@ -19093,22 +19228,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">14.7 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">12 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">0.8 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">1.9 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-120302030102" transform="translate(0,432)scale(1)" class="nill">
@@ -19141,22 +19291,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">39 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">30.3 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">6.3 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">2.4 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-130201011304" transform="translate(0,432)scale(1)" class="nill">
@@ -19189,22 +19354,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">17.8 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">12.5 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">1.4 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">3.9 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-051202021001" transform="translate(0,432)scale(1)" class="nill">
@@ -19237,22 +19417,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">44.5 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">22.3 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">15.6 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">6.6 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-051302050708" transform="translate(0,432)scale(1)" class="nill">
@@ -19285,22 +19480,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">52.9 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">27.6 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">25.4 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">0 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-050200050808" transform="translate(0,432)scale(1)" class="nill">
@@ -19333,22 +19543,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">47.9 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">22.6 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">2.1 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">23.2 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-140100051906" transform="translate(0,432)scale(1)" class="nill">
@@ -19381,22 +19606,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">21.2 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">14.2 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">4.7 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">2.3 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-100301012008" transform="translate(0,432)scale(1)" class="nill">
@@ -19429,22 +19669,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">19.1 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">12.1 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">4.2 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">2.8 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-170900120202" transform="translate(0,432)scale(1)" class="nill">
@@ -19477,22 +19732,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">64 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">21 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">40.3 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">2.7 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-180400012103" transform="translate(0,432)scale(1)" class="nill">
@@ -19525,22 +19795,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">16.9 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">18.9 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">1.4 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">0 inches per year</text>
       </g>
     </g>
     <g id="wb-bar-010300032404" transform="translate(0,432)scale(1)" class="nill">
@@ -19573,22 +19858,37 @@
         <text transform="translate(15,115.2) rotate(-90)" class="axis-units-label" lengthAdjust="spacingAndGlyphs" text-anchor="middle">inches</text>
       </g>
       <!-- legend rectangles -->
-      <rect x="184.74" y="108.66" width="15.86" height="15.86" class="precip-bar"/>
-      <rect x="184.74" y="125.94" width="15.86" height="15.86" class="evapotranspiration-bar"/>
-      <rect x="184.74" y="143.22" width="15.86" height="15.86" class="streamflow-bar"/>
-      <rect x="184.74" y="160.22" width="15.86" height="15.86" class="unknown-bar"/>
+      <rect x="170" y="83.5" width="16" height="16" class="precip-bar"/>
+      <rect x="170" y="115.5" width="16" height="16" class="evapotranspiration-bar"/>
+      <rect x="170" y="147.5" width="16" height="16" class="streamflow-bar"/>
+      <rect x="170" y="179.5" width="16" height="16" class="unknown-bar"/>
       <!-- legend text -->
       <g>
-        <text x="203.47" y="119.74" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
+        <text x="170" y="69.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Water Budget Components</text>
       </g>
       <g>
-        <text x="203.47" y="137.02" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
+        <text x="190" y="91.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Precipitation</text>
       </g>
       <g>
-        <text x="203.47" y="154.30" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+        <text x="190" y="123.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Evapotranspiration</text>
       </g>
       <g>
-        <text x="203.47" y="171" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+        <text x="190" y="155.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Streamflow</text>
+      </g>
+      <g>
+        <text x="190" y="187.5" class="legend-text" lengthAdjust="spacingAndGlyphs">Unknown</text>
+      </g>
+      <g>
+        <text x="190" y="105.5" class="legend-text" lengthAdjust="spacingAndGlyphs">44.8 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="137.5" class="legend-text" lengthAdjust="spacingAndGlyphs">18.1 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="169.5" class="legend-text" lengthAdjust="spacingAndGlyphs">24 inches per year</text>
+      </g>
+      <g>
+        <text x="190" y="201.5" class="legend-text" lengthAdjust="spacingAndGlyphs">2.7 inches per year</text>
       </g>
     </g>
   </g>
