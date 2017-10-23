@@ -125,6 +125,28 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   y_units_x <- margin
   y_units_y <- max_x / 2.5
   
+  legend_boxes_x <- ueq_rect_x + rect_w + 10
+  legend_box_size <- 16
+  legend_text_x <- legend_boxes_x + (legend_box_size / .8)
+  legend_p_y <- max_bar_y + (max_bar_h / 2) - (legend_box_size * 3)
+  legend_e_y <- legend_p_y + (legend_box_size * 2)
+  legend_q_y <- legend_p_y + (legend_box_size * 4)
+  legend_u_y <- legend_p_y + (legend_box_size * 6)
+  
+  legend_text_p_y <- legend_p_y + (legend_box_size / 2)
+  legend_text_e_y <- legend_e_y + (legend_box_size / 2)
+  legend_text_q_y <- legend_q_y + (legend_box_size / 2)
+  legend_text_u_y <- legend_u_y + (legend_box_size / 2)
+  
+  legend_text_spacing <- 14
+  legend_textn_p_y <- legend_text_p_y + legend_text_spacing
+  legend_textn_q_y <- legend_text_q_y + legend_text_spacing
+  legend_textn_e_y <- legend_text_e_y + legend_text_spacing
+  legend_textn_u_y <- legend_text_u_y + legend_text_spacing
+  
+  legend_title_x <- legend_boxes_x
+  legend_title_y <- legend_p_y - legend_text_spacing
+  
   template_list <-list(title_x = title_x, title_y = title_y, title = titles[[wb]],
        rect_w = rect_w,
        p_rect_h = p_rect_h, p_rect_x = p_rect_x, p_rect_y = p_rect_y,
@@ -137,7 +159,17 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
        top_tick_y = top_tick_y, bottom_tick = bottom_tick, top_tick = top_tick,
        tick_x1 = tick_x1, tick_x2 = tick_x2,
        in_x = in_x, in_y = in_y, out_x = out_x, out_y = out_y,
-       y_units_x = y_units_x, y_units_y = y_units_y)
+       y_units_x = y_units_x, y_units_y = y_units_y,
+       legend_boxes_x = legend_boxes_x, legend_box_size = legend_box_size, 
+       legend_p_y = legend_p_y, legend_e_y = legend_e_y, legend_q_y = legend_q_y, 
+       legend_u_y = legend_u_y, legend_text_x = legend_text_x, 
+       legend_text_p_y = legend_text_p_y, legend_text_e_y = legend_text_e_y, 
+       legend_text_q_y = legend_text_q_y, legend_text_u_y = legend_text_u_y,
+       legend_textn_p_y = legend_textn_p_y, legend_textn_e_y = legend_textn_e_y, 
+       legend_textn_q_y = legend_textn_q_y, legend_textn_u_y = legend_textn_u_y,
+       legend_p_val = round(pr, digits = 1), legend_e_val = round(et, digits = 1), 
+       legend_q_val = round(q, digits = 1), legend_u_val = round(u, digits = 1),
+       legend_title_x = legend_title_x, legend_title_y = legend_title_y)
   
   template_list
 }
