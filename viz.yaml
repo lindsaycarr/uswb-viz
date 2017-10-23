@@ -191,6 +191,13 @@ process:
     scripts: scripts/process/process_watershed_data.R
     depends: ["fetch_nwc_wb_data"]
     reader: rds
+  - 
+    id: process_wb_huc_nwis
+    location: cache/process_wb_huc_nwis.rds
+    processor: process_wb_huc_nwis
+    scripts: scripts/process/process_watershed_data.R
+    depends: ["fetch_nwc_wb_data"]
+    reader: rds
   -
     id: process_watershed_por_wb_data
     location: cache/process_watershed_por_wb_data.rds

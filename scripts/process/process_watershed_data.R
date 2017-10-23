@@ -158,7 +158,5 @@ process.process_wb_huc_nwis <- function(viz = as.viz("process_wb_huc_nwis")) {
   
   wb_data <- deps[["fetch_nwc_wb_data"]]
   
-  
-  
-  
+  saveRDS(lapply(wb_data, function(x) x$streamflow$site_no[[1]]), viz[["location"]])
 }
