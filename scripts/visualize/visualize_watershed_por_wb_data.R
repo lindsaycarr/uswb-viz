@@ -15,7 +15,7 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
   
   template <- deps[["fetch_wb_bar_template"]]
   
-  wb_svg_size <- c(0, 0, 288, 288)
+  wb_svg_size <- c(0, 0, 300, 300)
   
   svgs <- lapply(X = names(all_wb_data),
                  FUN = build_watershed_por_wb_svg_list,
@@ -32,7 +32,7 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
   cat(whisker::whisker.render(template, template_list), file = viz[['location']])
 }
 
-build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 288, 288), titles) {
+build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   min_x <- view_box[1]
   min_y <- view_box[2]
   max_x <- view_box[3]
@@ -58,7 +58,7 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   
   # Constants
   # Fractions are relative to 288
-  margin <- 15 # 0.052
+  margin <- 20 # 0.052
   x_tick_allow <- 25 # 0.087
   x_tick_text_adj <- 3 # 0.01
   y_tick_allow <- 25 # 0.087
@@ -129,7 +129,7 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   legend_title_x <- legend_boxes_x
   legend_title_y <- legend_p_y - legend_text_spacing
   
-  template_list <-list(hu_id = wb, starting_class = "nill",
+  template_list <-list(hu_id = paste0("wb-id-", wb), starting_class = "nill",
        title_x = title_x, title_y = title_y, title = titles[[wb]],
        rect_w = rect_w,
        p_rect_h = p_rect_h, p_rect_x = p_rect_x, p_rect_y = p_rect_y,

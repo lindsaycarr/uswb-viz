@@ -7,10 +7,14 @@ function clicklink(url, event){
   }
 }
 
-function setShow(id) {
+ 
+function setEmphasis(id) {
   $(".emphasis").removeClass("emphasis");
   hovertext(" ");
   $('[id$=' + id + ']').addClass('emphasis');
+}
+
+function setShow(id) {
   $(".showIt").addClass("nill");
   $(".showIt").removeClass("showIt");
   $('[id$=' + id + ']').removeClass("nill");
