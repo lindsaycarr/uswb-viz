@@ -24,6 +24,10 @@ visualize.visualize_map <- function(viz = as.viz("visualize_map")){
   svg <- deps[["visualize_svg_base_map"]]
   watermark <- deps[['fetch_usgs_watermark']]
   
+  # add alttext and title before the children of the root element
+  xml2::xml_add_sibling(xml2::xml_children(svg)[[1]], 'desc', .where='before', viz[["alttext"]])
+  xml2::xml_add_sibling(xml2::xml_children(svg)[[1]], 'title', .where='before', viz[["title"]])
+  
   xml2::xml_attr(svg, "id") <- viz[['id']]
   vb <- strsplit(xml2::xml_attr(svg, 'viewBox'),'[ ]')[[1]] # can be used for portrait vs landscape, see Maria
   

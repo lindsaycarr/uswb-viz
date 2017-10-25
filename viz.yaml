@@ -229,19 +229,21 @@ visualize:
     visualizer: visualize_map
     depends: ["visualize_svg_base_map", "fetch_usgs_watermark"]
     scripts: scripts/visualize/visualize_map.R
-    reader: svg_map
+    mimetype: image/svg+xml
     orientation: vizlab-landscape
     export: true
+    title: "U.S. Water Budgets"
+    alttext: "Summary of water budgets for the conterminous US."
   - 
     id: visualize_watershed_por_wb_data
     location: figures/visualize_watershed_wb_data.svg
     visualizer: visualize_watershed_por_wb_data
     depends: ["process_watershed_por_wb_data", "fetch_wb_bar_template", 
-    "visualize_map", "process_watershed_map_data"]
+    "process_watershed_map_data"]
     scripts: scripts/visualize/visualize_watershed_por_wb_data.R
     mimetype: image/svg+xml
-    title: "U.S. Water Budgets"
-    alttext: "Summary of water budgets for the conterminous US."
+    title: "U.S. Water Budgets Bar Chart"
+    alttext: "Bar chart showing period of record mean annual water budget."
   -
     id: visualize_thumbnail_map_facebook
     location: figures/thumb-facebook.png
@@ -279,11 +281,13 @@ publish:
     publisher: section
     template: layout/templates/figureTemplate.mustache
     depends:
-      map: visualize_watershed_por_wb_data
+      map: visualize_map
+      bar: visualize_watershed_por_wb_data
       siteText: siteText
     context:
       id: gage-map
       figure: map
+      barchart: bar
       caption: siteText.explanationText1
   -
     id: publish_header

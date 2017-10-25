@@ -1,7 +1,7 @@
 visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_watershed_por_wb_data")) {
   
   deps <- readDepends(viz)
-  required <- c("process_watershed_por_wb_data", "fetch_wb_bar_template", "visualize_map", "process_watershed_map_data")
+  required <- c("process_watershed_por_wb_data", "fetch_wb_bar_template", "process_watershed_map_data")
   checkRequired(deps, required)
   
   all_wb_data <- deps[["process_watershed_por_wb_data"]]
@@ -15,39 +15,21 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
   
   template <- deps[["fetch_wb_bar_template"]]
   
-  hus <- setNames(names(all_wb_data), names(all_wb_data))
-  
   wb_svg_size <- c(0, 0, 288, 288)
-  svgs <- lapply(X = hus,
+  
+  svgs <- lapply(X = names(all_wb_data),
                  FUN = build_watershed_por_wb_svg_list,
                  all_wb_data,
                  view_box = wb_svg_size,
                  titles = titles)
   
-  svg <- deps[["visualize_map"]]
+  template_list <- list(viewbox = paste(wb_svg_size, collapse = " "),
+                        top_id = "visualize_watershed_por_wb_data",
+                        title = viz[["title"]], 
+                        alttext = viz[["alttext"]], 
+                        barcharts = svgs)
   
-  # add alttext and title before the children of the root element
-  xml2::xml_add_sibling(xml2::xml_children(svg)[[1]], 'desc', .where='before', viz[["alttext"]])
-  xml2::xml_add_sibling(xml2::xml_children(svg)[[1]], 'title', .where='before', viz[["title"]])
-  
-  vb <- as.numeric(strsplit(xml2::xml_attr(svg, 'viewBox'),'[ ]')[[1]]) # can be used for portrait vs landscape, see Maria
-  # Expand viewbox to include svgs to be added.
-  vb[4] <- vb[4] + wb_svg_size[4]
-  xml2::xml_attr(svg, 'viewBox') <- paste(vb, collapse = " ")
-  
-  non_geo_top <- xml2::xml_find_first(svg, "//*[local-name()='g'][@id='non-geo-top']")
-  
-  for(hu in names(svgs)) {
-    wb_svg <- xml2::xml_add_child(non_geo_top, xml2::read_xml(whisker::whisker.render(template, svgs[[hu]])))
-  
-    xml2::xml_attr(wb_svg, "id") <- paste0(hu)
-    xml2::xml_attr(wb_svg, "transform") <- paste0("translate(0,",
-                                               (vb[4] - wb_svg_size[4]), 
-                                               ")scale(1)")
-    xml2::xml_attr(wb_svg, "class") <- "nill"
-  }
-  
-  xml2::write_xml(svg, viz[['location']])
+  cat(whisker::whisker.render(template, template_list), file = viz[['location']])
 }
 
 build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 288, 288), titles) {
@@ -147,7 +129,8 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box = c(0, 0, 
   legend_title_x <- legend_boxes_x
   legend_title_y <- legend_p_y - legend_text_spacing
   
-  template_list <-list(title_x = title_x, title_y = title_y, title = titles[[wb]],
+  template_list <-list(hu_id = wb, starting_class = "nill",
+       title_x = title_x, title_y = title_y, title = titles[[wb]],
        rect_w = rect_w,
        p_rect_h = p_rect_h, p_rect_x = p_rect_x, p_rect_y = p_rect_y,
        ueq_rect_x = ueq_rect_x,

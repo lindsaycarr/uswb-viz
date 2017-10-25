@@ -1,4 +1,8 @@
-<g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="{{viewbox}}" preserveAspectRatio="xMidYMid meet" version="1.1" id="{{top_id}}">
+  <title>{{title}}</title>
+  <desc>{{alttext}}</desc>
+  {{#barcharts}}
+<g id="{{hu_id}}" class="{{starting_class}}">
 <g><text x='{{title_x}}' y='{{title_y}}' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">{{title}}</text></g>
 <!-- Main rectangles -->
 <rect x='{{p_rect_x}}' y='{{p_rect_y}}' width='{{rect_w}}' height='{{p_rect_h}}' class='precip-bar'/>
@@ -36,3 +40,5 @@
 <g><text x='{{legend_text_x}}' y='{{legend_textn_q_y}}' class='legend-text' lengthAdjust='spacingAndGlyphs'>{{legend_q_val}} inches per year</text></g>
 <g><text x='{{legend_text_x}}' y='{{legend_textn_u_y}}' class='legend-text' lengthAdjust='spacingAndGlyphs'>{{legend_u_val}} inches per year</text></g>
 </g>
+{{/barcharts}}
+</svg>
