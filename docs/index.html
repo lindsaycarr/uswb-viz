@@ -76,16 +76,16 @@
       </script>
       
   <title>US Water Budgets</title>
-    <script src="js/d3-4.11.0.min.js?_c=7351412" type="text/javascript"></script>
-    <script src="js/jquery-3.2.1.min.js?_c=3882418" type="text/javascript"></script>
-    <script src="js/vizlab.js?_c=6026285" type="text/javascript"></script>
-    <script src="js/svg-injector-1.1.3.min.js?_c=5176126" type="text/javascript"></script>
-    <script src="js/animate.js?_c=1859175" type="text/javascript"></script>
-    <script src="js/tooltip.js?_c=4222599" type="text/javascript"></script>
-    <link href="css/header.css?_c=9050402" rel="stylesheet" type="text/css" />
-    <link href="css/footer.css?_c=8807125" rel="stylesheet" type="text/css" />
-    <link href="css/viz.css?_c=4772377" rel="stylesheet" type="text/css" />
-    <link href="css/svg.css?_c=3065670" rel="stylesheet" type="text/css" />
+    <script src="js/d3-4.11.0.min.js?_c=1159334" type="text/javascript"></script>
+    <script src="js/jquery-3.2.1.min.js?_c=749697" type="text/javascript"></script>
+    <script src="js/vizlab.js?_c=5286805" type="text/javascript"></script>
+    <script src="js/svg-injector-1.1.3.min.js?_c=138921" type="text/javascript"></script>
+    <script src="js/animate.js?_c=9940352" type="text/javascript"></script>
+    <script src="js/tooltip.js?_c=1481893" type="text/javascript"></script>
+    <link href="css/header.css?_c=9559885" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css?_c=5249375" rel="stylesheet" type="text/css" />
+    <link href="css/viz.css?_c=2527597" rel="stylesheet" type="text/css" />
+    <link href="css/svg.css?_c=5042888" rel="stylesheet" type="text/css" />
   <noscript>Javascript is not enabled</noscript>
     
     <script type="application/javascript" src="https://www2.usgs.gov/scripts/analytics/usgs-analytics.js"></script>
@@ -105,7 +105,7 @@
 
   <div id="header">
   <div id="logo">
-  	<img src="images/usgsLogo.png?_c=9117487" alt="USGS" title="USGS" />
+  	<img src="images/usgsLogo.png?_c=335080" alt="USGS" title="USGS" />
   	<h3>Water Budgets Across the U.S.</h3>
   </div>
 </div>
@@ -117,11 +117,20 @@
 
 </div>
 
-  
-<div id="gage-map" class="responsiveGrid">
+  <div id="gage-map" class="responsiveGrid">
   <figure>
-    <img class="vizlab-landscape vizlab-portrait" src="images/visualize_watershed_wb_data.svg" title="U.S. Water Budgets" alt="Summary of water budgets for the conterminous US." />
+    <img class="vizlab-landscape vizlab-portrait" src="images/visualize_map.svg" title="U.S. Water Budgets" alt="Summary of water budgets for the conterminous US." />
   </figure>
+</div>
+<div id="infoBlock" class="responsiveGrid">
+  <div id="barchart" class="barchartDiv">
+    <img class="vizlab-landscape vizlab-portrait" src="images/visualize_watershed_wb_data.svg" title="U.S. Water Budgets Bar Chart" alt="Bar chart showing period of record mean annual water budget." />
+  </div>
+  <div id="characteristics" class="charDiv">
+    test test test
+  </div>
+</div>
+<div id="caption" class="responsiveGrid">
     <p>Text here would explain the idea of a water budget and that this shows how much 
 variation in water budgets there is across the us. Also explain caveats related 
 to water budget closure and uncertainty in the data we are using. Highlight how 

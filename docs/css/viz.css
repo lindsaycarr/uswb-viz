@@ -129,3 +129,14 @@ body{
   }
 }
 
+.barchartDiv {
+  width: 280px;
+  height: 280px;
+  float: left;
+  
+}
+
+.charDiv {
+  height: 280px; 
+  overflow: hidden;
+}

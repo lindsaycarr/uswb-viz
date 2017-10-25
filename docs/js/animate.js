@@ -1,9 +1,3 @@
-function setEmphasis(id) {
-  $(".emphasis").removeClass("emphasis");
-  hovertext(" ");
-  $('[id$=' + id + ']').addClass('emphasis');
-}
-
 function clicklink(url, event){
  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
    event.stopPropagation();
@@ -11,6 +5,13 @@ function clicklink(url, event){
     ga('send', 'event', 'outbound', 'click', url);
     window.open(url, '_blank');
   }
+}
+
+ 
+function setEmphasis(id) {
+  $(".emphasis").removeClass("emphasis");
+  hovertext(" ");
+  $('[id$=' + id + ']').addClass('emphasis');
 }
 
 function setShow(id) {
