@@ -40,7 +40,7 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
   for(hu in names(svgs)) {
     wb_svg <- xml2::xml_add_child(non_geo_top, xml2::read_xml(whisker::whisker.render(template, svgs[[hu]])))
   
-    xml2::xml_attr(wb_svg, "id") <- paste0("wb-bar-", hu)
+    xml2::xml_attr(wb_svg, "id") <- paste0(hu)
     xml2::xml_attr(wb_svg, "transform") <- paste0("translate(0,",
                                                (vb[4] - wb_svg_size[4]), 
                                                ")scale(1)")

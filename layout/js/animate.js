@@ -1,9 +1,3 @@
-function setEmphasis(id) {
-  $(".emphasis").removeClass("emphasis");
-  hovertext(" ");
-  $('[id$=' + id + ']').addClass('emphasis');
-}
-
 function clicklink(url, event){
  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
    event.stopPropagation();
@@ -14,6 +8,9 @@ function clicklink(url, event){
 }
 
 function setShow(id) {
+  $(".emphasis").removeClass("emphasis");
+  hovertext(" ");
+  $('[id$=' + id + ']').addClass('emphasis');
   $(".showIt").addClass("nill");
   $(".showIt").removeClass("showIt");
   $('[id$=' + id + ']').removeClass("nill");
