@@ -109,6 +109,8 @@ process_wb_ts <- function(wb_data) {
   
   da_sqft <- dataRetrieval::readNWISsite(wb_data$streamflow$site_no[1])$drain_area_va*27878400
   
+  wb_data$streamflow <- dplyr::filter(wb_data$streamflow, data_00060_00003 > 0)
+  
   an_q <- NWCEd::annualize(setNames(wb_data$streamflow[c("Date", "data_00060_00003")], 
                                     c("date", "data")),
                            method = mean)
