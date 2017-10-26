@@ -71,8 +71,8 @@ parameter:
     id: parameter_spatial
     crs: '+init=epsg:2163'
     simplify_tolerance_m: 1000
-    bbox: [-121,27,-71,47]
-    height: 6
+    bbox: [-120,30,-74,42]
+    height: 5
     width: 8
     pointsize: 12
 fetch:
@@ -254,6 +254,7 @@ visualize:
     export: true
     title: "U.S. Water Budgets"
     alttext: "Summary of water budgets for the conterminous US."
+    watermark_transform: [400, 10]
   - 
     id: visualize_watershed_por_wb_data
     location: figures/visualize_watershed_wb_data.svg

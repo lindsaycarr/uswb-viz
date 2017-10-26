@@ -1,3 +1,14 @@
+#' @title Fetch viz view limits
+#' @param viz a vizlab object including a \code{parameter_spatial} parameter input.
+#' @details \code{parameter_spatial} must include:
+#' /describe{
+#'   \item{id}{parameter_spatial}
+#'   \item{crs}{valid crs for \pkg{sf}}
+#'   \item{bbox}{numeric in xmin, ymin, xmax, ymax order}
+#'   \item{height}{figure height inches}
+#'   \item{width}{figure width inches}
+#'   \item{pointsize}{number of pixels per inch}
+#' }
 fetch.fetch_view_limits <- function(viz = as.viz('fetch_view_limits')){
   
   deps <- readDepends(viz)

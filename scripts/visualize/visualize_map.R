@@ -60,8 +60,8 @@ visualize.visualize_map <- function(viz = as.viz("visualize_map")){
   
   g_watermark <- xml2::xml_add_child(non_geo_top, watermark)
   xml2::xml_attr(g_watermark, "transform") <- sprintf('translate(%s,%s)scale(0.2)', 
-                                                as.character(as.numeric(vb[3])-115), 
-                                                as.character(as.numeric(vb[1])+10))
+                                                as.character(as.numeric(vb[1])+viz[["watermark_transform"]][1]), 
+                                                as.character(as.numeric(vb[2])+viz[["watermark_transform"]][2]))
   
   # Hack job here because there is a problem in svg_base_map
   poly_lines <- xml2::xml_find_all(svg, "//*[local-name()='polyline']")
