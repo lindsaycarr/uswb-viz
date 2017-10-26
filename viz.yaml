@@ -223,6 +223,13 @@ process:
     processor: process_state_map_data
     scripts: scripts/process/process_state_map_data.R
     reader: rds
+  -
+    id: process_characteristics_template
+    location: cache/process_characteristics_template.html
+    processor: process_characteristics_template
+    scripts: scripts/process/process_characteristics_template.R
+    depends: ["fetch_characteristics_template", "fetch_nldi_char_data", "process_wb_huc_nwis"]
+    mimetype: text/xml
 visualize:
   - 
     id: visualize_svg_base_map
