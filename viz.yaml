@@ -153,6 +153,13 @@ fetch:
     scripts: scripts/fetch/fetch_nwc_wb_data.R
     depends: fetch_HU_ids
     reader: rds
+  -
+    id: fetch_nldi_char_data
+    location: cache/fetch_nldi_char_data.rds
+    fetcher: fetch_nldi_char_data
+    scripts: scripts/fetch/fetch_nldi_char_data.R
+    depends: fetch_HU_ids
+    reader: rds
 process:
   -
     id: process_watershed_map_data
