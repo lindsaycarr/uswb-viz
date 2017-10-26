@@ -81,6 +81,11 @@ fetch:
     location: data/wb_bar_template.mustache
     reader: txt
     scripts:  
+  - 
+    id: fetch_characteristics_template
+    location: data/characteristics_template.mustache
+    reader: txt
+    scripts:
   -
     id: fetch_usgs_watermark 
     location: cache/usgs_watermark.xml
