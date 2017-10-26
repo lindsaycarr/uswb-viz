@@ -15,8 +15,13 @@ function setEmphasis(id) {
 }
 
 function setShow(id) {
+  $("#characteristics").removeClass("hide_span");
   $(".showIt").addClass("nill");
   $(".showIt").removeClass("showIt");
+  $(".show_span").addClass("hide_span");
+  $(".show_span").removeClass("show_span");
   $('[id$=' + id + ']').removeClass("nill");
   $('[id$=' + id + ']').addClass('showIt');
+  $('[id$=' + id + ']').removeClass("hide_span");
+  $('[id$=' + id + ']').addClass('show_span');
 }

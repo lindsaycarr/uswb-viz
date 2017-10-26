@@ -5,9 +5,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Minnesota River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='31.7951370418876' class='unknown-bar'/>
-<rect x='105' y='200.729327708472' width='60' height='54.2706722915275' class='streamflow-bar'/>
-<rect x='105' y='51.7951370418876' width='60' height='148.934190666585' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='31.6163683192681' class='unknown-bar'/>
+<rect x='105' y='200.550558985853' width='60' height='54.449441014147' class='streamflow-bar'/>
+<rect x='105' y='51.6163683192681' width='60' height='148.934190666585' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='169.142315428946' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
@@ -43,9 +43,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Indian Creek-Wisconsin River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='42.3496920536951' class='unknown-bar'/>
-<rect x='105' y='194.318244973488' width='60' height='60.6817550265116' class='streamflow-bar'/>
-<rect x='105' y='62.3496920536951' width='60' height='131.968552919793' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='21.0989716149472' class='unknown-bar'/>
+<rect x='105' y='173.06752453474' width='60' height='81.9324754652595' class='streamflow-bar'/>
+<rect x='105' y='41.0989716149472' width='60' height='131.968552919793' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='147.918381515679' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">15</text></g>
@@ -74,16 +74,16 @@
 <g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
 <g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>32.9 inches per year</text></g>
 <g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>18.5 inches per year</text></g>
-<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>8.5 inches per year</text></g>
-<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>5.9 inches per year</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>11.5 inches per year</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3 inches per year</text></g>
 </g>
 <g id="wb-id-031601130201" class="nill">
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Mill Creek-Black Warrior River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='6.98160093960306' class='unknown-bar'/>
-<rect x='105' y='163.598558023207' width='60' height='91.4014419767933' class='streamflow-bar'/>
-<rect x='105' y='26.9816009396031' width='60' height='136.616957083604' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='6.99654114012992' class='unknown-bar'/>
+<rect x='105' y='163.613498223734' width='60' height='91.3865017762664' class='streamflow-bar'/>
+<rect x='105' y='26.9965411401299' width='60' height='136.616957083604' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='153.060915533751' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">25</text></g>
@@ -119,9 +119,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">West Weber-Weber River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='90.3158113960431' class='unknown-bar'/>
-<rect x='105' y='237.767781958943' width='60' height='17.232218041057' class='streamflow-bar'/>
-<rect x='105' y='110.315811396043' width='60' height='127.4519705629' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='75.5856023350088' class='unknown-bar'/>
+<rect x='105' y='223.037572897909' width='60' height='31.9624271020913' class='streamflow-bar'/>
+<rect x='105' y='95.5856023350088' width='60' height='127.4519705629' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='166.88566509398' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
@@ -150,16 +150,16 @@
 <g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
 <g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>26.7 inches per year</text></g>
 <g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>14.5 inches per year</text></g>
-<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2 inches per year</text></g>
-<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>10.2 inches per year</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3.6 inches per year</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>8.6 inches per year</text></g>
 </g>
 <g id="wb-id-020401050911" class="nill">
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Buck Creek-Delaware River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='19.0785925198235' class='unknown-bar'/>
-<rect x='105' y='140.963112207295' width='60' height='114.036887792705' class='streamflow-bar'/>
-<rect x='105' y='39.0785925198235' width='60' height='101.884519687471' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='19.106139388154' class='unknown-bar'/>
+<rect x='105' y='140.990659075625' width='60' height='114.009340924375' class='streamflow-bar'/>
+<rect x='105' y='39.106139388154' width='60' height='101.884519687471' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='159.381096606687' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
@@ -188,16 +188,16 @@
 <g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
 <g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>49.2 inches per year</text></g>
 <g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21.3 inches per year</text></g>
-<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.9 inches per year</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.8 inches per year</text></g>
 <g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>4 inches per year</text></g>
 </g>
 <g id="wb-id-102600080802" class="nill">
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Deer Creek-Smoky Hill River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='25.6021901417681' class='unknown-bar'/>
-<rect x='105' y='244.277030367624' width='60' height='10.7229696323761' class='streamflow-bar'/>
-<rect x='105' y='45.6021901417681' width='60' height='198.674840225856' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='25.607091937264' class='unknown-bar'/>
+<rect x='105' y='244.28193216312' width='60' height='10.7180678368802' class='streamflow-bar'/>
+<rect x='105' y='45.607091937264' width='60' height='198.674840225856' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='152.218077626996' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
@@ -233,9 +233,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Packer Lake-Sacramento River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='13.7448766606264' class='unknown-bar'/>
-<rect x='105' y='182.234402781733' width='60' height='72.7655972182675' class='streamflow-bar'/>
-<rect x='105' y='33.7448766606264' width='60' height='148.489526121106' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='13.7725175732171' class='unknown-bar'/>
+<rect x='105' y='182.262043694323' width='60' height='72.7379563056768' class='streamflow-bar'/>
+<rect x='105' y='33.7725175732171' width='60' height='148.489526121106' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='151.85052119318' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">15</text></g>
@@ -271,9 +271,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Palouse Lake</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='44.9761971659809' class='unknown-bar'/>
-<rect x='105' y='214.532533565455' width='60' height='40.4674664345454' class='streamflow-bar'/>
-<rect x='105' y='64.9761971659809' width='60' height='149.556336399474' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='44.9827572129506' class='unknown-bar'/>
+<rect x='105' y='214.539093612424' width='60' height='40.4609063875756' class='streamflow-bar'/>
+<rect x='105' y='64.9827572129506' width='60' height='149.556336399474' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='141.409456045072' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
@@ -308,22 +308,22 @@
 <g id="wb-id-150302040410" class="nill">
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Bill Williams River-Lake Havasu</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='83.9023632241048' width='60' height='171.097636775895' class='precip-bar'/>
+<rect x='45' y='84.2488437603703' width='60' height='170.75115623963' class='precip-bar'/>
 <rect x='105' y='20' width='60' height='0' class='unknown-bar'/>
-<rect x='105' y='252.274140073876' width='60' height='2.72585992612415' class='streamflow-bar'/>
-<rect x='105' y='20' width='60' height='232.274140073876' class='evapotranspiration-bar'/>
+<rect x='105' y='251.803774321725' width='60' height='3.19622567827549' class='streamflow-bar'/>
+<rect x='105' y='20' width='60' height='231.803774321725' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='245.759664588262' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
-<g><text x='30' y='172.61696595242' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='30' y='246.254262433012' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
+<g><text x='30' y='173.259681105654' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,244.759664588262 37,244.759664588262 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,171.61696595242 37,171.61696595242 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='32,245.254262433012 37,245.254262433012 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='32,172.259681105654 37,172.259681105654 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='331.402363224105' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='331.402363224105' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text x='75' y='331.74884376037' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='331.74884376037' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
 <g><text transform='translate(20,120) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
@@ -347,9 +347,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Appel Creek</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='30.2666104125473' class='unknown-bar'/>
-<rect x='105' y='242.138300364921' width='60' height='12.8616996350786' class='streamflow-bar'/>
-<rect x='105' y='50.2666104125473' width='60' height='191.871689952374' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='28.2156131603028' class='unknown-bar'/>
+<rect x='105' y='240.087303112677' width='60' height='14.912696887323' class='streamflow-bar'/>
+<rect x='105' y='48.2156131603028' width='60' height='191.871689952374' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='175.247164417997' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
@@ -378,16 +378,16 @@
 <g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
 <g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>14.7 inches per year</text></g>
 <g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>12 inches per year</text></g>
-<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0.8 inches per year</text></g>
-<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.9 inches per year</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0.9 inches per year</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.8 inches per year</text></g>
 </g>
 <g id="wb-id-120302030102" class="nill">
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Fields Bayou-Trinity River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='14.5249255331032' class='unknown-bar'/>
-<rect x='105' y='217.25203861411' width='60' height='37.7479613858896' class='streamflow-bar'/>
-<rect x='105' y='34.5249255331032' width='60' height='182.727113081007' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='14.535997351192' class='unknown-bar'/>
+<rect x='105' y='217.263110432199' width='60' height='37.7368895678007' class='streamflow-bar'/>
+<rect x='105' y='34.535997351192' width='60' height='182.727113081007' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='164.612905353002' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">15</text></g>
@@ -423,9 +423,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Los Alamos Canyon-Rio Grande</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='51.3637555956676' class='unknown-bar'/>
-<rect x='105' y='236.65093644435' width='60' height='18.3490635556504' class='streamflow-bar'/>
-<rect x='105' y='71.3637555956676' width='60' height='165.287180848682' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='51.3679843511093' class='unknown-bar'/>
+<rect x='105' y='236.655165199791' width='60' height='18.3448348002087' class='streamflow-bar'/>
+<rect x='105' y='71.3679843511093' width='60' height='165.287180848682' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='189.029151050716' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
@@ -461,9 +461,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Lick Creek-White River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='34.917782058389' class='unknown-bar'/>
-<rect x='105' y='172.515404361995' width='60' height='82.4845956380045' class='streamflow-bar'/>
-<rect x='105' y='54.917782058389' width='60' height='117.597622303607' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='34.9557198730178' class='unknown-bar'/>
+<rect x='105' y='172.553342176624' width='60' height='82.4466578233756' class='streamflow-bar'/>
+<rect x='105' y='54.9557198730178' width='60' height='117.597622303607' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='149.376811921011' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
@@ -498,22 +498,22 @@
 <g id="wb-id-051302050708" class="nill">
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Demumbers Creek-Cumberland River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20.6924454616229' width='60' height='234.307554538377' class='precip-bar'/>
+<rect x='45' y='20.7004641921828' width='60' height='234.299535807817' class='precip-bar'/>
 <rect x='105' y='20' width='60' height='0' class='unknown-bar'/>
-<rect x='105' y='142.33612162387' width='60' height='112.66387837613' class='streamflow-bar'/>
-<rect x='105' y='20' width='60' height='122.33612162387' class='evapotranspiration-bar'/>
+<rect x='105' y='142.331934902708' width='60' height='112.668065097292' class='streamflow-bar'/>
+<rect x='105' y='20' width='60' height='122.331934902708' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='144.998137430679' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">25</text></g>
-<g><text x='30' y='34.3038293997352' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">50</text></g>
+<g><text x='30' y='145.009944463466' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">25</text></g>
+<g><text x='30' y='34.3194247347485' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">50</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,143.998137430679 37,143.998137430679 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,33.3038293997352 37,33.3038293997352 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='32,144.009944463466 37,144.009944463466 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='32,33.3194247347485 37,33.3194247347485 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='268.192445461623' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='268.192445461623' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text x='75' y='268.200464192183' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='268.200464192183' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
 <g><text transform='translate(20,120) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
@@ -537,9 +537,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Streets Run-Monongahela River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='113.895201810015' class='unknown-bar'/>
-<rect x='105' y='244.817933319613' width='60' height='10.182066680387' class='streamflow-bar'/>
-<rect x='105' y='133.895201810015' width='60' height='110.922731509599' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='8.90305636100091' class='unknown-bar'/>
+<rect x='105' y='139.825787870599' width='60' height='115.174212129401' class='streamflow-bar'/>
+<rect x='105' y='28.9030563610009' width='60' height='110.922731509599' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='156.926786124432' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
@@ -568,16 +568,16 @@
 <g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
 <g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>47.9 inches per year</text></g>
 <g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>22.6 inches per year</text></g>
-<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.1 inches per year</text></g>
-<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.2 inches per year</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.5 inches per year</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.8 inches per year</text></g>
 </g>
 <g id="wb-id-140100051906" class="nill">
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">May Flat-Colorado River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='25.0402321233003' class='unknown-bar'/>
-<rect x='105' y='203.200348140162' width='60' height='51.7996518598381' class='streamflow-bar'/>
-<rect x='105' y='45.0402321233003' width='60' height='158.160116016862' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='25.0519164236607' class='unknown-bar'/>
+<rect x='105' y='203.212032440522' width='60' height='51.7879675594777' class='streamflow-bar'/>
+<rect x='105' y='45.0519164236607' width='60' height='158.160116016862' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='143.997226710942' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
@@ -613,9 +613,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Log Gulch-Missouri River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='33.9514212906218' class='unknown-bar'/>
-<rect x='105' y='203.02377671665' width='60' height='51.9762232833502' class='streamflow-bar'/>
-<rect x='105' y='53.9514212906218' width='60' height='149.072355426028' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='33.9596250008815' class='unknown-bar'/>
+<rect x='105' y='203.03198042691' width='60' height='51.9680195730905' class='streamflow-bar'/>
+<rect x='105' y='53.9596250008815' width='60' height='149.072355426028' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='193.549673495155' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
@@ -651,9 +651,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Balch Creek-Willamette River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='9.78303543896552' class='unknown-bar'/>
-<rect x='105' y='107.073563685193' width='60' height='147.926436314807' class='streamflow-bar'/>
-<rect x='105' y='29.7830354389655' width='60' height='77.2905282462272' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='9.45246952448449' class='unknown-bar'/>
+<rect x='105' y='106.742997770712' width='60' height='148.257002229288' class='streamflow-bar'/>
+<rect x='105' y='29.4524695244845' width='60' height='77.2905282462272' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='144.817967142506' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">30</text></g>
@@ -682,28 +682,28 @@
 <g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
 <g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>64 inches per year</text></g>
 <g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21 inches per year</text></g>
-<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>40.3 inches per year</text></g>
-<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.7 inches per year</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>40.4 inches per year</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.6 inches per year</text></g>
 </g>
 <g id="wb-id-180400012103" class="nill">
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Shag Slough-San Joaquin River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='58.9137973200506' width='60' height='196.086202679949' class='precip-bar'/>
+<rect x='45' y='58.862918469055' width='60' height='196.137081530945' class='precip-bar'/>
 <rect x='105' y='20' width='60' height='0' class='unknown-bar'/>
-<rect x='105' y='238.658138213188' width='60' height='16.3418617868118' class='streamflow-bar'/>
-<rect x='105' y='20' width='60' height='218.658138213188' class='evapotranspiration-bar'/>
+<rect x='105' y='238.714873846196' width='60' height='16.2851261538042' class='streamflow-bar'/>
+<rect x='105' y='20' width='60' height='218.714873846196' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='236.053537996494' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
-<g><text x='30' y='178.193278672938' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='30' y='235.987646036609' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
+<g><text x='30' y='178.112373604162' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,235.053537996494 37,235.053537996494 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,177.193278672938 37,177.193278672938 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='32,234.987646036609 37,234.987646036609 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='32,177.112373604162 37,177.112373604162 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='306.413797320051' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='306.413797320051' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text x='75' y='306.362918469055' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='306.362918469055' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
 <g><text transform='translate(20,120) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
@@ -727,9 +727,9 @@
 <g><text x='30' y='10' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Riggs Branch-Kennebec River</text></g>
 <!-- Main rectangles -->
 <rect x='45' y='20' width='60' height='235' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='14.2019684983321' class='unknown-bar'/>
-<rect x='105' y='129.130394806262' width='60' height='125.869605193738' class='streamflow-bar'/>
-<rect x='105' y='34.2019684983321' width='60' height='94.92842630793' class='evapotranspiration-bar'/>
+<rect x='105' y='20' width='60' height='14.3521134407562' class='unknown-bar'/>
+<rect x='105' y='129.280539748686' width='60' height='125.719460251314' class='streamflow-bar'/>
+<rect x='105' y='34.3521134407562' width='60' height='94.92842630793' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
 <g><text x='30' y='150.014967961207' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
@@ -758,7 +758,7 @@
 <g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
 <g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>44.8 inches per year</text></g>
 <g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>18.1 inches per year</text></g>
-<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>24 inches per year</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.9 inches per year</text></g>
 <g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.7 inches per year</text></g>
 </g>
 </svg>
