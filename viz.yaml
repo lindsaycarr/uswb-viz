@@ -229,7 +229,8 @@ process:
     processor: process_characteristics_template
     scripts: scripts/process/process_characteristics_template.R
     depends: ["fetch_characteristics_template", "fetch_nldi_char_data", "process_wb_huc_nwis"]
-    mimetype: text/xml
+    reader: txt
+    mimetype: text/plain
 visualize:
   - 
     id: visualize_svg_base_map
@@ -302,11 +303,13 @@ publish:
     depends:
       map: visualize_map
       bar: visualize_watershed_por_wb_data
+      char_text: process_characteristics_template
       siteText: siteText
     context:
       id: gage-map
       figure: map
       barchart: bar
+      chars: char_text
       caption: siteText.explanationText1
   -
     id: publish_header

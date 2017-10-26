@@ -133,10 +133,19 @@ body{
   width: 280px;
   height: 280px;
   float: left;
-  
 }
 
 .charDiv {
   height: 280px; 
   overflow: hidden;
+}
+
+.hide_span {
+  visibility: hidden; 
+  display: none;
+}
+
+.show_span {
+  visibility: visible; 
+  display: inline;
 }
