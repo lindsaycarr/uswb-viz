@@ -97,7 +97,7 @@ fetch:
     location: cache/fetch_view_limits.rds
     reader: rds
     fetcher: fetch_view_limits
-    scripts: [scripts/fetch/fetch_view_limits.R]
+    scripts: [scripts/fetch/view_limits.R]
     depends: "parameter_spatial"
     comment: sets up the basic view window and projection
   -
