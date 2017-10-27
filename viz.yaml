@@ -236,7 +236,8 @@ visualize:
     id: visualize_svg_base_map
     location: figures/visualize_svg_base_map.svg
     visualizer: visualize_svg_base_map
-    depends: ["fetch_view_limits", 
+    depends: ["parameter_spatial",
+    "fetch_view_limits", 
     "process_state_map_data",
     "process_flowline_map_data",
     "process_boundary_map_data",
