@@ -15,7 +15,7 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
   
   template <- deps[["fetch_wb_bar_template"]]
   
-  wb_svg_size <- c(0, 0, 300, 300)
+  wb_svg_size <- c(0, 0, 360, 360)
   
   svgs <- lapply(X = names(all_wb_data),
                  FUN = build_watershed_por_wb_svg_list,
@@ -65,7 +65,7 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   y_tick_text_x <- 30
   
   title_x = y_tick_text_x
-  title_y = margin / 2
+  title_y = margin / 1.5
   
   rect_w <- 60 # 0.2
   

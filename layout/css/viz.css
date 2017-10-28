@@ -31,15 +31,16 @@ a:hover{
 
 body{
   font-family:sans-serif;
+  font-size: 12px;
 }
 
-.tooltip-text. {
+.tooltip-text {
   z-index: 100;
   opacity: 1;
 }
 .tooltip-box, .tooltip-point{
   stroke: none;
-  opacity: 0.85;
+  opacity: 0.5;
   fill: white;
 }
 .tooltip-box.hidden, .tooltip-point.hidden {
