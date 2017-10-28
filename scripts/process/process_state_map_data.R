@@ -2,8 +2,8 @@
 process.process_state_map_data <- function(viz = as.viz("process_state_map_data")){
   
   deps <- readDepends(viz)
-  required <- c("parameter_spatial")
-  crs <- deps[["parameter_spatial"]]$crs
+  required <- c("spatial_metadata")
+  crs <- deps[["spatial_metadata"]]$crs
   crs <- "+init=epsg:2163"
   
   shift_states <- 

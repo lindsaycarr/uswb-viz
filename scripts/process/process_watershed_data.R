@@ -5,7 +5,7 @@ process.process_watershed_map_data <- function(viz = as.viz("process_watershed_m
   required <- c("fetch_huc12boundary", 
                 "fetch_huc12pp", 
                 "fetch_nhdplusflowline",
-                "parameter_spatial")
+                "spatial_metadata")
   checkRequired(deps, required)
   
   # Load geojson and project
@@ -13,10 +13,10 @@ process.process_watershed_map_data <- function(viz = as.viz("process_watershed_m
                              hu_outlet = deps$`fetch_huc12pp`,
                              nhd_flowline = deps$`fetch_nhdplusflowline`)
   
-  watershed_map_data <- lapply(watershed_map_data, sf::st_transform, crs = deps$`parameter_spatial`$crs)
+  watershed_map_data <- lapply(watershed_map_data, sf::st_transform, crs = deps$`spatial_metadata`$crs)
   
   # simplify geometries
-  watershed_map_data <- lapply(watershed_map_data, sf::st_simplify, dTolerance = deps$`parameter_spatial`$simplify_tolerance_m)
+  watershed_map_data <- lapply(watershed_map_data, sf::st_simplify, dTolerance = deps$`spatial_metadata`$simplify_tolerance_m)
   
   saveRDS(watershed_map_data, viz[['location']])
 }

@@ -68,10 +68,12 @@ info:
       name: USGS-R/NWCEd
 parameter:
   -
-    id: parameter_spatial
+    id: spatial_metadata
     crs: '+init=epsg:2163'
     simplify_tolerance_m: 1000
     bbox: [-120,30,-74,42]
+  -
+    id: plot_metadata
     height: 5
     width: 8
     pointsize: 12
@@ -93,12 +95,12 @@ fetch:
     fetcher: fetch_usgs_watermark 
     scripts: scripts/fetch/fetch_usgs_watermark.R 
   -
-    id: fetch_view_limits
-    location: cache/fetch_view_limits.rds
+    id: fetch_viewbox_limits
+    location: cache/fetch_viewbox_limits.rds
     reader: rds
-    fetcher: view_limits
-    scripts: [scripts/fetch/view_limits.R]
-    depends: "parameter_spatial"
+    fetcher: viewbox_limits
+    scripts: [scripts/fetch/viewbox_limits.R]
+    depends: ["spatial_metadata", "plot_metadata"]
     comment: sets up the basic view window and projection
   -
     id: siteText
@@ -172,7 +174,7 @@ process:
     processor: process_watershed_map_data
     scripts: scripts/process/process_watershed_data.R
     depends: ["fetch_huc12boundary", "fetch_huc12pp", 
-    "fetch_nhdplusflowline", "parameter_spatial"]
+    "fetch_nhdplusflowline", "spatial_metadata"]
     reader: rds
   -
     id: process_outlet_map_data
@@ -236,8 +238,8 @@ visualize:
     id: visualize_svg_base_map
     location: figures/visualize_svg_base_map.svg
     visualizer: visualize_svg_base_map
-    depends: ["parameter_spatial",
-    "fetch_view_limits", 
+    depends: ["plot_metadata",
+    "fetch_viewbox_limits", 
     "process_state_map_data",
     "process_flowline_map_data",
     "process_boundary_map_data",

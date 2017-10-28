@@ -2,26 +2,26 @@ visualize.visualize_svg_base_map <- function(viz = as.viz('visualize_svg_base_ma
   
   # -- added px based precip --
   depends <- readDepends(viz)
-  checkRequired(depends, c("fetch_view_limits", "parameter_spatial"))
+  checkRequired(depends, c("fetch_viewbox_limits", "plot_metadata"))
   
   # makes the assumption that all inputs other than view-limits are 
   # geometries to be injected into the svg base map.
-  vl <- which(names(depends) == 'fetch_view_limits')
+  vl <- which(names(depends) == 'fetch_viewbox_limits')
   view_limits <- depends[[vl]]
   geoms <- depends[-vl]
   g_ids <- names(depends)[-vl]
   
-  ps <- which(names(depends) == "parameter_spatial")
-  p_spatial <- geoms[[ps]]
-  geoms <- geoms[-ps]
-  g_ids <- names(geoms)[-ps]
+  pm <- which(names(geoms) == "plot_metadata")
+  p_meta <- geoms[[pm]]
+  geoms <- geoms[-pm]
+  g_ids <- names(geoms)[-pm]
   
-  checkRequired(p_spatial, c("bbox", "width", "height", "pointsize"))
+  checkRequired(p_meta, c("width", "height", "pointsize"))
   
-  view_limits <- append(view_limits, p_spatial[c("height", "width", "pointsize")])
+  view_limits <- append(view_limits, p_meta[c("height", "width", "pointsize")])
   
   # 1) set up shell svg, w/ proper size and aspect
-  svg <- init_svg(width = p_spatial$width, height = p_spatial$height)
+  svg <- init_svg(width = p_meta$width, height = p_meta$height)
   geom_base_group <- xml2::xml_add_child(svg, 'g', 'id' = 'map-elements')
   
   # 2) add basic groups etc, including <defs><g id="template-geoms"/></defs> and <g id="styled-geoms"/>
