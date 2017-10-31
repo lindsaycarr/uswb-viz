@@ -87,25 +87,26 @@ circle.emphasis {
 }
 
 .wb-plot-title {
-  font-size: 12px;
   fill: #4D4D4D;
   font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .axis-label {
-  font-size: 8.80px;
+  font-size: 14px;
   fill: #4D4D4D;
   font-family: Arial;
 }
 
 .legend-text {
-  font-size: 10px;
+  font-size: 14px;
   fill: #4D4D4D;
   font-family: Arial;
 }
 
 .axis-units-label {
-  font-size: 12px;
+  font-size: 18px;
   fill: #4D4D4D;
   font-family: Arial;}
 
