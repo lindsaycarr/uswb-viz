@@ -1,8 +1,11 @@
 <p>
-More USGS data at {{#hu_list}}<span class="hide_span" id="{{wb_id}}"><a href="http://waterdata.usgs.gov/nwis/nwisman/?site_no={{nwis_id}}" target="_blank">NWIS-Web</a></span>{{/hu_list}}<br>
+<h3>{{#hu_list}}<span class="hide_span" id="{{wb_id}}">{{hu_name}}</span>{{/hu_list}}<br></h3>
+Drainage area (sqmi): {{#hu_list}}<span class="hide_span" id="{{wb_id}}">{{drainage_area}}</span>{{/hu_list}}<br>
 Impervious Surface from 2011 (%): {{#hu_list}}<span class="hide_span" id="{{wb_id}}">{{TOT_IMPV11}}</span>{{/hu_list}}<br>
 Population Density (people/sqkm): {{#hu_list}}<span class="hide_span" id="{{wb_id}}">{{TOT_POPDENS10}}</span>{{/hu_list}}<br>
 Irrigated agriculture 2012 (%): {{#hu_list}}<span class="hide_span" id="{{wb_id}}">{{TOT_MIRAD_2012}}</span>{{/hu_list}}<br>
 Number of dams in 2013: {{#hu_list}}<span class="hide_span" id="{{wb_id}}">{{TOT_NDAMS_2013}}</span>{{/hu_list}}<br>
-Freshwater withdrawals in 1000L/year/sqkm: {{#hu_list}}<span class="hide_span" id="{{wb_id}}">{{TOT_FRESHWATER_WD}}</span>{{/hu_list}}
+Freshwater withdrawals in (in/yr): {{#hu_list}}<span class="hide_span" id="{{wb_id}}">{{TOT_FRESHWATER_WD}}</span>{{/hu_list}}<br>
+{{#hu_list}}<span class="hide_span" id="{{wb_id}}"><a href="https://cida.usgs.gov/nwc/#!waterbudget/achuc/{{hu_id}}" target="_blank">More USGS National Water Census data.</a></span>{{/hu_list}}<br>
+{{#hu_list}}<span class="hide_span" id="{{wb_id}}"><a href="http://waterdata.usgs.gov/nwis/nwisman/?site_no={{nwis_id}}" target="_blank">More USGS National Water Information System data.</a></span>{{/hu_list}}
 </p>
