@@ -77,6 +77,7 @@ parameter:
     height: 5
     width: 8
     pointsize: 12
+    
 fetch:
   - 
     id: fetch_wb_bar_template
@@ -297,12 +298,32 @@ visualize:
     fig-width: 400
 publish:
   -
-    id: publish_intro
-    template: layout/templates/intro.mustache
-    publisher: section
-    depends: siteText
+    id: publish_index
+    name: index
+    publisher: page
+    template: fullpage
+    depends:
+      header: publish_header
+      footer: publish_footer
+      map-section: publish_map_section
+      handmade-social-section: handmade-social-section
+      lib-d3-js: lib-d3-js
+      jquery-js: lib-jquery-js
+      svg-injector-js: lib-svg-injector-js
+      vizlab-js: lib-vizlab-javascript
+      tooltip-js: lib-tooltip-js
+      animate-js: publish_animate_js
+      svg-css: publish_svg_css
+      viz-css: publish_viz_css
+      header-css: lib-header-css
+      footer-css: lib-footer-css
+      socialCSS: publish_social_css
     context:
-      data: ["siteText.title", "siteText.introText1"]
+      header: header
+      footer: footer
+      sections: ["handmade-social-section", "map-section"]
+      resources: [ "lib-d3-js", "jquery-js", "vizlab-js", "svg-injector-js", 
+      "animate-js", "tooltip-js", "header-css", "footer-css", "viz-css", "svg-css", "socialCSS"]
   -
     id: publish_map_section
     publisher: section
@@ -318,22 +339,23 @@ publish:
       barchart: bar
       chars: char_text
       caption: siteText.explanationText1
+      data: ["siteText.title", "siteText.introText1"]
   -
-    id: publish_header
-    publisher: section
-    template: header-template
-    context:
-      title: Water Budgets Across the U.S.
-  -
-    id: publish_social_section
-    publisher: section
+    id: handmade-social-section
     template: layout/templates/socialMedia.mustache
+    publisher: section
     depends:
       twitterLogo: twitterLogo 
       facebookLogo: facebookLogo
     context:
       twitterLogo: twitterLogo 
       facebookLogo: facebookLogo
+  -
+    id: publish_header
+    publisher: section
+    template: header-template
+    context:
+      title: Water Budgets Across the U.S.
   -
     id: publish_footer
     publisher: footer
@@ -349,8 +371,27 @@ publish:
         url: https://owi.usgs.gov/blog/stats-service-map/
         thumbLoc: https://owi.usgs.gov/blog/static/stats-service-map/plot-1.png
   -
+    id: twitterLogo
+    location: images/twitter.svg
+    mimetype: image/png
+    inline: true
+    title: "Twitter"
+    alttext: "Twitter Logo"
+  -
+    id: facebookLogo
+    location: images/facebook.svg
+    mimetype: image/png
+    inline: true
+    title: "Facebook"
+    alttext: "Facebook Logo"
+  -
     id: publish_viz_css
     location: layout/css/viz.css
+    mimetype: text/css
+    publisher: resource
+  -
+    id: publish_social_css
+    location: layout/css/socialMedia.css
     mimetype: text/css
     publisher: resource
   -
@@ -363,65 +404,4 @@ publish:
     location: layout/js/animate.js
     mimetype: text/javascript
     publisher: resource
-  -
-    id: publish_index
-    name: index
-    publisher: page
-    template: fullpage
-    depends:
-      header: publish_header
-      footer: publish_footer
-      intro: publish_intro
-      map-section: publish_map_section
-      social-section: publish_social_section
-      lib-d3-js: lib-d3-js
-      jquery-js: lib-jquery-js
-      svg-injector-js: lib-svg-injector-js
-      vizlab-js: lib-vizlab-javascript
-      tooltip-js: lib-tooltip-js
-      animate-js: publish_animate_js
-      svg-css: publish_svg_css
-      viz-css: publish_viz_css
-      header-css: lib-header-css
-      footer-css: lib-footer-css
-    context:
-      header: header
-      footer: footer
-      sections: [ "intro", "map-section", "social-section"]
-      resources: [ "lib-d3-js", "jquery-js", "vizlab-js", "svg-injector-js", 
-      "animate-js", "tooltip-js", "header-css", "footer-css", "viz-css", "svg-css"]
-  -
-    id: twitterLogo
-    location: images/twitter.svg
-    mimetype: image/svg
-    inline: true
-    title: "Twitter"
-    alttext: "Twitter Logo"
-  -
-    id: facebookLogo
-    location: images/facebook.svg
-    mimetype: image/svg
-    inline: true
-    title: "Facebook"
-    alttext: "Facebook Logo"
-  -
-    id: facebook-thumb
-    location: figures/thumb-facebook.png
-    publisher: thumbnail
-    for: facebook
-    mimetype: image/png
-    export: TRUE
-  -
-    id: twitter-thumb
-    location: figures/thumb-twitter.png
-    publisher: thumbnail
-    for: twitter
-    mimetype: image/png
-    export: TRUE
-  -
-    id: landing-thumb
-    location: figures/thumb-landing.png
-    publisher: thumbnail
-    for: landing
-    mimetype: image/png
-    export: TRUE
+        

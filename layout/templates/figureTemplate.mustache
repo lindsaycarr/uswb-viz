@@ -1,20 +1,31 @@
-<div id="{{id}}" class="responsiveGrid">
-  <figure>
-    {{{figure}}}
-  </figure>
-</div>
-<div id="infoBlock" class="responsiveGrid">
-  <div id="barchart" class="barchartDiv">
-    {{{barchart}}}
-  </div>
-  <div id="characteristics" class="hide_span">
-    {{#chars}}
+<div id="vizContainer">
+  <div class="intro">
+    {{#data}}
       {{{.}}}
-    {{/chars}}
+    {{/data}}
   </div>
-</div>
-<div id="caption" class="responsiveGrid">
-  {{#caption}}
-    {{{.}}}
-  {{/caption}}
+  <div id="figureContent">
+    <div class="leftSideContent">
+      <div id="{{id}}" class="map">
+        <figure>
+          {{{figure}}}
+        </figure>
+      </div>
+    </div>
+    <div class="rightSideContent" id="barChart">
+      {{{barchart}}}
+    </div>
+    <div class="rightSideContent" id="characteristicsHolder">
+      <div id="characteristics" class="hide_span">
+        {{#chars}}
+          {{{.}}}
+        {{/chars}}
+      </div>
+    </div>
+    <div class="leftSideContent" id="caption">
+      {{#caption}}
+        {{{.}}}
+      {{/caption}}
+    </div>
+  </div>
 </div>
