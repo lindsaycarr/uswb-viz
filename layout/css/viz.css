@@ -15,10 +15,6 @@
     }
 }
 
-p{
-  margin-top:10px;
-}
-
 a{
   text-decoration:none;
   cursor:pointer;
@@ -29,124 +25,111 @@ a:hover{
   text-decoration:underline;
 }
 
-body{
+body,
+html{
   font-family:sans-serif;
   font-size: 12px;
+  height:100%;
+}
+
+.socialMediaImage img{
+  width: 100%;
+}
+
+#github{
+  display:none;
 }
 
 .tooltip-text {
   z-index: 100;
   opacity: 1;
 }
+
 .tooltip-box, .tooltip-point{
   stroke: none;
   opacity: 0.5;
   fill: white;
 }
+
 .tooltip-box.hidden, .tooltip-point.hidden {
   opacity: 0;
 }
 
-.socialHolder{
-  width:30px;
-  min-height:20px;
-  position:fixed;
-  z-index:1000;
-  top:55px;
-  right:5px;
-}
-
-.socialMediaOption{
-  height:30px;
-  margin-bottom:5px;
-  position:relative;
-  cursor:pointer;
-  transition: all .5s ease;
-}
-
-.socialMediaOption:hover{
-  transform: scale(1.2);
-}
-
-.socialMediaOption:nth-child(4){
-  margin-bottom:0;
-}
-
-.socialMediaImage{
-  width:25px;
-  height:25px;
-  position:absolute;
-  margin:auto;
-  top:0; bottom:0; right:0; left:0;
-}
-
-#github{
-  background:rgb(38,40,47);
-}
-
-#twitter{
-  background:rgb(108,175,224);
-}
-
-#facebook{
-  background:rgb(66,88,149);
-}
-
-.spacer{
-  padding:10px;
-}
-
-.responsiveGrid{
-  padding:15px 40px;
-  margin-top:10px;
-}
-
-@media screen and (min-width:768px){
-  #header h3{
-    font-size:1.2em;
-    margin:0 0 0 10px;
-    padding:0;
-  }
-}
-
-@media screen and (min-width:1024px){
-  .responsiveGrid{
-    width:770px;
-    margin:10px auto 0 auto;
-    padding:0;
-  }
-}
-
-@media screen and (min-width:1500px){
-  .responsiveGrid{
-    width:810px;
-  }
-}
-
-@media screen and (min-width:2000px){
-  .responsiveGrid{
-    width:1210px;
-    
-  }
-}
-
-.barchartDiv {
-  width: 280px;
-  height: 280px;
-  float: left;
-}
-
-.charDiv {
-  height: 280px; 
-  overflow: hidden;
-}
-
 .hide_span {
-  visibility: hidden; 
   display: none;
 }
 
 .show_span {
-  visibility: visible; 
   display: inline;
 }
+
+#vizContainer{
+  min-height:85%;
+}
+
+.intro{
+  padding:10px;
+}
+
+#figureContent{
+  min-height:100px;
+}
+
+.leftSideContent,
+.rightSideContent{
+  min-height:100px;
+}
+
+#barChart{
+  margin-bottom:-30px;
+}
+
+#caption p{
+  padding:10px;
+}
+
+#characteristics {
+    line-height: 2em;
+    padding:10px;
+}
+
+@media screen and (min-width:600px){
+  #figureContent{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+  
+  .leftSideContent{
+    width:60%;
+  }
+  
+  .rightSideContent{
+    width:40%;
+  }
+  
+  #characteristicsHolder{
+    order:4;
+  }
+}
+
+@media screen and (min-width:960px){
+  #vizContainer{
+    width:960px;
+    margin:0 auto;
+  }
+  
+  .intro,
+  #caption p{
+    padding:10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
