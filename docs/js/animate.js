@@ -15,6 +15,7 @@ function setEmphasis(id) {
 }
 
 function setShow(id) {
+  $(".rightSideContent").removeClass("hide_span");
   $("#characteristics").removeClass("hide_span");
   $(".showIt").addClass("nill");
   $(".showIt").removeClass("showIt");

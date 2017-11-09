@@ -89,7 +89,7 @@ circle.emphasis {
 .wb-plot-title {
   fill: #4D4D4D;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -106,7 +106,7 @@ circle.emphasis {
 }
 
 .axis-units-label {
-  font-size: 18px;
+  font-size: 14px;
   fill: #4D4D4D;
   font-family: Arial;}
 

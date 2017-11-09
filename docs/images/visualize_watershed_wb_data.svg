@@ -1,764 +1,764 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 360 360" preserveAspectRatio="xMidYMid meet" version="1.1" id="visualize_watershed_por_wb_data">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 360 300" preserveAspectRatio="xMidYMid meet" version="1.1" id="visualize_watershed_por_wb_data">
   <title>U.S. Water Budgets Bar Chart</title>
   <desc>Bar chart showing period of record mean annual water budget.</desc>
 <g id="wb-id-070200121110" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Minnesota River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Minnesota River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='39.6886325709961' class='unknown-bar'/>
-<rect x='105' y='246.648574046071' width='60' height='68.3514259539292' class='streamflow-bar'/>
-<rect x='105' y='59.6886325709961' width='60' height='186.959941475075' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='31.6163683192681' class='unknown-bar'/>
+<rect x='105' y='200.550558985853' width='60' height='54.449441014147' class='streamflow-bar'/>
+<rect x='105' y='51.6163683192681' width='60' height='148.934190666585' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='207.221204474635' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
-<g><text x='30' y='99.4424089492695' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
+<g><text x='35' y='169.142315428946' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='83.2846308578927' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,206.221204474635 37,206.221204474635 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,98.4424089492695 37,98.4424089492695 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,168.142315428946 43,168.142315428946 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,82.2846308578927 43,82.2846308578927 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>27.4 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>17.3 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>6.3 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3.7 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>27.4 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>17.3 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>6.3 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3.7 in/yr</text></g>
 </g>
 <g id="wb-id-070700051701" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Indian Creek-Wisconsin River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Indian Creek-Wisconsin River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='26.485943091104' class='unknown-bar'/>
-<rect x='105' y='212.148594628717' width='60' height='102.851405371283' class='streamflow-bar'/>
-<rect x='105' y='46.485943091104' width='60' height='165.662651537613' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='21.0989716149472' class='unknown-bar'/>
+<rect x='105' y='173.06752453474' width='60' height='81.9324754652595' class='streamflow-bar'/>
+<rect x='105' y='41.0989716149472' width='60' height='131.968552919793' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='180.578393817554' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">15</text></g>
-<g><text x='30' y='46.1567876351077' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">30</text></g>
+<g><text x='35' y='147.918381515679' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">15</text></g>
+<g><text x='35' y='40.836763031357' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">30</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,179.578393817554 37,179.578393817554 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,45.1567876351077 37,45.1567876351077 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,146.918381515679 43,146.918381515679 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,39.836763031357 43,39.836763031357 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>32.9 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>18.5 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>11.5 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>32.9 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>18.5 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>11.5 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3 in/yr</text></g>
 </g>
 <g id="wb-id-031601130201" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Mill Creek-Black Warrior River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Mill Creek-Black Warrior River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='8.78289206952479' class='unknown-bar'/>
-<rect x='105' y='200.280774365963' width='60' height='114.719225634037' class='streamflow-bar'/>
-<rect x='105' y='28.7828920695248' width='60' height='171.497882296439' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='6.99654114012992' class='unknown-bar'/>
+<rect x='105' y='163.613498223734' width='60' height='91.3865017762664' class='streamflow-bar'/>
+<rect x='105' y='26.9965411401299' width='60' height='136.616957083604' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='187.033915244496' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">25</text></g>
-<g><text x='30' y='59.0678304889919' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">50</text></g>
+<g><text x='35' y='153.060915533751' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">25</text></g>
+<g><text x='35' y='51.1218310675021' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">50</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,186.033915244496 37,186.033915244496 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,58.0678304889919 37,58.0678304889919 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,152.060915533751 43,152.060915533751 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,50.1218310675021 43,50.1218310675021 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>57.6 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>33.5 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>22.4 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.7 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>57.6 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>33.5 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>22.4 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.7 in/yr</text></g>
 </g>
 <g id="wb-id-160201020603" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">West Weber-Weber River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">West Weber-Weber River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='94.8840539950111' class='unknown-bar'/>
-<rect x='105' y='274.876953212268' width='60' height='40.1230467877316' class='streamflow-bar'/>
-<rect x='105' y='114.884053995011' width='60' height='159.992899217257' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='75.5856023350088' class='unknown-bar'/>
+<rect x='105' y='223.037572897909' width='60' height='31.9624271020913' class='streamflow-bar'/>
+<rect x='105' y='95.5856023350088' width='60' height='127.4519705629' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='204.388388096698' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
-<g><text x='30' y='93.7767761933966' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
+<g><text x='35' y='166.88566509398' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='78.77133018796' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,203.388388096698 37,203.388388096698 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,92.7767761933966 37,92.7767761933966 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,165.88566509398 43,165.88566509398 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,77.77133018796 43,77.77133018796 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>26.7 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>14.5 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3.6 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>8.6 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>26.7 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>14.5 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3.6 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>8.6 in/yr</text></g>
 </g>
 <g id="wb-id-020401050911" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Buck Creek-Delaware River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Buck Creek-Delaware River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='23.9843026361933' class='unknown-bar'/>
-<rect x='105' y='171.88189118004' width='60' height='143.11810881996' class='streamflow-bar'/>
-<rect x='105' y='43.9843026361933' width='60' height='127.897588543847' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='19.106139388154' class='unknown-bar'/>
+<rect x='105' y='140.990659075625' width='60' height='114.009340924375' class='streamflow-bar'/>
+<rect x='105' y='39.106139388154' width='60' height='101.884519687471' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='194.967759570097' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
-<g><text x='30' y='74.9355191401936' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">40</text></g>
+<g><text x='35' y='159.381096606687' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
+<g><text x='35' y='63.7621932133746' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">40</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,193.967759570097 37,193.967759570097 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,73.9355191401936 37,73.9355191401936 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,158.381096606687 43,158.381096606687 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,62.7621932133746 43,62.7621932133746 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>49.2 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21.3 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.8 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>4 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>49.2 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21.3 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.8 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>4 in/yr</text></g>
 </g>
 <g id="wb-id-102600080802" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Deer Creek-Smoky Hill River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Deer Creek-Smoky Hill River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='32.1450728574165' class='unknown-bar'/>
-<rect x='105' y='301.545404204767' width='60' height='13.4545957952326' class='streamflow-bar'/>
-<rect x='105' y='52.1450728574165' width='60' height='249.400331347351' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='25.607091937264' class='unknown-bar'/>
+<rect x='105' y='244.28193216312' width='60' height='10.7180678368802' class='streamflow-bar'/>
+<rect x='105' y='45.607091937264' width='60' height='198.674840225856' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='185.975884680698' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
-<g><text x='30' y='56.9517693613952' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
+<g><text x='35' y='152.218077626996' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='49.4361552539928' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,184.975884680698 37,184.975884680698 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,55.9517693613952 37,55.9517693613952 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,151.218077626996 43,151.218077626996 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,48.4361552539928 43,48.4361552539928 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>22.9 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>19.3 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.5 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>22.9 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>19.3 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.5 in/yr</text></g>
 </g>
 <g id="wb-id-180201041203" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Packer Lake-Sacramento River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Packer Lake-Sacramento River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='17.2889050387193' class='unknown-bar'/>
-<rect x='105' y='223.690650595001' width='60' height='91.3093494049986' class='streamflow-bar'/>
-<rect x='105' y='37.2889050387193' width='60' height='186.401745556282' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='13.7725175732171' class='unknown-bar'/>
+<rect x='105' y='182.262043694323' width='60' height='72.7379563056768' class='streamflow-bar'/>
+<rect x='105' y='33.7725175732171' width='60' height='148.489526121106' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='185.514484051013' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">15</text></g>
-<g><text x='30' y='56.0289681020264' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">30</text></g>
+<g><text x='35' y='151.85052119318' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">15</text></g>
+<g><text x='35' y='48.70104238636' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">30</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,184.514484051013 37,184.514484051013 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,55.0289681020264 37,55.0289681020264 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,150.85052119318 43,150.85052119318 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,47.70104238636 43,47.70104238636 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>34.2 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21.6 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>10.6 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>34.2 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21.6 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>10.6 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2 in/yr</text></g>
 </g>
 <g id="wb-id-170601080803" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Palouse Lake Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Palouse Lake</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='56.4677165013636' class='unknown-bar'/>
-<rect x='105' y='264.208649428362' width='60' height='50.7913505716375' class='streamflow-bar'/>
-<rect x='105' y='76.4677165013636' width='60' height='187.740932926999' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='44.9827572129506' class='unknown-bar'/>
+<rect x='105' y='214.539093612424' width='60' height='40.4609063875756' class='streamflow-bar'/>
+<rect x='105' y='64.9827572129506' width='60' height='149.556336399474' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='172.407615035303' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
-<g><text x='30' y='29.8152300706059' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
+<g><text x='35' y='141.409456045072' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='27.8189120901437' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,171.407615035303 37,171.407615035303 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,28.8152300706059 37,28.8152300706059 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,140.409456045072 43,140.409456045072 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,26.8189120901437 43,26.8189120901437 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>20.7 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>13.2 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3.6 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>4 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>20.7 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>13.2 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3.6 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>4 in/yr</text></g>
 </g>
 <g id="wb-id-150302040410" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Bill Williams River-Lake Havasu Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Bill Williams River-Lake Havasu</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='100.652803869401' width='60' height='214.347196130599' class='precip-bar'/>
+<rect x='45' y='84.2488437603703' width='60' height='170.75115623963' class='precip-bar'/>
 <rect x='105' y='20' width='60' height='0' class='unknown-bar'/>
-<rect x='105' y='310.987716701739' width='60' height='4.01228329826072' class='streamflow-bar'/>
-<rect x='105' y='20' width='60' height='290.987716701739' class='evapotranspiration-bar'/>
+<rect x='105' y='251.803774321725' width='60' height='3.19622567827549' class='streamflow-bar'/>
+<rect x='105' y='20' width='60' height='231.803774321725' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='304.021308160589' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
-<g><text x='30' y='212.389812451778' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='246.254262433012' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
+<g><text x='35' y='173.259681105654' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,303.021308160589 37,303.021308160589 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,211.389812451778 37,211.389812451778 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,245.254262433012 43,245.254262433012 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,172.259681105654 43,172.259681105654 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='408.152803869401' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='408.152803869401' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='331.74884376037' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='331.74884376037' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>11.7 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>15.9 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0.2 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>11.7 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>15.9 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0.2 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0 in/yr</text></g>
 </g>
 <g id="wb-id-101102050210" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Appel Creek Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Appel Creek</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='35.4195994991036' class='unknown-bar'/>
-<rect x='105' y='296.279806035063' width='60' height='18.7201939649374' class='streamflow-bar'/>
-<rect x='105' y='55.4195994991036' width='60' height='240.860206535959' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='28.2156131603028' class='unknown-bar'/>
+<rect x='105' y='240.087303112677' width='60' height='14.912696887323' class='streamflow-bar'/>
+<rect x='105' y='48.2156131603028' width='60' height='191.871689952374' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='214.884738311954' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
-<g><text x='30' y='114.769476623907' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='175.247164417997' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
+<g><text x='35' y='95.4943288359939' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,213.884738311954 37,213.884738311954 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,113.769476623907 37,113.769476623907 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,174.247164417997 43,174.247164417997 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,94.4943288359939 43,94.4943288359939 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>14.7 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>12 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0.9 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.8 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>14.7 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>12 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0.9 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.8 in/yr</text></g>
 </g>
 <g id="wb-id-120302030102" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Fields Bayou-Trinity River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Fields Bayou-Trinity River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='18.2473158238368' class='unknown-bar'/>
-<rect x='105' y='267.62815990425' width='60' height='47.3718400957499' class='streamflow-bar'/>
-<rect x='105' y='38.2473158238368' width='60' height='229.380844080413' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='14.535997351192' class='unknown-bar'/>
+<rect x='105' y='217.263110432199' width='60' height='37.7368895678007' class='streamflow-bar'/>
+<rect x='105' y='34.535997351192' width='60' height='182.727113081007' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='201.535349272918' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">15</text></g>
-<g><text x='30' y='88.0706985458359' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">30</text></g>
+<g><text x='35' y='164.612905353002' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">15</text></g>
+<g><text x='35' y='74.2258107060049' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">30</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,200.535349272918 37,200.535349272918 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,87.0706985458359 37,87.0706985458359 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,163.612905353002 43,163.612905353002 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,73.2258107060049 43,73.2258107060049 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>39 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>30.3 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>6.3 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.4 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>39 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>30.3 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>6.3 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.4 in/yr</text></g>
 </g>
 <g id="wb-id-130201011304" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Los Alamos Canyon-Rio Grande Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Los Alamos Canyon-Rio Grande</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='64.4832143982011' class='unknown-bar'/>
-<rect x='105' y='291.971377591227' width='60' height='23.0286224087726' class='streamflow-bar'/>
-<rect x='105' y='84.4832143982011' width='60' height='207.488163193026' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='51.3679843511093' class='unknown-bar'/>
+<rect x='105' y='236.655165199791' width='60' height='18.3448348002087' class='streamflow-bar'/>
+<rect x='105' y='71.3679843511093' width='60' height='165.287180848682' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='232.185530042389' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
-<g><text x='30' y='149.371060084777' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='189.029151050716' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
+<g><text x='35' y='123.058302101433' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,231.185530042389 37,231.185530042389 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,148.371060084777 37,148.371060084777 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,188.029151050716 43,188.029151050716 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,122.058302101433 43,122.058302101433 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>17.8 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>12.5 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.4 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3.9 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>17.8 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>12.5 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.4 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>3.9 in/yr</text></g>
 </g>
 <g id="wb-id-051202021001" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Lick Creek-White River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Lick Creek-White River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='43.8805845214479' class='unknown-bar'/>
-<rect x='105' y='211.503131668528' width='60' height='103.496868331472' class='streamflow-bar'/>
-<rect x='105' y='63.8805845214479' width='60' height='147.622547147081' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='34.9557198730178' class='unknown-bar'/>
+<rect x='105' y='172.553342176624' width='60' height='82.4466578233756' class='streamflow-bar'/>
+<rect x='105' y='54.9557198730178' width='60' height='117.597622303607' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='182.409189432758' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
-<g><text x='30' y='49.8183788655159' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">40</text></g>
+<g><text x='35' y='149.376811921011' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
+<g><text x='35' y='43.7536238420211' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">40</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,181.409189432758 37,181.409189432758 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,48.8183788655159 37,48.8183788655159 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,148.376811921011 43,148.376811921011 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,42.7536238420211 43,42.7536238420211 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>44.5 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>22.3 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>15.6 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>6.6 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>44.5 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>22.3 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>15.6 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>6.6 in/yr</text></g>
 </g>
 <g id="wb-id-051302050708" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Demumbers Creek-Cumberland River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Demumbers Creek-Cumberland River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20.8793061135911' width='60' height='294.120693886409' class='precip-bar'/>
+<rect x='45' y='20.7004641921828' width='60' height='234.299535807817' class='precip-bar'/>
 <rect x='105' y='20' width='60' height='0' class='unknown-bar'/>
-<rect x='105' y='173.565620409782' width='60' height='141.434379590218' class='streamflow-bar'/>
-<rect x='105' y='20' width='60' height='153.565620409782' class='evapotranspiration-bar'/>
+<rect x='105' y='142.331934902708' width='60' height='112.668065097292' class='streamflow-bar'/>
+<rect x='105' y='20' width='60' height='122.331934902708' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='176.927377092436' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">25</text></g>
-<g><text x='30' y='37.97544807128' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">50</text></g>
+<g><text x='35' y='145.009944463466' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">25</text></g>
+<g><text x='35' y='34.3194247347485' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">50</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,175.927377092436 37,175.927377092436 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,36.97544807128 37,36.97544807128 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,144.009944463466 43,144.009944463466 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,33.3194247347485 43,33.3194247347485 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='328.379306113591' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='328.379306113591' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='268.200464192183' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='268.200464192183' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>52.9 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>27.6 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>25.4 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>52.9 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>27.6 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>25.4 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0 in/yr</text></g>
 </g>
 <g id="wb-id-050200050808" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Streets Run-Monongahela River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Streets Run-Monongahela River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='11.1761771340224' class='unknown-bar'/>
-<rect x='105' y='170.419606050327' width='60' height='144.580393949673' class='streamflow-bar'/>
-<rect x='105' y='31.1761771340224' width='60' height='139.243428916305' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='8.90305636100091' class='unknown-bar'/>
+<rect x='105' y='139.825787870599' width='60' height='115.174212129401' class='streamflow-bar'/>
+<rect x='105' y='28.9030563610009' width='60' height='110.922731509599' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='191.886816624287' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
-<g><text x='30' y='68.773633248573' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">40</text></g>
+<g><text x='35' y='156.926786124432' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
+<g><text x='35' y='58.8535722488633' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">40</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,190.886816624287 37,190.886816624287 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,67.773633248573 37,67.773633248573 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,155.926786124432 43,155.926786124432 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,57.8535722488633 43,57.8535722488633 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>47.9 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>22.6 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.5 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.8 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>47.9 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>22.6 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.5 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.8 in/yr</text></g>
 </g>
 <g id="wb-id-140100051906" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">May Flat-Colorado River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">May Flat-Colorado River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='31.4481504041698' class='unknown-bar'/>
-<rect x='105' y='249.989572638102' width='60' height='65.0104273618976' class='streamflow-bar'/>
-<rect x='105' y='51.4481504041698' width='60' height='198.541422233933' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='25.0519164236607' class='unknown-bar'/>
+<rect x='105' y='203.212032440522' width='60' height='51.7879675594777' class='streamflow-bar'/>
+<rect x='105' y='45.0519164236607' width='60' height='158.160116016862' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='175.656093105226' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
-<g><text x='30' y='36.3121862104512' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
+<g><text x='35' y='143.997226710942' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='32.9944534218849' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,174.656093105226 37,174.656093105226 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,35.3121862104512 37,35.3121862104512 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,142.997226710942 43,142.997226710942 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,31.9944534218849 43,31.9944534218849 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21.2 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>14.2 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>4.7 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.3 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21.2 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>14.2 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>4.7 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.3 in/yr</text></g>
 </g>
 <g id="wb-id-100301012008" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Log Gulch-Missouri River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Log Gulch-Missouri River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='42.630167554298' class='unknown-bar'/>
-<rect x='105' y='249.76354989761' width='60' height='65.2364501023902' class='streamflow-bar'/>
-<rect x='105' y='62.630167554298' width='60' height='187.133382343312' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='33.9596250008815' class='unknown-bar'/>
+<rect x='105' y='203.03198042691' width='60' height='51.9680195730905' class='streamflow-bar'/>
+<rect x='105' y='53.9596250008815' width='60' height='149.072355426028' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='237.860228430089' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
-<g><text x='30' y='160.720456860178' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='193.549673495155' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
+<g><text x='35' y='132.099346990311' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,236.860228430089 37,236.860228430089 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,159.720456860178 37,159.720456860178 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,192.549673495155 43,192.549673495155 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,131.099346990311 43,131.099346990311 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>19.1 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>12.1 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>4.2 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.8 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>19.1 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>12.1 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>4.2 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.8 in/yr</text></g>
 </g>
 <g id="wb-id-170900120202" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Balch Creek-Willamette River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Balch Creek-Willamette River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='11.865865998821' class='unknown-bar'/>
-<rect x='105' y='128.890146137702' width='60' height='186.109853862298' class='streamflow-bar'/>
-<rect x='105' y='31.865865998821' width='60' height='97.024280138881' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='9.45246952448449' class='unknown-bar'/>
+<rect x='105' y='106.742997770712' width='60' height='148.257002229288' class='streamflow-bar'/>
+<rect x='105' y='29.4524695244845' width='60' height='77.2905282462272' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='176.686384285273' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">30</text></g>
-<g><text x='30' y='38.3727685705469' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">60</text></g>
+<g><text x='35' y='144.817967142506' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">30</text></g>
+<g><text x='35' y='34.6359342850119' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">60</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,175.686384285273 37,175.686384285273 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,37.3727685705469 37,37.3727685705469 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,143.817967142506 43,143.817967142506 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,33.6359342850119 43,33.6359342850119 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>64 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>40.4 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.6 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>64 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>21 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>40.4 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.6 in/yr</text></g>
 </g>
 <g id="wb-id-180400012103" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Shag Slough-San Joaquin River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Shag Slough-San Joaquin River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='68.78536573775' width='60' height='246.21463426225' class='precip-bar'/>
+<rect x='45' y='58.862918469055' width='60' height='196.137081530945' class='precip-bar'/>
 <rect x='105' y='20' width='60' height='0' class='unknown-bar'/>
-<rect x='105' y='294.556969296288' width='60' height='20.4430307037116' class='streamflow-bar'/>
-<rect x='105' y='20' width='60' height='274.556969296288' class='evapotranspiration-bar'/>
+<rect x='105' y='238.714873846196' width='60' height='16.2851261538042' class='streamflow-bar'/>
+<rect x='105' y='20' width='60' height='218.714873846196' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='291.133428003402' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
-<g><text x='30' y='218.481490269055' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
+<g><text x='35' y='235.987646036609' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">5</text></g>
+<g><text x='35' y='178.112373604162' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">10</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,290.133428003402 37,290.133428003402 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,217.481490269055 37,217.481490269055 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,234.987646036609 43,234.987646036609 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,177.112373604162 43,177.112373604162 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='376.28536573775' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='376.28536573775' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='306.362918469055' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='306.362918469055' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>16.9 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>18.9 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.4 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>16.9 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>18.9 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>1.4 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>0 in/yr</text></g>
 </g>
 <g id="wb-id-010300032404" class="nill">
-<g><text x='30' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Riggs Branch-Kennebec River Water Budget</text></g>
+<g><text x='15' y='13.3333333333333' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">Riggs Branch-Kennebec River</text></g>
 <!-- Main rectangles -->
-<rect x='45' y='20' width='60' height='295' class='precip-bar'/>
-<rect x='105' y='20' width='60' height='18.0164828298854' class='unknown-bar'/>
-<rect x='105' y='157.181954152606' width='60' height='157.818045847394' class='streamflow-bar'/>
-<rect x='105' y='38.0164828298854' width='60' height='119.165471322721' class='evapotranspiration-bar'/>
+<rect x='45' y='20' width='60' height='235' class='precip-bar'/>
+<rect x='105' y='20' width='60' height='14.3521134407562' class='unknown-bar'/>
+<rect x='105' y='129.280539748686' width='60' height='125.719460251314' class='streamflow-bar'/>
+<rect x='105' y='34.3521134407562' width='60' height='94.92842630793' class='evapotranspiration-bar'/>
 
 <!-- y axis text -->
-<g><text x='30' y='183.210278930026' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
-<g><text x='30' y='51.4205578600516' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">40</text></g>
+<g><text x='35' y='150.014967961207' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">20</text></g>
+<g><text x='35' y='45.029935922414' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">40</text></g>
 
 <!-- y axis ticks -->
-<polyline points='32,182.210278930026 37,182.210278930026 ' class='axis-tick' alignment-baseline="middle"/>
-<polyline points='32,50.4205578600516 37,50.4205578600516 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,149.014967961207 43,149.014967961207 ' class='axis-tick' alignment-baseline="middle"/>
+<polyline points='38,44.029935922414 43,44.029935922414 ' class='axis-tick' alignment-baseline="middle"/>
 
 <!-- x axis text  -->
-<g><text x='75' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
-<g><text x='135' y='327.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
-<g><text transform='translate(20,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
+<g><text x='75' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">In</text></g>
+<g><text x='135' y='267.5' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">Out</text></g>
+<g><text transform='translate(15,144) rotate(-90)' class="axis-units-label" lengthAdjust='spacingAndGlyphs' text-anchor="middle">inches</text></g>
 
 <!-- legend rectangles -->
-<rect x='175' y='119.5' width='16' height='16' class='precip-bar' />
-<rect x='175' y='151.5' width='16' height='16' class='evapotranspiration-bar' />
-<rect x='175' y='183.5' width='16' height='16' class='streamflow-bar' />
-<rect x='175' y='215.5' width='16' height='16' class='unknown-bar' />
+<rect x='175' y='89.5' width='16' height='16' class='precip-bar' />
+<rect x='175' y='121.5' width='16' height='16' class='evapotranspiration-bar' />
+<rect x='175' y='153.5' width='16' height='16' class='streamflow-bar' />
+<rect x='175' y='185.5' width='16' height='16' class='unknown-bar' />
 
 <!-- legend text -->
-<g><text x='175' y='105.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
-<g><text x='195' y='127.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
-<g><text x='195' y='159.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
-<g><text x='195' y='191.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
-<g><text x='195' y='223.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
-<g><text x='195' y='141.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>44.8 in/yr</text></g>
-<g><text x='195' y='173.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>18.1 in/yr</text></g>
-<g><text x='195' y='205.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.9 in/yr</text></g>
-<g><text x='195' y='237.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.7 in/yr</text></g>
+<g><text x='175' y='75.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Component</text></g>
+<g><text x='195' y='97.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Precipitation</text></g>
+<g><text x='195' y='129.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Evapotranspiration</text></g>
+<g><text x='195' y='161.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Streamflow</text></g>
+<g><text x='195' y='193.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>Unknown</text></g>
+<g><text x='195' y='111.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>44.8 in/yr</text></g>
+<g><text x='195' y='143.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>18.1 in/yr</text></g>
+<g><text x='195' y='175.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>23.9 in/yr</text></g>
+<g><text x='195' y='207.5' class='legend-text' lengthAdjust='spacingAndGlyphs'>2.7 in/yr</text></g>
 </g>
 </svg>
