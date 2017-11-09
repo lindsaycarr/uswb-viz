@@ -6,27 +6,27 @@ process.process_state_map_data <- function(viz = as.viz("process_state_map_data"
   crs <- deps[["spatial_metadata"]]$crs
   crs <- "+init=epsg:2163"
   
-  shift_states <- 
-    list(AK = list(scale = 0.37, shift = c(90,-460), rotate = -50,
-                   sf_df = get_map_data(crs, database = "world", region = "USA:alaska")),
-         HI = list(scale = 1, shift = c(520, -110), rotate = -35,
-                   sf_df = get_map_data(crs, database = "world", region = "USA:hawaii")),
-         PR = list(scale = 2.5, shift = c(-140, 90), rotate=20,
-                   sf_df = get_map_data(crs, database = "world", region = "Puerto Rico")))
+  # shift_states <- 
+  #   list(AK = list(scale = 0.37, shift = c(90,-460), rotate = -50,
+  #                  sf_df = get_map_data(crs, database = "world", region = "USA:alaska")),
+  #        HI = list(scale = 1, shift = c(520, -110), rotate = -35,
+  #                  sf_df = get_map_data(crs, database = "world", region = "USA:hawaii")),
+  #        PR = list(scale = 2.5, shift = c(-140, 90), rotate=20,
+  #                  sf_df = get_map_data(crs, database = "world", region = "Puerto Rico")))
   
   states_out <- get_map_data(crs, database = 'state')
   
-  for(ss in names(shift_states)){
-    ss_data <- shift_states[[ss]]
-    
-    shifted <- shift_sf(sf_df = ss_data$sf_df, 
-                        scale = ss_data$scale,
-                        shift = ss_data$shift, 
-                        ss_data$rotate, 
-                        row_name = ss)
-    
-    states_out <- rbind(shifted, states_out)
-  }
+  # for(ss in names(shift_states)){
+  #   ss_data <- shift_states[[ss]]
+  #   
+  #   shifted <- shift_sf(sf_df = ss_data$sf_df, 
+  #                       scale = ss_data$scale,
+  #                       shift = ss_data$shift, 
+  #                       ss_data$rotate, 
+  #                       row_name = ss)
+  #   
+  #   states_out <- rbind(shifted, states_out)
+  # }
   
   library(dplyr)
   library(sf)
