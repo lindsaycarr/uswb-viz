@@ -34,9 +34,9 @@
 }
 
 circle.emphasis {
-  stroke-width:2;
+  stroke-width:4;
   fill: #dddddd;
-  stroke:#828282;
+  stroke:#DC143C;
   stroke-opacity: 1;
 }
 
