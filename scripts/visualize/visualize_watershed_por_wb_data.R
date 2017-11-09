@@ -15,7 +15,7 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
   
   template <- deps[["fetch_wb_bar_template"]]
   
-  wb_svg_size <- c(0, 0, 360, 360)
+  wb_svg_size <- c(0, 0, 360, 300)
   
   svgs <- lapply(X = names(all_wb_data),
                  FUN = build_watershed_por_wb_svg_list,
@@ -62,9 +62,9 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   x_tick_allow <- 25 # 0.087
   x_tick_text_adj <- 3 # 0.01
   y_tick_allow <- 25 # 0.087
-  y_tick_text_x <- 30
+  y_tick_text_x <- 35
   
-  title_x = y_tick_text_x
+  title_x = margin - 5
   title_y = margin / 1.5
   
   rect_w <- 60 # 0.2
@@ -97,14 +97,14 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   bottom_tick_text_y <- p_rect_y + max_bar_h - max_bar_h * bottom_tick / max_bar
   top_tick_y <- top_tick_text_y - 1
   bottom_tick_y <- bottom_tick_text_y - 1
-  tick_x1 <- y_tick_text_x + 2
+  tick_x1 <- y_tick_text_x + 3
   tick_x2 <- tick_x1 + 5
   
   in_x <- p_rect_x + rect_w / 2
   in_y <- out_y <- p_rect_y + max_bar_h + y_tick_allow / 2
   out_x <- ueq_rect_x + rect_w / 2
   
-  y_units_x <- margin
+  y_units_x <- margin - 5
   y_units_y <- max_x / 2.5
   
   legend_boxes_x <- ueq_rect_x + rect_w + 10
