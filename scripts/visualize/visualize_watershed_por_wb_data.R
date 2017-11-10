@@ -93,15 +93,15 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   q_rect_y <- e_rect_y + e_rect_h
   q_rect_h <- max_bar_h * q / max_bar
   
-  top_tick_text_y <- p_rect_y + max_bar_h - max_bar_h * top_tick / max_bar
-  bottom_tick_text_y <- p_rect_y + max_bar_h - max_bar_h * bottom_tick / max_bar
+  top_tick_text_y <- max_bar_y + max_bar_h - max_bar_h * top_tick / max_bar
+  bottom_tick_text_y <- max_bar_y + max_bar_h - max_bar_h * bottom_tick / max_bar
   top_tick_y <- top_tick_text_y - 1
   bottom_tick_y <- bottom_tick_text_y - 1
   tick_x1 <- y_tick_text_x + 3
   tick_x2 <- tick_x1 + 5
   
   in_x <- p_rect_x + rect_w / 2
-  in_y <- out_y <- p_rect_y + max_bar_h + y_tick_allow / 2
+  in_y <- out_y <- max_bar_y + max_bar_h + y_tick_allow / 2
   out_x <- ueq_rect_x + rect_w / 2
   
   y_units_x <- margin - 5
