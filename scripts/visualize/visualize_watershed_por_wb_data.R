@@ -51,7 +51,6 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   # ET is too big in some places. Adjust like this?
   if(et > (pr - q)) {
     max_bar <- et + q
-    u = 0
   } else {
     max_bar <- pr
   }
@@ -79,15 +78,27 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   
   # Relative calculations
   p_rect_x <- margin + x_tick_allow 
+  eq_rect_x <- p_rect_x + rect_w
+  
+  if(u >= 0) {
+    u_rect_x <- eq_rect_x
+    ueq_rect_h <- max_bar_h * u / max_bar
+    up_rect_h <- 0
+    u_rect_h <- ueq_rect_h
+  } else {
+    u_rect_x <- p_rect_x
+    ueq_rect_h <- 0
+    up_rect_h <- max_bar_h * -u / max_bar
+    u_rect_h <- up_rect_h
+    u <- -u
+  }
+  
   p_rect_y <- max_bar_y + ((max_bar - pr) / max_bar) * max_bar_h
   p_rect_h <- max_bar_h * pr / max_bar
   
-  ueq_rect_x <- p_rect_x + rect_w
-  
   u_rect_y <- max_bar_y
-  u_rect_h <- max_bar_h * u / max_bar 
   
-  e_rect_y <- u_rect_y + u_rect_h 
+  e_rect_y <- u_rect_y + ueq_rect_h 
   e_rect_h <- max_bar_h * et / max_bar
   
   q_rect_y <- e_rect_y + e_rect_h
@@ -102,12 +113,12 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   
   in_x <- p_rect_x + rect_w / 2
   in_y <- out_y <- max_bar_y + max_bar_h + y_tick_allow / 2
-  out_x <- ueq_rect_x + rect_w / 2
+  out_x <- eq_rect_x + rect_w / 2
   
   y_units_x <- margin - 5
   y_units_y <- max_x / 2.5
   
-  legend_boxes_x <- ueq_rect_x + rect_w + 10
+  legend_boxes_x <- eq_rect_x + rect_w + 10
   legend_box_size <- 16
   legend_text_x <- legend_boxes_x + (legend_box_size / .8)
   legend_p_y <- max_bar_y + (max_bar_h / 2) - (legend_box_size * 3)
@@ -133,7 +144,8 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
        title_x = title_x, title_y = title_y, title = titles[[wb]],
        rect_w = rect_w,
        p_rect_h = p_rect_h, p_rect_x = p_rect_x, p_rect_y = p_rect_y,
-       ueq_rect_x = ueq_rect_x,
+       eq_rect_x = eq_rect_x,
+       u_rect_x = u_rect_x,
        u_rect_y = u_rect_y, u_rect_h = u_rect_h,
        q_rect_y = q_rect_y, q_rect_h = q_rect_h,
        e_rect_y = e_rect_y, e_rect_h = e_rect_h,

@@ -5,9 +5,46 @@ subtitle: "### Differences in precipitation, evapotranspiration and streamflow a
 introText1: "### How the water cycle varies across the country"
 
 explanationText1: |
-   Text here would explain the idea of a water budget and that this shows how much 
-   variation in water budgets there is across the us. Also explain caveats related 
-   to water budget closure and uncertainty in the data we are using. Highlight how 
-   we are working to close the water budget and improve data accuracy. Link to the
-   [National Water Census](https://water.usgs.gov/watercensus/)
+  Water budgets are used to understand the movement of water into and out 
+  of a watershed. Much like a financial budget, inflows, storage, and outflows 
+  can be thought of like income, account balance, and expenses respectively. 
+  Unlike a bank account, we don't have perfect information about the flows of 
+  water into and out of a watershed.
 
+  In this data visualization, you can see how three major components of the 
+  water budget vary across the conterminous US. Precipitation is incoming rain 
+  and snow, evapotranspiration is outgoing evaporation from soil and waterbodies 
+  and transpiration through plants, and runoff is excess water that makes its 
+  way to a river outlet through groundwater springs, streams, and lakes. Each 
+  of these components is estimated with a variety of measurement and modeling methods.
+
+  With perfect information, the water budget bar charts shown here would "balance", 
+  showing that in the long run, inflows to each watershed are equal to outflows. 
+  The "Unknown" component in the bar charts is meant to highlight the fact that our 
+  best estimate of three major water budget components don't balance as we might expect. 
+  As we go forward, USGS National Water Census projects aim to eliminate the unknowns in 
+  the water budget for every watershed in the country. This is being done by estimating 
+  additional components and by working to improve the accuracy of the estimates of all 
+  components.
+
+  These independent water budget components can be studied in isolation or used in a 
+  model that combines and compares them into a balanced water budget. As the National 
+  Water Census progresses such a model will be built and vetted to report all significant 
+  inflow and outflow components of the water budget as well as the other components of a 
+  watershed’s water budget, such as, interbasin transfers of water, consumptive water use, 
+  recharge to groundwater systems that don’t discharge to the watershed of interest, and 
+  the state of storage in the watershed. Because inflows must equal outflows over the long 
+  term, storage doesn't appear in the bar charts shown for the sampling of watersheds here, 
+  but at monthly or daily time steps, storage varies and is a very important aspect of the 
+  water budget for many water availability decisions.
+
+  A major issue that the WAUSP program needs to face is how to quantify and communicate the 
+  "unknowns" in this water budget analysis. First, we can just look at all the things we 
+  intuitively know are going on in each watershed and acknowledge that we have not yet 
+  quantified these components. Where we know it to be true, this would include consumptive 
+  water use, interbasin transfers, soil moisture deficits, operational factors with reservoirs, 
+  voids in reservoir storage, recharge to groundwater systems, etc. We can acknowledge these 
+  as unknowns. Second, we can acknowledge that our monitoring systems do not perfectly measure 
+  the amount of water in each component of the hydrologic cycle. This is certainly true in the 
+  case of precipitation, ET, and streamflow. WAUSP could develop conventions for how to show 
+  the “uncertainty” for these components and apply those to the visualization.
