@@ -1,16 +1,30 @@
-visualize.visualize_map_thumbnail <- function(viz){
+visualize.visualize_map_thumbnail <- function(viz) {
   library(dplyr)
   
+  library(sf)
   data <- readDepends(viz)
-  states <- data[['process_state_map_data']]
-  # Just commenting out sites and bars to keep ideas in code for later.
-  # sites <- data[['site-map']]
-  # bars <- data[['bar-data']]
-  height <- viz[['fig-height']]
-  width <- viz[['fig-width']]
-  
+  required <- c("process_flowline_map_data",
+                "process_boundary_map_data",
+                "process_outlet_map_data")
+  checkRequired(data, required)
+  hu <- "140100051906"
+  flines <- data[["process_flowline_map_data"]]
+  flines <- flines[which(flines$id == hu),]$geometry
+  boundary <- data[["process_boundary_map_data"]]
+  boundary <- boundary[which(boundary$id == hu),]$geometry
+  outlet <- data[["process_outlet_map_data"]]
+  outlet <- outlet[which(outlet$id == hu),]$geometry
+
+  height <- viz[["fig-height"]]
+  width <- viz[["fig-width"]]
   png(filename = viz[['location']], width = width, height = height, units = 'px')
-  createThumbnailPlot(states, width)
+  par(mar=c(0,0,0,0), oma=c(0,0,0,0), bg='white')
+  plot(boundary, col = "grey")
+  plot(flines, col = "blue", add = T)
+  plot(outlet, pch = 20, cex = 3, col = "red", add = T)
+  text(-760000, -475000, "Precipitation", cex = 3, pos = 4)
+  text(-760000, -505000, "Evaporation", cex = 3, pos = 4)
+  text(-760000, -535000, "Runoff", cex = 3, pos = 4)
   dev.off()
 }
 
@@ -97,33 +111,5 @@ as_mouse_topper <- function(svg, style.group.id, mouser.parent.id){
     )
   }
   # does it work to let the reference element keep its class? no
-  
-}
-
-#' Create the actual map + bars separately from saving image
-#' 
-#' @param states spatial polygon of state outlines
-# @param sites spatial polygon of site locations
-# @param bars filepath to the xml file with bar data
-#' 
-#' @result a plot
-createThumbnailPlot <- function(states, width){
-  library(xml2)
-  
-  par(mar=c(0,0,0,0), oma=c(0,0,0,0), bg='black')
-  library(sf)
-  plot(states, col='grey2', border = 'grey2')
-  # Could add watersheds?
-  # sp::plot(sites, add=TRUE, pch = 16, cex=width/2500, col='#CCFFFF33') # 20% opacity
-  
-  # bars.xml <- xml2::read_xml(bars) %>% xml_child()
-  # rects <- xml_children(bars.xml)
-  # xleft <- xml_attr(rects, 'x') %>% as.numeric()
-  # ys <- xml_attr(rects, 'y') %>% as.numeric()
-  # ytop <- max(ys) - ys
-  # 
-  # par(new=TRUE, mar=c(0,0,0,0), oma=c(0,0,0,0))
-  # plot(xleft, ytop, type = 'l', axes=FALSE , 
-  #      ylab="", xlab="", col='#2c5258CC', lwd = width/60)
   
 }
