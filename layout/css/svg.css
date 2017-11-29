@@ -99,6 +99,11 @@ circle.emphasis {
   font-family: Arial;
 }
 
+.y-axis {
+  fill: #4D4D4D;
+  stroke: none;
+}
+
 .legend-text {
   font-size: 14px;
   fill: #4D4D4D;

@@ -4,11 +4,14 @@
   {{#barcharts}}
 <g id="{{hu_id}}" class="{{starting_class}}">
 <g><text x='{{title_x}}' y='{{title_y}}' class="wb-plot-title" lengthAdjust='spacingAndGlyphs' text-anchor="start">{{title}}</text></g>
+
 <!-- Main rectangles -->
 <rect x='{{p_rect_x}}' y='{{p_rect_y}}' width='{{rect_w}}' height='{{p_rect_h}}' class='precip-bar'/>
 <rect x='{{u_rect_x}}' y='{{u_rect_y}}' width='{{rect_w}}' height='{{u_rect_h}}' class='unknown-bar'/>
 <rect x='{{eq_rect_x}}' y='{{q_rect_y}}' width='{{rect_w}}' height='{{q_rect_h}}' class='streamflow-bar'/>
 <rect x='{{eq_rect_x}}' y='{{e_rect_y}}' width='{{rect_w}}' height='{{e_rect_h}}' class='evapotranspiration-bar'/>
+
+<rect x='{{max_rect_x}}' y='{{max_rect_y}}' width='2' height='{{max_rect_h}}' class='y-axis'/>
 
 <!-- y axis text -->
 <g><text x='{{y_tick_text_x}}' y='{{bottom_tick_text_y}}' class="axis-label" lengthAdjust='spacingAndGlyphs' text-anchor="end" alignment-baseline="middle">{{bottom_tick}}</text></g>

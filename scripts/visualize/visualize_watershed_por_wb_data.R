@@ -21,7 +21,8 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
                  FUN = build_watershed_por_wb_svg_list,
                  all_wb_data,
                  view_box = wb_svg_size,
-                 titles = titles)
+                 titles = titles,
+                 scale_max = 70)
   
   template_list <- list(viewbox = paste(wb_svg_size, collapse = " "),
                         top_id = "visualize_watershed_por_wb_data",
@@ -32,7 +33,7 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
   cat(whisker::whisker.render(template, template_list), file = viz[['location']])
 }
 
-build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
+build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles, scale_max = NULL) {
   min_x <- view_box[1]
   min_y <- view_box[2]
   max_x <- view_box[3]
@@ -48,12 +49,13 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   
   u <- pr - et - q
   
-  # ET is too big in some places. Adjust like this?
   if(et > (pr - q)) {
-    max_bar <- et + q
+    max_wb_bar <- et + q
   } else {
-    max_bar <- pr
+    max_wb_bar <- pr
   }
+  
+  max_bar <- scale_max
   
   # Constants
   # Fractions are relative to 288
@@ -69,13 +71,13 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   rect_w <- 60 # 0.2
   
   # Ticks
-  top_tick <- floor(pr / 10) * 10
+  top_tick <- floor((scale_max-5) / 10) * 10
   bottom_tick <- top_tick / 2
   
   #fictitious "max_bar"
   max_bar_y <- margin
   max_bar_h <- (max_y - min_y) - (2 * margin + x_tick_allow)
-  
+ 
   # Relative calculations
   p_rect_x <- margin + x_tick_allow 
   eq_rect_x <- p_rect_x + rect_w
@@ -96,7 +98,9 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
   p_rect_y <- max_bar_y + ((max_bar - pr) / max_bar) * max_bar_h
   p_rect_h <- max_bar_h * pr / max_bar
   
-  u_rect_y <- max_bar_y
+  max_wb_bar_y <- max_bar_y + ((max_bar - max_wb_bar) / max_bar) * max_bar_h
+  
+  u_rect_y <- max_wb_bar_y
   
   e_rect_y <- u_rect_y + ueq_rect_h 
   e_rect_h <- max_bar_h * et / max_bar
@@ -144,6 +148,7 @@ build_watershed_por_wb_svg_list <- function(wb, all_wb_data, view_box, titles) {
        title_x = title_x, title_y = title_y, title = titles[[wb]],
        rect_w = rect_w,
        p_rect_h = p_rect_h, p_rect_x = p_rect_x, p_rect_y = p_rect_y,
+       max_rect_x = p_rect_x, max_rect_y = max_bar_y, max_rect_h = max_bar_h,
        eq_rect_x = eq_rect_x,
        u_rect_x = u_rect_x,
        u_rect_y = u_rect_y, u_rect_h = u_rect_h,
