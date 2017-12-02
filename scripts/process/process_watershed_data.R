@@ -5,6 +5,7 @@ process.process_watershed_map_data <- function(viz = as.viz("process_watershed_m
   required <- c("fetch_huc12boundary", 
                 "fetch_huc12pp", 
                 "fetch_nhdplusflowline",
+                "fetch_map_data",
                 "spatial_metadata")
   checkRequired(deps, required)
   
