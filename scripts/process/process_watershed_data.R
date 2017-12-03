@@ -2,17 +2,11 @@
 process.process_watershed_map_data <- function(viz = as.viz("process_watershed_map_data")) {
 
   deps <- readDepends(viz)
-  required <- c("fetch_huc12boundary", 
-                "fetch_huc12pp", 
-                "fetch_nhdplusflowline",
-                "fetch_map_data",
+  required <- c("fetch_map_data",
                 "spatial_metadata")
   checkRequired(deps, required)
   
-  # Load geojson and project
-  watershed_map_data <- list(hu_boundary = deps$`fetch_huc12boundary`,
-                             hu_outlet = deps$`fetch_huc12pp`,
-                             nhd_flowline = deps$`fetch_nhdplusflowline`)
+  watershed_map_data <- deps$fetch_map_data
   
   watershed_map_data <- lapply(watershed_map_data, sf::st_transform, crs = deps$`spatial_metadata`$crs)
   
@@ -32,11 +26,11 @@ process.process_outlet_map_data <- function(viz = as.viz("process_outlet_map_dat
   library(dplyr)
   library(sf) # dplyr calls select out geometry with loading sf.
   
-  outlets <- deps[["process_watershed_map_data"]]$hu_outlet %>%
-    dplyr::select(HUC_12) %>% 
+  outlets <- deps[["process_watershed_map_data"]]$huc12pp %>%
+    dplyr::select(huc12) %>% 
     dplyr::mutate(r = '2',
            class = 'outlet-dots') %>%
-    dplyr::rename(id = HUC_12)
+    dplyr::rename(id = huc12)
     
   saveRDS(outlets, viz[['location']])
 }
@@ -51,7 +45,7 @@ process.process_boundary_map_data <- function(viz = as.viz("process_boundary_map
   library(dplyr)
   library(sf) # dplyr calls select out geometry with loading sf.
   
-  boundaries <- deps[["process_watershed_map_data"]]$hu_boundary %>%
+  boundaries <- deps[["process_watershed_map_data"]]$huc12boundary %>%
     dplyr::select(huc12) %>%
     dplyr::mutate(onmouseover = sprintf("setEmphasis('%s'); setShow('wb-id-%s');", huc12, huc12),
                   class = 'watershed-boundary') %>%
@@ -70,7 +64,7 @@ process.process_flowline_map_data <- function(viz = as.viz("process_flowline_map
   library(dplyr)
   library(sf) # dplyr calls select out geometry with loading sf.
   
-  flowline <- sf::st_simplify(deps[["process_watershed_map_data"]]$nhd_flowline, viz[["simp_tolerance"]])
+  flowline <- sf::st_simplify(deps[["process_watershed_map_data"]]$nhdplusflowline, viz[["simp_tolerance"]])
   
   flowline <-  flowline %>%
     dplyr::mutate(class = 'nhdplus-flowline') %>%

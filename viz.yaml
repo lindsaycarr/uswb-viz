@@ -115,46 +115,6 @@ fetch:
     mimetype: "application/json"
     scripts: 
   -
-    id: fetch_huc12boundary
-    location: cache/fetch_huc12boundary.geojson
-    fetcher: sciencebase
-    scripts:
-    remoteItemId: 59e10108e4b05fe04cd000c8
-    remoteFilename: usgs_huc12boundary_uswb.geojson
-    reader: sf_reader
-  -
-    id: fetch_huc12boundary_atts
-    location: cache/fetch_huc12boundary_atts.tsv
-    fetcher: sciencebase
-    scripts:
-    remoteItemId: 59e10108e4b05fe04cd000c8
-    remoteFilename: usgs_huc12boundary_uswb.tsv
-    mimetype: text/tab-separated-values
-  -
-    id: fetch_huc12pp
-    location: cache/fetch_huc12pp.geojson
-    fetcher: sciencebase
-    scripts:
-    remoteItemId: 59e10108e4b05fe04cd000c8
-    remoteFilename: usgs_huc12pp_uswb.geojson
-    reader: sf_reader
-  -
-    id: fetch_huc12pp_atts
-    location: cache/fetch_huc12pp_atts.tsv
-    fetcher: sciencebase
-    scripts:
-    remoteItemId: 59e10108e4b05fe04cd000c8
-    remoteFilename: usgs_huc12pp_uswb.tsv
-    mimetype: text/tab-separated-values
-  -
-    id: fetch_nhdplusflowline
-    location: cache/fetch_nhdplusflowline.geojson
-    fetcher: sciencebase
-    scripts:
-    remoteItemId: 59e10108e4b05fe04cd000c8
-    remoteFilename: usgs_nhdplusflowline_uswb.geojson
-    reader: sf_reader
-  -
     id: fetch_map_data
     location: cache/fetch_map_data.rds
     fetcher: fetch_map_data
@@ -181,8 +141,7 @@ process:
     location: cache/process_watershed_map_data.rds
     processor: process_watershed_map_data
     scripts: scripts/process/process_watershed_data.R
-    depends: ["fetch_huc12boundary", "fetch_huc12pp", 
-    "fetch_nhdplusflowline", "spatial_metadata", "fetch_map_data"]
+    depends: ["spatial_metadata", "fetch_map_data"]
     reader: rds
   -
     id: process_outlet_map_data

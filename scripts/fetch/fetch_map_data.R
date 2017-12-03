@@ -10,6 +10,7 @@ fetch.fetch_map_data <- function(viz = as.viz("fetch_map_data")) {
                huc12boundary = "https://opengeospatial.github.io/ELFIE/usgs/huc12boundary/uswb/",
                huc12pp = "https://opengeospatial.github.io/ELFIE/usgs/huc12pp/uswb/")
   
+  hu_names <- setNames(HU_ids, HU_ids)
   md <- setNames(rep(list(list()), length(HU_ids)), HU_ids)
   map_data <- list()
 
@@ -29,8 +30,10 @@ fetch.fetch_map_data <- function(viz = as.viz("fetch_map_data")) {
           sfg <- sf::st_point(c(jl$geo$longitude, jl$geo$latitude))
         } else if(jl$geo$`@type` == "schema:GeoShape") {
           if(!is.null(jl$geo$polygon)) {
-            if(dim(jl$geo$polygon$geometry$coordinates)[1]==1 && dim(jl$geo$polygon$geometry$coordinates)[2]==1) {
+            if(!is.list(jl$geo$polygon$geometry$coordinates) && dim(jl$geo$polygon$geometry$coordinates)[1]==1 && dim(jl$geo$polygon$geometry$coordinates)[2]==1) {
               sfg <- sf::st_polygon(list(matrix(jl$geo$polygon$geometry$coordinates[1,1,,], ncol = 2, byrow = F)))
+            } else if(is.list(jl$geo$polygon$geometry$coordinates)) {
+              sfg <- sf::st_multipolygon(lapply(jl$geo$polygon$geometry$coordinates[[1]], function(x) sf::st_polygon(list(x))))
             } else {
               stop("found a multipolygon or multiple features, not supported")
             }
@@ -41,11 +44,12 @@ fetch.fetch_map_data <- function(viz = as.viz("fetch_map_data")) {
       }
       
       md[[ws]] <- sfg
-      
+      hu_names[[ws]] <- jl$name
     }
     
     map_data[[type]] <- sf::st_sf(geometry = sf::st_sfc(md), data.frame(huc12 = HU_ids, row.names = HU_ids, stringsAsFactors = F))
-    
+    sf::st_crs(map_data[[type]]) <- sf::st_crs("+init=epsg:4326")
+    map_data[[type]]$name <- hu_names
   }
   
   saveRDS(map_data, viz[["location"]])

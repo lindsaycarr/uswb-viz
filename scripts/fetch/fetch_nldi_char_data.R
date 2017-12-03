@@ -7,7 +7,7 @@ fetch.fetch_nldi_char_data <- function(viz = as.viz("fetch_nldi_char_data")) {
   HU_ids <- deps[["fetch_HU_ids"]]
   
   chars <- c("TOT_IMPV11", "TOT_POPDENS10", "TOT_MIRAD_2012", 
-             "TOT_NDAMS_2013", "TOT_FRESHWATER_WD")
+             "TOT_NDAMS_2013", "TOT_FRESHWATER_WD", "TOT_BASIN_AREA")
   
   char_data <- setNames(rep(list(setNames(as.list(character(length = length(chars))), 
                                           chars)), 
