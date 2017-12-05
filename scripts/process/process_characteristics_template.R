@@ -13,7 +13,7 @@ process.process_characteristics_template <- function(viz = as.viz("process_chara
   
   nwis_sites <- deps[["process_wb_huc_nwis"]]
   
-  boundaries <- dplyr::select(deps[["process_watershed_map_data"]]$huc12boundary, huc12, name) 
+  boundaries <- dplyr::select(deps[["process_watershed_map_data"]]$`http://www.opengeospatial.org/standards/waterml2/hy_features/HY_CatchmentDivide`, huc12, name) 
   sf::st_geometry(boundaries) <- NULL
   boundaries <- data.frame(boundaries, stringsAsFactors = F)
   rownames(boundaries) <- boundaries$huc12

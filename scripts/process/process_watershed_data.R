@@ -26,7 +26,7 @@ process.process_outlet_map_data <- function(viz = as.viz("process_outlet_map_dat
   library(dplyr)
   library(sf) # dplyr calls select out geometry with loading sf.
   
-  outlets <- deps[["process_watershed_map_data"]]$huc12pp %>%
+  outlets <- deps[["process_watershed_map_data"]]$`http://www.opengeospatial.org/standards/waterml2/hy_features/HY_HydroNexus` %>%
     dplyr::select(huc12) %>% 
     dplyr::mutate(r = '2',
            class = 'outlet-dots') %>%
@@ -45,7 +45,7 @@ process.process_boundary_map_data <- function(viz = as.viz("process_boundary_map
   library(dplyr)
   library(sf) # dplyr calls select out geometry with loading sf.
   
-  boundaries <- deps[["process_watershed_map_data"]]$huc12boundary %>%
+  boundaries <- deps[["process_watershed_map_data"]]$`http://www.opengeospatial.org/standards/waterml2/hy_features/HY_CatchmentDivide` %>%
     dplyr::select(huc12) %>%
     dplyr::mutate(onmouseover = sprintf("setEmphasis('%s'); setShow('wb-id-%s');", huc12, huc12),
                   class = 'watershed-boundary') %>%
@@ -64,7 +64,7 @@ process.process_flowline_map_data <- function(viz = as.viz("process_flowline_map
   library(dplyr)
   library(sf) # dplyr calls select out geometry with loading sf.
   
-  flowline <- sf::st_simplify(deps[["process_watershed_map_data"]]$nhdplusflowline, viz[["simp_tolerance"]])
+  flowline <- sf::st_simplify(deps[["process_watershed_map_data"]]$`http://www.opengeospatial.org/standards/waterml2/hy_features/HY_HydrographicNetwork`, viz[["simp_tolerance"]])
   
   flowline <-  flowline %>%
     dplyr::mutate(class = 'nhdplus-flowline') %>%

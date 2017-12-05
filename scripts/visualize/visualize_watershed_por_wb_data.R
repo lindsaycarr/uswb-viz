@@ -7,7 +7,7 @@ visualize.visualize_watershed_por_wb_data <- function(viz = as.viz("visualize_wa
   all_wb_data <- deps[["process_watershed_por_wb_data"]]
   
   library(sf)
-  title_data <- deps[["process_watershed_map_data"]]$huc12boundary %>%
+  title_data <- deps[["process_watershed_map_data"]]$`http://www.opengeospatial.org/standards/waterml2/hy_features/HY_CatchmentDivide` %>%
     dplyr::select(huc12, name)
   sf::st_geometry(title_data) <- NULL 
 
