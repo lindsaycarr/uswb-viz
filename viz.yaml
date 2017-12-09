@@ -279,7 +279,6 @@ publish:
     template: fullpage
     depends:
       header: publish_header
-      footer: publish_footer
       map-section: publish_map_section
       handmade-social-section: handmade-social-section
       lib-d3-js: lib-d3-js
@@ -331,20 +330,6 @@ publish:
     template: header-template
     context:
       title: Water Budgets Across the U.S.
-  -
-    id: publish_footer
-    publisher: footer
-    template: footer-template
-    blogsInFooter: TRUE
-    vizzies:
-      -
-        org: USGS-VIZLAB
-        repo: hurricane-matthew
-    blogs:
-      -
-        name: Using the dataRetrieval Stats Service
-        url: https://owi.usgs.gov/blog/stats-service-map/
-        thumbLoc: https://owi.usgs.gov/blog/static/stats-service-map/plot-1.png
   -
     id: twitterLogo
     location: images/twitter.svg
