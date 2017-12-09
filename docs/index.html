@@ -76,17 +76,17 @@
       </script>
       
   <title>US Water Budgets</title>
-    <script src="js/d3-4.11.0.min.js?_c=562089" type="text/javascript"></script>
-    <script src="js/jquery-3.2.1.min.js?_c=7967315" type="text/javascript"></script>
-    <script src="js/vizlab.js?_c=7030926" type="text/javascript"></script>
-    <script src="js/svg-injector-1.1.3.min.js?_c=5977186" type="text/javascript"></script>
-    <script src="js/animate.js?_c=5932796" type="text/javascript"></script>
-    <script src="js/tooltip.js?_c=3154706" type="text/javascript"></script>
-    <link href="css/header.css?_c=7982148" rel="stylesheet" type="text/css" />
-    <link href="css/footer.css?_c=5792356" rel="stylesheet" type="text/css" />
-    <link href="css/viz.css?_c=2237546" rel="stylesheet" type="text/css" />
-    <link href="css/svg.css?_c=6944143" rel="stylesheet" type="text/css" />
-    <link href="css/socialMedia.css?_c=3153093" rel="stylesheet" type="text/css" />
+    <script src="js/d3-4.11.0.min.js?_c=8723001" type="text/javascript"></script>
+    <script src="js/jquery-3.2.1.min.js?_c=7146669" type="text/javascript"></script>
+    <script src="js/vizlab.js?_c=5181839" type="text/javascript"></script>
+    <script src="js/svg-injector-1.1.3.min.js?_c=9450833" type="text/javascript"></script>
+    <script src="js/animate.js?_c=8494760" type="text/javascript"></script>
+    <script src="js/tooltip.js?_c=9491345" type="text/javascript"></script>
+    <link href="css/header.css?_c=5897219" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css?_c=3746185" rel="stylesheet" type="text/css" />
+    <link href="css/viz.css?_c=4255904" rel="stylesheet" type="text/css" />
+    <link href="css/svg.css?_c=6927583" rel="stylesheet" type="text/css" />
+    <link href="css/socialMedia.css?_c=6618789" rel="stylesheet" type="text/css" />
   <noscript>Javascript is not enabled</noscript>
     
     <script type="application/javascript" src="https://www2.usgs.gov/scripts/analytics/usgs-analytics.js"></script>
@@ -106,7 +106,7 @@
 
   <div id="header">
   <div id="logo">
-  	<img src="images/usgsLogo.png?_c=1006780" alt="USGS" title="USGS" />
+  	<img src="images/usgsLogo.png?_c=4096190" alt="USGS" title="USGS" />
   	<h3>Water Budgets Across the U.S.</h3>
   </div>
 </div>
@@ -173,115 +173,70 @@ need for timely best science. The information is provided on the condition that 
 U.S. Geological Survey nor the U.S. Government shall be held liable for any damages resulting 
 from the authorized or unauthorized use of this information.</strong></p>
 
-<p>Water budgets are used to understand the movement of water into and out 
-of a watershed. Much like a financial budget, inflows, storage, and outflows 
-can be thought of like income, account balance, and expenses respectively. 
-Unlike a bank account, we don&#39;t have perfect information about the flows of 
-water into and out of a watershed.</p>
+<p>Water budgets are used to understand the movement of water into and out of a
+watershed. Much like a financial budget, inflows, storage, and outflows can
+be thought of like income, account balance, and expenses respectively. Unlike
+a bank account, we don&#39;t have perfect information about the flows of water
+into and out of a watershed.</p>
 
-<p>In this data visualization, you can see how three major components of the 
-water budget vary across the conterminous US. Precipitation is incoming rain 
-and snow, evapotranspiration is outgoing evaporation from soil and waterbodies 
-and transpiration through plants, and runoff is excess water that makes its 
-way to a river outlet through groundwater springs, streams, and lakes. Each 
-of these components is estimated with a variety of measurement and modeling methods.</p>
+<p>In this data visualization, you can see how three major components of the
+water budget vary across the conterminous US. Precipitation is incoming rain
+and snow; evapotranspiration is outgoing evaporation from soil and
+waterbodies and transpiration through plants; and runoff is excess water that
+makes its way to a stream or river through spring discharges, streams, and
+lakes. Each of these components is estimated with a variety of measurement
+and modeling methods.</p>
 
-<p>With perfect information, the water budget bar charts shown here would &ldquo;balance&rdquo;, 
-showing that in the long run, inflows to each watershed are equal to outflows. 
-The &ldquo;Unknown&rdquo; component in the bar charts is meant to highlight the fact that our 
-best estimate of three major water budget components don&#39;t balance as we might expect. 
-As we go forward, USGS National Water Census projects aim to eliminate the unknowns in 
-the water budget for every watershed in the country. This is being done by estimating 
-additional components and by working to improve the accuracy of the estimates of all 
-components.</p>
+<p>With perfect information, the water budget bar charts shown here would
+“balance”, showing that in the long run, inflows to each watershed are equal
+to outflows, barring any changes in storage. The “Unknown” component in the
+bar charts is meant to highlight the fact that our best estimate of three
+major water budget components don&#39;t balance perfectly. So why might these
+data not balance? We know the unknown term can be composed of (1) changes in
+storage, (2) uncertainty in data, and (3) unquantified sources and sinks.</p>
 
-<p>These independent water budget components can be studied in isolation or used in a 
-model that combines and compares them into a balanced water budget. As the National 
-Water Census progresses such a model will be built and vetted to report all significant 
-inflow and outflow components of the water budget as well as the other components of a 
-watershed’s water budget, such as, interbasin transfers of water, consumptive water use, 
-recharge to groundwater systems that don’t discharge to the watershed of interest, and 
-the state of storage in the watershed. Because inflows must equal outflows over the long 
-term, storage doesn&#39;t appear in the bar charts shown for the sampling of watersheds here, 
-but at monthly or daily time steps, storage varies and is a very important aspect of the 
-water budget for many water availability decisions.</p>
+<p>The water balance shown here neglects one of the most difficult terms to
+quantify &ndash; storage. The amount of water stored in a particular watershed,
+whether in lakes, aquifers, or any other storage, fluctuates over time; at
+times contributing extra water to outflows (shrinking stores) and at other
+times withholding water from outflows (increasing stores). Using the bank
+analogy, storage is the amount of money in a bank account. For a given period
+of time, the inflows and outflows may not be equivalent and the balance may
+shift. While this can be less important for long-term balances as is shown
+here, it becomes more important at monthly or daily time scales, making it a
+very important aspect of the water budget. The National Water Census (NWC) is
+exploring remotely sensed products and additional observational datasets such
+as groundwater well data to improve our characterization of storage.</p>
 
-<p>A major issue that the WAUSP program needs to face is how to quantify and communicate the 
-&ldquo;unknowns&rdquo; in this water budget analysis. First, we can just look at all the things we 
-intuitively know are going on in each watershed and acknowledge that we have not yet 
-quantified these components. Where we know it to be true, this would include consumptive 
-water use, interbasin transfers, soil moisture deficits, operational factors with reservoirs, 
-voids in reservoir storage, recharge to groundwater systems, etc. We can acknowledge these 
-as unknowns. Second, we can acknowledge that our monitoring systems do not perfectly measure 
-the amount of water in each component of the hydrologic cycle. This is certainly true in the 
-case of precipitation, ET, and streamflow. WAUSP could develop conventions for how to show 
-the “uncertainty” for these components and apply those to the visualization.</p>
+<p>Layered into all of these hydrologic observations is an unknown or
+unquantified degree of uncertainty - no measurement is exact. The NWC is
+collecting and analyzing numerous observational and simulated data sets to
+begin to understand the degree of uncertainty in the water budget. Work can
+also be undertaken to understand and reduce specific sources of uncertainty
+and to incorporate information on uncertainty into our characterization of
+the water budget. The final source of the “unknown” in the water budget stems
+from the fact that current hydrologic data products may not have captured all
+of the components of the water budget, resulting in unquantified components
+of the water budget. These could natural processes that we know we have not
+accounted for (such as groundwater flow out of a watershed) or human water
+use. The NWC continues to apply cutting-edge science to expanding our ability
+to account for the complete water budget.</p>
+
+<p>As we go forward, the NWC aims to improve our understanding of the unknowns
+in the water budget for every watershed in the country. In addition to
+improving our observational datasets and our understanding of their
+uncertainties, the National Water Census is developing a model to estimate
+components of the water budget. Building upon knowledge gained through
+comprehensive analysis of observational datasets, this model can be used to
+understand how the different water budget components relate to one another
+and may change under various land use and water management scenarios.</p>
 
     </div>
   </div>
 </div>
 
   <footer>
-    
-<div class="footerContentAligner">
-
-    <div id="vizlabPromo">
-      <p>This interactive data visualization was created by
-      <a href="https://owi.usgs.gov/vizlab/" target="_blank">
-        <strong>USGS VIZLAB</strong></p>
-      	<img src="images/atom.svg" alt="atom icon"/>
-    	</a>
-    </div>
-
-    <div id="github-contact">
-      <a class="githublink" href="" target="_blank" onclick="ga('send', 'event', 'outbound', 'clicked on repo')">
-        <img src="images/github.svg" alt="github icon"/>
-      	<p>Get the Code</p>
-      </a>
-      <span>|</span>
-      <a href="mailto:vizlab@usgs.gov">
-    	  Contact Us
-    	</a>
-    </div>
-
-    <div id="relatedItems">
-
-      <div id="relatedVizzies">
-        <h3>Related Visualizations:</h3>
-        <div class="relatedItemContainer">
-        		<div class="relatedItem">
-        		  <a href="https://owi.usgs.gov/vizlab/hurricane-matthew/" target="_blank">
-        		    <div class="footerThumbnail">
-        					<img src="https://owi.usgs.gov/vizlab/hurricane-matthew/images/matthew_water2.png" alt=""/>
-        				</div>
-        			  <div class="titleHandler">
-        				  <h4>Hurricane Matthew's Water Footprint</h4>
-        				</div>
-        			</a>
-        		</div>
-      	</div>
-      </div>
-
-        <div id="relatedBlogs">
-          <h3>Related Blogs:</h3>
-          <div class="relatedItemContainer">
-          		<div class="relatedItem">
-          		  <a href="https://owi.usgs.gov/blog/stats-service-map/" target="_blank">
-          				<div class="footerThumbnail blog">
-          					<img src="https://owi.usgs.gov/blog/static/stats-service-map/plot-1.png" alt=""/>
-          				</div>
-          				<div class="titleHandler">
-          					<h4>Using the dataRetrieval Stats Service</h4>
-          				</div>
-          			</a>
-          		</div>
-        	</div>
-        </div>
-    </div>
-
-</div>
-
-
+    footer
   </footer>
 </body>
 
