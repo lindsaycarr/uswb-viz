@@ -395,6 +395,7 @@ publish:
     template: footer-template
     depends: lib-footer-css
     blogsInFooter: FALSE
+    github-url: "https://github.com/dblodgett-usgs/uswb-viz"
     vizzies:
       - name: Visualizing water use by region and time
         org: USGS-VIZLAB
