@@ -398,3 +398,4 @@ publish:
     vizzies:
       - name: Visualizing water use by region and time
         org: USGS-VIZLAB
+        repo: water-use
